@@ -1,4 +1,4 @@
-# y
+# banannica vue
 
 > A nice vue project
 
