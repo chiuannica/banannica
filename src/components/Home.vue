@@ -12,7 +12,7 @@ export default {
   data () {
     return {
       title: 'Banannica',
-      subtitle: 'Web Developement',
+      subtitle: 'Web Developer',
       banana: require('@/assets/banana.png'),
       logo: require('@/assets/logo_transparent.png')
     }
@@ -27,7 +27,7 @@ export default {
 /* Animation */
 h1{
   font-size: 32pt;
-  color:#333;
+  color: #222;
   text-align: center;
   overflow: hidden;
   border-right: .1em solid transparent;
@@ -62,6 +62,7 @@ span{
   z-index: -1;
   width: 60%;
   height: 60%;
+  opacity: 0.6;
 }
 /* Smol Screen */
 @media screen and (max-width: 600px) {
