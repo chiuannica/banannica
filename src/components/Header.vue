@@ -3,7 +3,7 @@
     <div id="picture">
       <img v-bind:src="logo" class="picture"/>
     </div>
-    <div class="tabs">
+    <div>
       <a class="tab" v-for="tab in tabs" v-bind:href="tab.link" v-bind:key="tab.id">{{ tab.title }}</a>
     </div>
   </div>
@@ -36,6 +36,7 @@ a{
   margin: 10px;
 }
 a:hover{
+  color: #F73F52;
   text-decoration: none;
 }
 a:hover:after{
@@ -74,16 +75,17 @@ a.block{
     margin-left: 30px;
     float: none;
     display: block;
-    text-align: left;
+    text-align: right;
   }
   a:hover:after{
-    width: 20%;
-  }
-  #header{
-    display: inline-block;
+    width: 0%;
   }
   .picture{
     margin-bottom: -100px;
+  }
+  #header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (min-width: 1000px) {
