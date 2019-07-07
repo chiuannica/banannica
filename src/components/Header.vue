@@ -3,7 +3,9 @@
     <div id="picture">
       <img v-bind:src="logo" class="picture"/>
     </div>
-    <a class="tab" v-for="tab in tabs" v-bind:href="tab.link" v-bind:key="tab.id">{{ tab.title }}</a>
+    <div class="tabs">
+      <a class="tab" v-for="tab in tabs" v-bind:href="tab.link" v-bind:key="tab.id">{{ tab.title }}</a>
+    </div>
   </div>
 </template>
 <script>
@@ -78,7 +80,7 @@ a.block{
     width: 20%;
   }
   #header{
-    display: block;
+    display: inline-block;
   }
   .picture{
     margin-bottom: -100px;
