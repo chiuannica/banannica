@@ -1,11 +1,15 @@
 <template>
   <div id="about">
-    <div class="titlelogo">
+    <div id="titlelogo">
       <h1>{{ title }}</h1>
       <img class="logo" :src="logo">
     </div>
-    <div v-for="text in texts">
-      <p :id="text.id">{{ text.p }}</p>
+    <div id="content">
+      <div class="text">
+        <p v-for="text in texts" :id="text.id">{{ text.p }}</p>
+        <a :href="resume.link"><p>{{ resume.p }}</p></a>
+      </div>
+      <div><img class="mypicture" :src="mypicture"></div>
     </div>
   </div>
 </template>
@@ -17,11 +21,13 @@ export default {
     return {
       title: 'About',
       logo: require('@/assets/logo_transparent.png'),
+      mypicture: require('@/assets/mypicture.jpg'),
       texts: [
-        { p: 'Banannica is a web developer based in Philadelphia, PA.', id: 0 },
         { p: 'Banana + Annica = Banannica', id: 'equation' },
-        { p: 'Web Developer', id: 1 }
-      ]
+        { p: 'Banannica is a web developer based in Philadelphia, PA.', id: 0 },
+        { p: 'I am a bubble tea lover, ARMY, student, teacher, and soccer fan.', id: 1 }
+      ],
+      resume: { p: 'Check out my resume.', link: 'https://google.com' }
     }
   }
 }
@@ -29,7 +35,8 @@ export default {
 
 <style>
 #about{
-  background: hsl(348, 92%, 80%)
+  background: hsl(348, 92%, 80%);
+  display: block;
 
 }
 h1{
@@ -39,19 +46,35 @@ h1{
 }
 p{
   font-size: 16pt;
-  text-align: center;
-  margin: 5%;
+  margin: 2%;
 }
-#equation{
+a{
+  text-decoration: none;
+  color: #e3e3e3;
+}
+a:hover{
   color: #F73F52;
-  font-size: 120%;
 }
-.titlelogo{
+#titlelogo{
   display: inline-flex;
   justify-content: center;
   align-items: center;
   margin-bottom: -15%;
   margin-top: -10%;
+}
+#content{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.text{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#equation{
+  font-family: 'Dosis';
+  color: #F73F52;
+  font-size: 150%;
 }
 /* Images */
 .logo{
@@ -59,6 +82,11 @@ p{
   height: 50%;
   margin-left: -30%;
   margin-right: 10%;
+}
+.mypicture{
+  border-radius: 50%;
+  width: 90%;
+  margin: 5%;
 }
 /* Smol Screen */
 @media screen and (max-width: 600px) {
