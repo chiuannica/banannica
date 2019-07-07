@@ -3,6 +3,7 @@
     <Scrollbar></Scrollbar>
     <Header></Header>
     <Home></Home>
+    <About></About>
   </div>
 </template>
 
@@ -11,11 +12,12 @@
 import Scrollbar from './components/Scrollbar'
 import Header from './components/Header'
 import Home from './components/Home'
+import About from './components/About'
 
 export default {
   name: 'App',
   components: {
-    Scrollbar, Header, Home
+    Scrollbar, Header, Home, About
   }
 }
 </script>
@@ -44,4 +46,5 @@ h1, a{
   font-size: 24pt;
   color: #F73F52;
 }
+
 </style>

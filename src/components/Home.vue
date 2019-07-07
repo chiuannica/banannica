@@ -2,7 +2,6 @@
   <div id="home">
     <h1>{{ title }} <span>{{ subtitle }}</span></h1>
     <img class="banana" :src="banana">
-    <img class="logo" :src="logo">
   </div>
 </template>
 
@@ -14,7 +13,6 @@ export default {
       title: 'Banannica',
       subtitle: 'Web Developer',
       banana: require('@/assets/banana.png'),
-      logo: require('@/assets/logo_transparent.png')
     }
   }
 }
@@ -35,7 +33,7 @@ h1{
   margin: 20px auto;
   letter-spacing: 0.07em;
   animation: 
-    typing 3s steps(40, end),
+    typing 2s steps(40, end),
     blinking-cursor .5s step-start 5;
   animation-delay: 0s;
 }
@@ -57,7 +55,7 @@ span{
   height: 50%;
 }
 .banana{
-  margin-top: -25%;
+  margin-top: -18%;
   margin-left: 30%;
   z-index: -1;
   width: 60%;
@@ -67,13 +65,19 @@ span{
 /* Smol Screen */
 @media screen and (max-width: 600px) {
   h1{
-    font-size: 16pt;
+    font-size: 18pt;
+  }
+  span{
+    font-size: 12pt;
   }
 }
 /* Big Screen */
 @media screen and (min-width: 1000px) {
   h1{
-    font-size: 76pt;
+    font-size: 64pt;
+  }
+  span{
+    font-size: 24pt;
   }
 }
 </style>
