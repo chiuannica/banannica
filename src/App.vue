@@ -4,6 +4,7 @@
     <Header></Header>
     <Home></Home>
     <About></About>
+    <Projects></Projects>
   </div>
 </template>
 
@@ -13,11 +14,12 @@ import Scrollbar from './components/Scrollbar'
 import Header from './components/Header'
 import Home from './components/Home'
 import About from './components/About'
+import Projects from './components/Projects'
 
 export default {
   name: 'App',
   components: {
-    Scrollbar, Header, Home, About
+    Scrollbar, Header, Home, About, Projects
   }
 }
 </script>
@@ -41,7 +43,7 @@ html{
   font-size: 14pt;
   color: #333333;
 }
-h1, a{
+h1, h2, a{
   font-family: 'Dosis';
   font-size: 24pt;
   color: #F73F52;

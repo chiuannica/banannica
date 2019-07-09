@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <div id="main">
     <h1>{{ title }} <span>{{ subtitle }}</span></h1>
     <img class="banana" :src="banana">
   </div>
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-#home{
+#main{
   margin: 70px;
 }
 /* Animation */
@@ -34,12 +34,13 @@ h1{
   letter-spacing: 0.07em;
   animation: 
     typing 2s steps(40, end),
-    blinking-cursor .5s step-start 5;
+    blinking-cursor .5s step-start 7;
   animation-delay: 0s;
 }
 span{
   font-size: 14pt;
   font-family: 'Roboto';
+  font-style: italic;
 }
 @keyframes typing {
   from { width: 0 }

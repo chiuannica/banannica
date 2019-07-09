@@ -1,5 +1,5 @@
 <template>
-  <div id="header">
+  <div id="home">
     <div id="picture">
       <img v-bind:src="logo" class="picture"/>
     </div>
@@ -15,11 +15,11 @@ export default {
     return {
       logo: require('@/assets/logo_transparent.png'),
       tabs: [
-        {title: 'Home', link: '/', id: 0},
-        {title: 'About', link: '/about', id: 1},
-        {title: 'Projects', link: '/projects', id: 2},
+        {title: 'Home', link: '#home', id: 0},
+        {title: 'About', link: '#about', id: 1},
+        {title: 'Projects', link: '#projects', id: 2},
         {title: 'Blog', link: '/blog', id: 3},
-        {title: 'Contact', link: '/contact', id: 4}
+        {title: 'Contact', link: '#contact', id: 4}
       ]
     }
   }
@@ -56,7 +56,7 @@ a.block{
   display: block;
   padding: 0.5em;
 }
-#header{
+#home{
   background: transparent;
   width: 100%;
   display: inline-flex;

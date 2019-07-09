@@ -1,15 +1,17 @@
 <template>
   <div id="about">
     <div id="titlelogo">
-      <h1>{{ title }}</h1>
+      <h2>{{ title }}</h2>
       <img class="logo" :src="logo">
     </div>
     <div id="content">
       <div class="text">
         <p v-for="text in texts" :id="text.id">{{ text.p }}</p>
-        <a :href="resume.link"><p>{{ resume.p }}</p></a>
       </div>
-      <div><img class="mypicture" :src="mypicture"></div>
+      <div>
+        <img class="mypicture" :src="mypicture">
+      </div>
+      <a :href="resume.link"><span>{{ resume.p }}</span></a>
     </div>
   </div>
 </template>
@@ -24,8 +26,8 @@ export default {
       mypicture: require('@/assets/mypicture.jpg'),
       texts: [
         { p: 'Banana + Annica = Banannica', id: 'equation' },
-        { p: 'Banannica is a web developer based in Philadelphia, PA.', id: 0 },
-        { p: 'I am a bubble tea lover, ARMY, student, teacher, and soccer fan.', id: 1 }
+        { p: 'Banannica, or Annica Chiu, is a web developer based in Philadelphia, PA.', id: 0 },
+        { p: 'Bubble tea lover, Temple University student, teacher, and soccer fan.', id: 1 }
       ],
       resume: { p: 'Check out my resume.', link: 'https://google.com' }
     }
@@ -37,20 +39,20 @@ export default {
 #about{
   background: hsl(348, 92%, 80%);
   display: block;
-
+  padding: 5%;
 }
-h1{
-  animation: 
-    typing 3s steps(40, end),
-    blinking-cursor .5s step-start 2;
+h2{
+  font-size: 32pt;
+  color: #222;
+  text-align: center;
 }
 p{
-  font-size: 16pt;
-  margin: 2%;
+  font-size: 18pt;
 }
 a{
+  color: #eee;
   text-decoration: none;
-  color: #e3e3e3;
+  text-align: left;
 }
 a:hover{
   color: #F73F52;
@@ -60,7 +62,7 @@ a:hover{
   justify-content: center;
   align-items: center;
   margin-bottom: -15%;
-  margin-top: -10%;
+  margin-top: -15%;
 }
 #content{
   width: 100%;
@@ -68,20 +70,18 @@ a:hover{
   grid-template-columns: 3fr 1fr;
 }
 .text{
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  display: inline-block;
 }
 #equation{
   font-family: 'Dosis';
   color: #F73F52;
-  font-size: 150%;
+  font-size: 200%;
 }
 /* Images */
 .logo{
   width: 50%;
   height: 50%;
-  margin-left: -30%;
-  margin-right: 10%;
+  margin-right: -13%;
 }
 .mypicture{
   border-radius: 50%;
@@ -90,7 +90,7 @@ a:hover{
 }
 /* Smol Screen */
 @media screen and (max-width: 600px) {
-  h1{
+  h1, h2{
     font-size: 18pt;
   }
   span{
@@ -98,18 +98,24 @@ a:hover{
   }
   p{
     font-size: 12pt;
+  }
+  #equation{
+  font-size: 120%;
   }
 }
 /* Big Screen */
 @media screen and (min-width: 1000px) {
-  h1{
-    font-size: 64pt;
+  h1, h2{
+    font-size: 48pt;
   }
   span{
-    font-size: 24pt;
+    font-size: 18pt;
   }
   p{
     font-size: 18pt;
+  }
+  #equation{
+  font-size: 300%;
   }
 }
 </style>
