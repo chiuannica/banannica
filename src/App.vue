@@ -5,6 +5,7 @@
     <Home></Home>
     <About></About>
     <Projects></Projects>
+    <Contact></Contact>
   </div>
 </template>
 
@@ -15,19 +16,18 @@ import Header from './components/Header'
 import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
+
 
 export default {
   name: 'App',
   components: {
-    Scrollbar, Header, Home, About, Projects
+    Scrollbar, Header, Home, About, Projects, Contact
   }
 }
 </script>
 
 <style>
-html{
-  background: #FFEA85;
-}
 @font-face {
   font-family: 'Dosis';
   src: url('assets/Dosis-Medium.ttf');
@@ -48,5 +48,26 @@ h1, h2, a{
   font-size: 24pt;
   color: #F73F52;
 }
-
+.magic-text {
+  opacity: 0;
+  transform: translateY(4em);
+  transition: transform 4s .25s cubic-bezier(0,1,0.3,1),
+              opacity .3s .25s ease-out;
+  will-change: transform, opacity;
+}
+.magic-text.is-visible {
+  opacity: 1;
+  transform: rotateZ(0deg);
+}
+.magic-text-side {
+  opacity: 0;
+  transform: translateX(-4em);
+  transition: transform 4s .25s cubic-bezier(0,1,0.3,1),
+              opacity .3s .25s ease-out;
+  will-change: transform, opacity;
+}
+.magic-text-side.is-visible {
+  opacity: 1;
+  transform: rotateZ(0deg);
+}
 </style>

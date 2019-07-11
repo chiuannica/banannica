@@ -20,7 +20,8 @@ export default {
 
 <style>
 #main{
-  margin: 70px;
+  padding: 7%;
+  min-height: 100%;
 }
 /* Animation */
 h1{

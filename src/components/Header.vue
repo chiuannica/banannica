@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <div id="home" class="show-on-scroll magic-text">
     <div id="picture">
       <img v-bind:src="logo" class="picture"/>
     </div>

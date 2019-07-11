@@ -1,12 +1,14 @@
 <template>
   <div id="projects">
-    <h2>{{ title }}</h2>
-    <div v-for="project in projects">
-      <h4>{{ project.name }}</h4>
-      <p>{{ project.description }}</p>
-      <p>{{ project.tools }}</p>
-      <a :href="project.link">Link to Website</a>
-      <a :href="project.github">Link to Project on GitHub</a>
+    <h2 class="show-on-scroll magic-text">{{ title }}</h2>
+    <div class="grid">
+      <div class="project magic-project show-on-scroll" v-for="project in projects">
+        <h4>{{ project.name }}</h4>
+        <p>{{ project.description }}</p>
+        <p>{{ project.tools }}</p>
+        <a :href="project.link">Website</a><br>
+        <a :href="project.github">GitHub</a>
+      </div>
     </div>
   </div>
 </template>
@@ -36,7 +38,7 @@ export default {
           link: 'https://chiuannica.github.io/valentinesdaycard/meme.html', 
           github: 'https://github.com/chiuannica/valentinesdaycard' 
         },
-        { name: 'The Effects of Video Games', 
+        { name: 'Tips From People Older Than Me', 
           description: 'A webpage displaying tips from older people',
           tools: 'CSS animations, CSS grid, HTML/CSS', 
           link: 'https://chiuannica.github.io/tipsfrompeopleolderthanme/', 
@@ -49,11 +51,118 @@ export default {
           github: 'https://github.com/chiuannica/videogamesproject' 
         }
       ]
-    }
+    }   
   }
 }
 </script>
 
 <style>
-
+h4{
+  font-size: 18pt;
+}
+p, a{
+  font-size: 14pt;
+}
+.project:nth-child(even){
+  background: #F73F52;
+}
+.project:nth-child(even) > a{
+  color: hsl(50, 100%, 86%);
+}
+.project:nth-child(odd){
+  background: hsl(348, 92%, 80%);
+}
+.project:nth-child(odd) > a{
+  color: #F73F52;
+}
+.project:nth-child(1){
+  background: hsl(50, 100%, 86%);
+}
+.project:nth-child(1) > a{
+  color: #F73F52;
+}
+.project:nth-child(even) > a:hover{
+  color: hsl(348, 92%, 80%);
+}
+.project:nth-child(odd) > a:hover{
+  color: hsl(50, 100%, 86%);
+}
+.project:nth-child(1) > a:hover{
+  color: hsl(348, 92%, 80%);
+}
+.grid > div {
+  border-radius: 10px;
+  padding: 3%;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5%;
+}
+.project:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+.project:nth-child(2) { 
+  grid-column: 3;
+  grid-row: 1;
+}
+.project:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+.project:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+.project:nth-child(5) {
+  grid-column: 3;
+  grid-row: 2;
+}
+@media screen and (max-width: 600px) {
+  h4{
+    font-size: 14pt;
+  }
+  p, a{
+    font-size: 12pt;
+  }
+  .grid{
+    display: block;
+  }
+  .project{
+    margin: 1%;
+  }   
+}
+/* Big Screen */
+@media screen and (min-width: 1000px) {
+  h4{
+    font-size: 24pt;
+  }
+  p, a{
+    font-size: 20pt;
+  }
+}
+/*SHOW ON SCROLL ANIMATION*/
+.magic-project {
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+  opacity: 0;
+  transform: translateY(6em);
+  transition: transform 4s .25s cubic-bezier(0,1,0.3,1),
+              opacity .3s .25s ease-out;
+  width: 100%;
+  will-change: transform, opacity;
+}
+.magic-project:nth-child(even) {
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+  opacity: 0;
+  transform: translateX(6em);
+  transition: transform 4s .25s cubic-bezier(0,1,0.3,1),
+              opacity .3s .25s ease-out;
+  width: 100%;
+  will-change: transform, opacity;
+}
+.magic-project.is-visible {
+  opacity: 1;
+  transform: rotateZ(0deg);
+}
 </style>

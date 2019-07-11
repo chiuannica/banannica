@@ -1,17 +1,17 @@
 <template>
   <div id="about">
-    <div id="titlelogo">
+    <div id="titlelogo"  class="show-on-scroll magic-text">
       <h2>{{ title }}</h2>
       <img class="logo" :src="logo">
     </div>
     <div id="content">
-      <div class="text">
+      <div class="text show-on-scroll magic-text-side">
         <p v-for="text in texts" :id="text.id">{{ text.p }}</p>
       </div>
       <div>
         <img class="mypicture" :src="mypicture">
       </div>
-      <a :href="resume.link"><span>{{ resume.p }}</span></a>
+      <a class="show-on-scroll magic-text" :href="resume.link">{{ resume.p }}</a>
     </div>
   </div>
 </template>
@@ -26,8 +26,8 @@ export default {
       mypicture: require('@/assets/mypicture.jpg'),
       texts: [
         { p: 'Banana + Annica = Banannica', id: 'equation' },
-        { p: 'Banannica, or Annica Chiu, is a web developer based in Philadelphia, PA.', id: 0 },
-        { p: 'Bubble tea lover, Temple University student, teacher, and soccer fan.', id: 1 }
+        { p: 'Bubble tea lover, Temple University student, soccer fan, instructor, and web developer.' },
+        { p: 'Banannica, or Annica Chiu, is a web developer based in Philadelphia, PA. Annica Chiu is a sophomore at Temple University studying Information Science and Technology. She works as an instructor for web development and Python at Upward Bound, a program dedicated to serving low-income high school students. A born and raised Philadelphian, she pronounces water as “wooder.” Annica started volunteering at thirteen with kindergarteners and currently with cats.'}
       ],
       resume: { p: 'Check out my resume.', link: 'https://google.com' }
     }
@@ -38,8 +38,9 @@ export default {
 <style>
 #about{
   background: hsl(348, 92%, 80%);
-  display: block;
   padding: 5%;
+  height: 100%;
+  border-radius: 10px;
 }
 h2{
   font-size: 32pt;
@@ -50,12 +51,11 @@ p{
   font-size: 18pt;
 }
 a{
-  color: #eee;
+  color: #F73F52;
   text-decoration: none;
-  text-align: left;
 }
 a:hover{
-  color: #F73F52;
+  color:#333;
 }
 #titlelogo{
   display: inline-flex;
@@ -93,14 +93,18 @@ a:hover{
   h1, h2{
     font-size: 18pt;
   }
-  span{
-    font-size: 12pt;
-  }
-  p{
+  p, a{
     font-size: 12pt;
   }
   #equation{
   font-size: 120%;
+  }
+  #content{
+  display: block;
+  }
+  .mypicture{
+    width: 40%;
+    margin: 0;
   }
 }
 /* Big Screen */
@@ -108,10 +112,7 @@ a:hover{
   h1, h2{
     font-size: 48pt;
   }
-  span{
-    font-size: 18pt;
-  }
-  p{
+  p, a{
     font-size: 18pt;
   }
   #equation{

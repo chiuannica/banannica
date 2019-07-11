@@ -35,10 +35,11 @@ export default {
   width: 100%;
   height: 8px;
   background: transparent;
+  z-index: 100;
 }
 #progress{
   width: 8px;
   height: 8px;
-  background: #F73F52;
+  background: hsl(50, 100%, 90%);
 }
 </style>
