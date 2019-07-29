@@ -41,6 +41,7 @@ export default {
   padding: 5%;
   height: 100%;
   border-radius: 10px;
+  min-height: 70vh;
 }
 h2{
   font-size: 32pt;

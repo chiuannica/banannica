@@ -1,6 +1,7 @@
 <template>
   <div id="main">
-    <h1>{{ title }} <span>{{ subtitle }}</span></h1>
+    <h1>{{ title }}</h1>
+    <h3>{{ subtitle }}</h3>
     <img class="banana" :src="banana">
   </div>
 </template>
@@ -20,36 +21,19 @@ export default {
 
 <style>
 #main{
-  padding: 7%;
-  min-height: 100%;
+  padding-top: 7%;
+  min-height: 70vh;
 }
 /* Animation */
 h1{
   font-size: 32pt;
   color: #222;
   text-align: center;
-  overflow: hidden;
-  border-right: .1em solid transparent;
-  white-space: nowrap;
-  margin: 20px auto;
-  letter-spacing: 0.07em;
-  animation: 
-    typing 2s steps(40, end),
-    blinking-cursor .5s step-start 7;
-  animation-delay: 0s;
 }
-span{
-  font-size: 14pt;
+h3{
+  font-size: 18pt;
   font-family: 'Roboto';
-  font-style: italic;
-}
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-@keyframes blinking-cursor {
-  from, to { border-color: transparent }
-  50% { border-color: #F73F52; }
+  text-align: center;
 }
 /* Images */
 .logo{
@@ -57,11 +41,10 @@ span{
   height: 50%;
 }
 .banana{
-  margin-top: -18%;
+  margin-top: -10%;
   margin-left: 30%;
-  z-index: -1;
-  width: 60%;
-  height: 60%;
+  width: 40%;
+  height: 40%;
   opacity: 0.6;
 }
 /* Smol Screen */

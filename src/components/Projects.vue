@@ -57,6 +57,8 @@ export default {
 </script>
 
 <style>
+#projects{
+}
 h4{
   font-size: 18pt;
 }
@@ -93,10 +95,12 @@ p, a{
 .grid > div {
   border-radius: 10px;
   padding: 3%;
+  min-height: 40vh;
 }
 .grid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 5%;
 }
 .project:nth-child(1) {
@@ -114,10 +118,20 @@ p, a{
 .project:nth-child(4) {
   grid-column: 2;
   grid-row: 2;
+  z-index: 100;
+  margin-top: -60%;
+  margin-bottom: 40%;
+  margin-left: -20%;
+  padding: 10%;
+  padding-top: 3%;
 }
 .project:nth-child(5) {
   grid-column: 3;
   grid-row: 2;
+  margin-top: -10%;
+  margin-bottom: 10%;
+  margin-left: -10%;
+
 }
 @media screen and (max-width: 600px) {
   h4{

@@ -28,8 +28,7 @@ export default {
 
 <style>
 #contact{
-  padding-left: 5%;
-  padding-bottom: 5%;
+  text-align: center;
 }
 h5{
   font-family: 'Dosis';
@@ -52,7 +51,7 @@ h5{
   h5{
     font-size: 18pt;
   }
-  span{
+  a{
     font-size: 12pt;
   }
 }
@@ -61,7 +60,7 @@ h5{
   h5{
     font-size: 24pt;
   }
-  span{
+  a{
     font-size: 24pt;
   }
 }
