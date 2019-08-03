@@ -1,12 +1,12 @@
 <template>
   <div id="about">
-    <div id="titlelogo"  class="show-on-scroll magic-text">
+    <div id="titlelogo">
       <h2>{{ title }}</h2>
       <img class="logo" :src="logo">
     </div>
     <div id="content">
-      <div class="text show-on-scroll magic-text-side">
-        <p v-for="text in texts" :id="text.id">{{ text.p }}</p>
+      <div class="text">
+        <p class="show-on-scroll magic-text-bottom" v-for="text in texts" :id="text.id">{{ text.p }}</p>
       </div>
       <div>
         <img class="mypicture" :src="mypicture">
@@ -25,9 +25,9 @@ export default {
       logo: require('@/assets/logo_transparent.png'),
       mypicture: require('@/assets/mypicture.jpg'),
       texts: [
-        { p: 'Banana + Annica = Banannica', id: 'equation' },
         { p: 'Bubble tea lover, Temple University student, soccer fan, instructor, and web developer.' },
-        { p: 'Banannica, or Annica Chiu, is a web developer based in Philadelphia, PA. Annica Chiu is a sophomore at Temple University studying Information Science and Technology. She works as an instructor for web development and Python at Upward Bound, a program dedicated to serving low-income high school students. A born and raised Philadelphian, she pronounces water as “wooder.” Annica started volunteering at thirteen with kindergarteners and currently with cats.'}
+        { p: 'Banannica, or Annica Chiu, is a web developer based in Philadelphia, PA. She works as an instructor for web development and Python at Upward Bound.' },
+        { p: 'A born and raised Philadelphian, she pronounces water as “wooder.” Annica started volunteering at thirteen with kindergarteners and currently with cats.' }
       ],
       resume: { p: 'Check out my resume.', link: 'https://google.com' }
     }
@@ -38,25 +38,11 @@ export default {
 <style>
 #about{
   background: hsl(348, 92%, 80%);
-  padding: 5%;
-  height: 100%;
-  border-radius: 10px;
-  min-height: 70vh;
-}
-h2{
-  font-size: 32pt;
-  color: #222;
-  text-align: center;
-}
-p{
-  font-size: 18pt;
-}
-a{
-  color: #F73F52;
-  text-decoration: none;
-}
-a:hover{
-  color:#333;
+  padding-left: 5%;
+  min-height: 80vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  width: 100%;
 }
 #titlelogo{
   display: inline-flex;
@@ -68,15 +54,7 @@ a:hover{
 #content{
   width: 100%;
   display: grid;
-  grid-template-columns: 3fr 1fr;
-}
-.text{
-  display: inline-block;
-}
-#equation{
-  font-family: 'Dosis';
-  color: #F73F52;
-  font-size: 200%;
+  grid-template-columns: 2fr 1fr;
 }
 /* Images */
 .logo{
@@ -85,39 +63,9 @@ a:hover{
   margin-right: -13%;
 }
 .mypicture{
+  border: 0.5rem #FFEA85 solid;
   border-radius: 50%;
-  width: 90%;
-  margin: 5%;
-}
-/* Smol Screen */
-@media screen and (max-width: 600px) {
-  h1, h2{
-    font-size: 18pt;
-  }
-  p, a{
-    font-size: 12pt;
-  }
-  #equation{
-  font-size: 120%;
-  }
-  #content{
-  display: block;
-  }
-  .mypicture{
-    width: 40%;
-    margin: 0;
-  }
-}
-/* Big Screen */
-@media screen and (min-width: 1000px) {
-  h1, h2{
-    font-size: 48pt;
-  }
-  p, a{
-    font-size: 18pt;
-  }
-  #equation{
-  font-size: 300%;
-  }
+  width: 80%;
+  margin-top: 30%;
 }
 </style>

@@ -28,12 +28,9 @@ export default {
 
 <style>
 #contact{
+  margin-top: 10%;
+  margin-bottom: 10%;
   text-align: center;
-}
-h5{
-  font-family: 'Dosis';
-  font-size: 20pt;
-  margin-bottom: 1%;
 }
 /* Images */
 .logo{
@@ -45,23 +42,5 @@ h5{
 }
 .waystocontact > a:hover{
   color: hsl(348, 92%, 80%);
-}
-/* Smol Screen */
-@media screen and (max-width: 600px) {
-  h5{
-    font-size: 18pt;
-  }
-  a{
-    font-size: 12pt;
-  }
-}
-/* Big Screen */
-@media screen and (min-width: 1000px) {
-  h5{
-    font-size: 24pt;
-  }
-  a{
-    font-size: 24pt;
-  }
 }
 </style>

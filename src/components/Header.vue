@@ -18,7 +18,7 @@ export default {
         {title: 'Home', link: '#home', id: 0},
         {title: 'About', link: '#about', id: 1},
         {title: 'Projects', link: '#projects', id: 2},
-        {title: 'Blog', link: '/blog', id: 3},
+        {title: 'Blog', link: 'blog', id: 3},
         {title: 'Contact', link: '#contact', id: 4}
       ]
     }

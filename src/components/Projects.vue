@@ -1,6 +1,6 @@
 <template>
   <div id="projects">
-    <h2 class="show-on-scroll magic-text">{{ title }}</h2>
+    <h2>{{ title }}</h2>
     <div class="grid">
       <div class="project magic-project show-on-scroll" v-for="project in projects">
         <h4>{{ project.name }}</h4>
@@ -57,14 +57,6 @@ export default {
 </script>
 
 <style>
-#projects{
-}
-h4{
-  font-size: 18pt;
-}
-p, a{
-  font-size: 14pt;
-}
 .project:nth-child(even){
   background: #F73F52;
 }
@@ -99,7 +91,7 @@ p, a{
 }
 .grid{
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
   grid-gap: 5%;
 }
@@ -118,43 +110,19 @@ p, a{
 .project:nth-child(4) {
   grid-column: 2;
   grid-row: 2;
-  z-index: 100;
-  margin-top: -60%;
-  margin-bottom: 40%;
-  margin-left: -20%;
-  padding: 10%;
-  padding-top: 3%;
 }
 .project:nth-child(5) {
   grid-column: 3;
   grid-row: 2;
-  margin-top: -10%;
-  margin-bottom: 10%;
-  margin-left: -10%;
 
 }
 @media screen and (max-width: 600px) {
-  h4{
-    font-size: 14pt;
-  }
-  p, a{
-    font-size: 12pt;
-  }
   .grid{
     display: block;
   }
   .project{
     margin: 1%;
   }   
-}
-/* Big Screen */
-@media screen and (min-width: 1000px) {
-  h4{
-    font-size: 24pt;
-  }
-  p, a{
-    font-size: 20pt;
-  }
 }
 /*SHOW ON SCROLL ANIMATION*/
 .magic-project {
@@ -169,7 +137,7 @@ p, a{
 .magic-project:nth-child(even) {
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
   opacity: 0;
-  transform: translateX(6em);
+  transform: translateY(-6em);
   transition: transform 4s .25s cubic-bezier(0,1,0.3,1),
               opacity .3s .25s ease-out;
   width: 100%;
