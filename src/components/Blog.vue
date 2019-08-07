@@ -1,12 +1,12 @@
 <template>
-  <div id="about">
+  <div id="blog">
     <div id="titlelogo">
       <h2>{{ title }}</h2>
       <img class="logo" :src="logo">
     </div>
     <div id="content">
       <div class="text">
-        <p class="show-on-scroll magic-text" v-for="text in texts" :id="text.id">{{ text.p }}</p>
+        <p class="show-on-scroll magic-text-bottom" v-for="text in texts" :id="text.id">{{ text.p }}</p>
       </div>
       <div>
         <img class="mypicture" :src="mypicture">
@@ -18,10 +18,10 @@
 
 <script>
 export default {
-  name: 'About',
+  name: 'Blog',
   data () {
     return {
-      title: 'About',
+      title: 'Blog',
       logo: require('@/assets/logo_transparent.png'),
       mypicture: require('@/assets/mypicture.jpg'),
       texts: [
@@ -36,36 +36,5 @@ export default {
 </script>
 
 <style>
-#about{
-  background: hsl(348, 92%, 80%);
-  padding: 5%;
-  min-height: 80vh;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  width: 100%;
-}
-#titlelogo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: -5%;
-  margin-top: -15%;
 
-}
-#content{
-  width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-/* Images */
-.logo{
-  width: 50%;
-  height: 50%;
-}
-.mypicture{
-  border: 0.5rem #FFEA85 solid;
-  border-radius: 50%;
-  width: 80%;
-  margin-top: 20%;
-}
 </style>

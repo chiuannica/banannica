@@ -2,10 +2,7 @@
   <div id="app">
     <Scrollbar></Scrollbar>
     <Header></Header>
-    <Home></Home>
-    <About></About>
-    <Projects></Projects>
-    <Contact></Contact>
+    <router-view></router-view>
   </div>
 </template>
 
