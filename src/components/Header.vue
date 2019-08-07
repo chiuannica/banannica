@@ -1,12 +1,12 @@
 <template>
-  <div id="home" class="show-on-scroll magic-text">
+  <nav class="show-on-scroll magic-text">
     <div id="picture">
       <img v-bind:src="logo" class="picture"/>
     </div>
     <div v-for="tab in tabs">
-      <router-link :to="tab.link" exact>{{ tab.title }}</router-link>
+      <router-link :onclick="tab.func" :to="tab.link" exact>{{ tab.title }}</router-link>
     </div>
-  </div>
+  </nav>
 </template>
 <script>
 export default {
@@ -15,9 +15,9 @@ export default {
     return {
       logo: require('@/assets/logo_transparent.png'),
       tabs: [
-        {title: 'Home', link: '/', id: 0},
-        {title: 'Blog', link: '/blog', id: 1},
-        {title: 'Contact', link: '/contact', id: 2}
+        {title: 'Home', link: '/', func: 'window.location.reload()', id: 0},
+        {title: 'Blog', link: '/blog', func: '', id: 1},
+        {title: 'Contact', link: '/contact', func:'', id: 2}
       ]
     }
   }
@@ -54,7 +54,7 @@ a.block{
   display: block;
   padding: 0.5em;
 }
-#home{
+nav{
   background: transparent;
   width: 100%;
   display: inline-flex;

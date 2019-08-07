@@ -38,18 +38,17 @@ export default {
 <style>
 #about{
   background: hsl(348, 92%, 80%);
-  padding: 5%;
+  padding: 10vh;
   min-height: 80vh;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
   width: 100%;
 }
 #titlelogo{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -5%;
+  margin-bottom: -15%;
   margin-top: -15%;
+
 
 }
 #content{
@@ -63,7 +62,7 @@ export default {
   height: 50%;
 }
 .mypicture{
-  border: 0.5rem #FFEA85 solid;
+  border: 0.rem #FFEA85 solid;
   border-radius: 50%;
   width: 80%;
   margin-top: 20%;

@@ -56,7 +56,7 @@ h2, h3 {
   font-size: 2.4rem;
   text-align: center;
 }
-h4, h5 { font-size: 1.8rem; }
+h4, h5 { font-size: 1.6rem; }
 p  { font-size: 1.4rem; } /* =14px */
 a {
   font-size: 1.4rem;
