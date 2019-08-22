@@ -57,6 +57,9 @@ export default {
 </script>
 
 <style>
+#projects{
+  width: 100%;
+}
 .project:nth-child(even){
   background: #F73F52;
 }

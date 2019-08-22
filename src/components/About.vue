@@ -38,7 +38,8 @@ export default {
 <style>
 #about{
   background: hsl(348, 92%, 80%);
-  padding: 10vh;
+  padding-top: 10vh;
+  padding: 5%;
   min-height: 80vh;
   width: 100%;
 }

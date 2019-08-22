@@ -30,6 +30,7 @@ export default {
 <style>
 main{
   margin-bottom: 20vh;
+  width: 100%;
 }
 .banana{
   margin-top: -10%;

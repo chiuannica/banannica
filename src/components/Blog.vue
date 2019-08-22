@@ -67,6 +67,9 @@ export default {
 </script>
 
 <style>
+#blog{
+  width: 100%;
+}
 #blog-nav{
   background: hsl(348, 92%, 80%);
   padding: 5%;
@@ -78,6 +81,7 @@ tr{
   text-decoration: none;
   display: flex;
   justify-content: space-around;
+  max-width: 100vh;
 }
 tr:hover{
   color: #F73F52;

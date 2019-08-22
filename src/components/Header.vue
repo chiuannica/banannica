@@ -1,7 +1,7 @@
 <template>
   <nav class="show-on-scroll magic-text">
     <div id="picture">
-      <img v-bind:src="logo" class="picture"/>
+      <a class="logo-link" href="/"><img v-bind:src="logo" class="picture"/></a>
     </div>
     <div v-for="tab in tabs">
       <router-link :onclick="tab.func" :to="tab.link" exact>{{ tab.title }}</router-link>
@@ -24,6 +24,9 @@ export default {
 }
 </script>
 <style scoped>
+nav{
+  width: 100%;
+}
 a{
   font-size: 18pt;
   color: #333333;
@@ -62,9 +65,12 @@ nav{
   align-items: center;
 }
 .picture{
-  width: 250px;
-  margin: -50px;
-  margin-left: -10px
+  max-width: 100%;
+  margin: -20%;
+  margin-left: 0%;
+}
+.logo-link:hover:after{
+  width: 0;
 }
 @media screen and (max-width: 600px) {
   a {
@@ -79,7 +85,7 @@ nav{
     width: 0%;
   }
   .picture{
-    margin-bottom: -100px;
+    
   }
   #header{
     display: grid;

@@ -31,6 +31,7 @@ export default {
   margin-top: 10%;
   margin-bottom: 10%;
   text-align: center;
+  width: 100%;
 }
 /* Images */
 .logo{
