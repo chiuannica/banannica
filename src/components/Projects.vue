@@ -26,11 +26,11 @@ export default {
           link: 'https://chiuannica.github.io/randompointgenerator/', 
           github: 'https://github.com/chiuannica/randompointgenerator' 
         },
-        { name: 'Task List', 
-          description: 'A website that adds, crosses off, and removes tasks.', 
+        { name: 'ACM-W Website', 
+          description: 'A website for Temple\'s chapter of the Association of Computing Machinery',
           tools: 'Vue, JavaScript, HTML/CSS',
-          link: 'https://chiuannica.github.io/tasklist/', 
-          github: 'https://github.com/chiuannica/tasklist' 
+          link: 'https://github.com/chiuannica/acmw-vue', 
+          github: 'https://acmwtemple.onrender.com' 
         },
         { name: "Valentine's Day Card Generator", 
           description: 'A website that take user input and generates a card with a random meme', 
@@ -96,7 +96,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1fr;
-  grid-gap: 5%;
+  grid-gap: 4%;
 }
 .project:nth-child(1) {
   grid-column: 1 / 3;
@@ -117,9 +117,8 @@ export default {
 .project:nth-child(5) {
   grid-column: 3;
   grid-row: 2;
-
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .grid{
     display: block;
   }

@@ -1,8 +1,8 @@
 <template>
   <div id="home">
     <main>
-      <h1>{{ title }}</h1>
-      <h3>{{ subtitle }}</h3>
+      <img id="logo" :src="logo">
+      <p class="subtitle">{{ subtitle }}</p>
     </main>
     <About></About>
     <Projects></Projects>
@@ -21,6 +21,7 @@ export default {
   data () {
     return {
       title: 'Banannica',
+      logo: require('@/assets/logo_transparent.png'),
       subtitle: 'Web Developer'
     }
   }
@@ -32,11 +33,13 @@ main{
   margin-bottom: 20vh;
   width: 100%;
 }
-.banana{
-  margin-top: -10%;
-  margin-left: 30%;
-  width: 40%;
-  height: 40%;
-  opacity: 0.6;
+#logo{
+  max-width: 50vh;
+  display: block;
+  margin: -15vh auto;
+}
+.subtitle{
+  text-align: center;
+  font-size: 3em;
 }
 </style>

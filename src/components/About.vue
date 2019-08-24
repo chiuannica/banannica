@@ -11,7 +11,9 @@
       <div>
         <img class="mypicture" :src="mypicture">
       </div>
+      <!--
       <a class="show-on-scroll magic-text" :href="resume.link">{{ resume.p }}</a>
+      -->
     </div>
   </div>
 </template>
@@ -26,8 +28,8 @@ export default {
       mypicture: require('@/assets/mypicture.jpg'),
       texts: [
         { p: 'Bubble tea lover, Temple University student, soccer fan, instructor, and web developer.' },
-        { p: 'Banannica, or Annica Chiu, is a web developer based in Philadelphia, PA. She works as an instructor for web development and Python at Upward Bound.' },
-        { p: 'A born and raised Philadelphian, she pronounces water as “wooder.” Annica started volunteering at thirteen with kindergarteners and currently with cats.' }
+        { p: 'Banannica is a web developer based in her hometown, Philadelphia, PA. She works as an instructor for web development and Python at Upward Bound.' },
+        { p: 'She started volunteering at thirteen with kindergarteners and currently with cats. She spends her time writing and making websites.' }
       ],
       resume: { p: 'Check out my resume.', link: 'https://google.com' }
     }

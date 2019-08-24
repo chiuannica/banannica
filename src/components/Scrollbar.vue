@@ -19,13 +19,13 @@ export default {
       var scrolled = (howMuchProgress / totalPageHeight) * 100;
       document.getElementById("progress").style.width = scrolled + "%";
     }
-  },
-  created () {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
+    },
+    created () {
+      window.addEventListener('scroll', this.handleScroll);
+    },
+    destroyed () {
+      window.removeEventListener('scroll', this.handleScroll);
+    }
 }
 </script>
 

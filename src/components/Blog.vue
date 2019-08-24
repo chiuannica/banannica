@@ -14,7 +14,9 @@
       <article :id="blog.date" v-for="blog in blogs" v-on:click="blog.showBlog = !blog.showBlog">
         <h5 class="blog-title">{{ blog.title }}</h5>
         <p>{{ blog.date }} by {{ blog.author }}</p>
-        <p class="blog-body" v-show="blog.showBlog" v-for="paragraph in blog.paragraphs">{{ paragraph.text }}</p>
+        <div class="blog-body" v-show="blog.showBlog" v-for="paragraph in blog.paragraphs">
+          <p>{{ paragraph.text }}</p>
+        </div>
       </article>
     </div>
   </div>
@@ -80,12 +82,14 @@ tr{
   font-size: 1.4rem;
   text-decoration: none;
   display: flex;
-  justify-content: space-around;
-  max-width: 100vh;
+  justify-content: right;
 }
 tr:hover{
   color: #F73F52;
   border-bottom: #F73F52 solid 1px;
+}
+td{
+  padding: 1%;
 }
 #content{
   margin: 5%;
