@@ -6,7 +6,6 @@
   </div>
 </template>
 
-
 <script>
 import Scrollbar from './components/Scrollbar'
 import Header from './components/Header'
@@ -14,7 +13,6 @@ import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
-
 
 export default {
   name: 'App',
@@ -44,15 +42,15 @@ body {
   font-size:62.5%;
   margin: 0;
 }
-h1 { 
+h1 {
   font-size: 3.2rem;
-  color: #F73F52; 
+  color: #F73F52;
   font-family: 'Dosis';
   text-align: center;
 
 }
 h2 { font-family: 'Dosis' }
-h2, h3 { 
+h2, h3 {
   font-size: 2.4rem;
   text-align: center;
   font-style: none;
@@ -61,7 +59,7 @@ h4, h5 { font-size: 1.6rem; }
 p  { font-size: 1.4rem; } /* =14px */
 a {
   font-size: 1.4rem;
-  color: #F73F52; 
+  color: #F73F52;
   text-decoration: none;
 }
 a:hover{

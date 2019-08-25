@@ -1,6 +1,6 @@
 <template>
   <nav class="show-on-scroll magic-text">
-    <div v-for="tab in tabs">
+    <div :key=tab.id v-for="tab in tabs">
       <router-link :onclick="tab.func" :to="tab.link" exact>{{ tab.title }}</router-link>
     </div>
   </nav>
@@ -13,8 +13,8 @@ export default {
       logo: require('@/assets/logo_transparent.png'),
       tabs: [
         {title: 'Home', link: '/', func: 'window.location.reload()', id: 0},
-        {title: 'Blog', link: '/blog', func: '', id: 1},
-        {title: 'Contact', link: '/contact', func:'', id: 2}
+        {title: 'Blog', link: '/blog', func: null, id: 1},
+        {title: 'Contact', link: '/contact', func: null, id: 2}
       ]
     }
   }
@@ -27,7 +27,6 @@ a{
   text-align: center;
   text-decoration: none;
   position: relative;
-  margin: 25%;
 }
 a:hover{
   color: #F73F52;
@@ -55,7 +54,7 @@ nav{
   width: 100%;
   height: 10vh;
   display: inline-flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 @media screen and (max-width: 600px) {

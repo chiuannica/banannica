@@ -1,7 +1,7 @@
 <template>
   <div id="contact">
     <h2>{{ title }}</h2>
-    <div v-for="media in medias">
+    <div :key=media.id v-for="media in medias">
       <a class="contact-link" :href="media.link">
         <i :class="media.icon"></i>
         {{ media.name }}
@@ -17,9 +17,9 @@ export default {
     return {
       title: 'Contact Banannica',
       medias: [
-        { name: 'Instagram', link: 'https://instagram.com/javascriptqueen', icon: 'fa fa-instagram'},
-        { name: 'Github', link: 'https://github.com/chiuannica', icon: 'fa fa-github'},
-        { name: 'Email', link: 'mailto:chiuannica@gmail.com', icon: 'fa fa-envelope-o'}  
+        { id: 0, name: 'Instagram', link: 'https://instagram.com/javascriptqueen', icon: 'fa fa-instagram' },
+        { id: 1, name: 'Github', link: 'https://github.com/chiuannica', icon: 'fa fa-github' },
+        { id: 2, name: 'Email', link: 'mailto:chiuannica@gmail.com', icon: 'fa fa-envelope-o' }
       ]
     }
   }

@@ -10,22 +10,22 @@ export default {
   data () {
     return {
       title: 'Annica is super cool'
-      }
-    },
+    }
+  },
   methods: {
     handleScroll () {
-      var howMuchProgress = document.documentElement.scrollTop;
-      var totalPageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      var scrolled = (howMuchProgress / totalPageHeight) * 100;
-      document.getElementById("progress").style.width = scrolled + "%";
+      var howMuchProgress = document.documentElement.scrollTop
+      var totalPageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+      var scrolled = (howMuchProgress / totalPageHeight) * 100
+      document.getElementById('progress').style.width = scrolled + '%'
     }
-    },
-    created () {
-      window.addEventListener('scroll', this.handleScroll);
-    },
-    destroyed () {
-      window.removeEventListener('scroll', this.handleScroll);
-    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
 }
 </script>
 

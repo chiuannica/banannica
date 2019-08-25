@@ -2,7 +2,7 @@
   <div id="projects">
     <h2>{{ title }}</h2>
     <div class="grid">
-      <div class="project magic-project show-on-scroll" v-for="project in projects">
+      <div :key=project.id class="project magic-project show-on-scroll" v-for="project in projects">
         <h4>{{ project.name }}</h4>
         <p>{{ project.description }}</p>
         <p>{{ project.tools }}</p>
@@ -20,38 +20,48 @@ export default {
     return {
       title: 'Projects',
       projects: [
-        { name: 'Random Basketball Point Generator', 
-          description: 'A website that takes player stats and generates a table of points', 
+        {
+          id: 0,
+          name: 'Random Basketball Point Generator',
+          description: 'A website that takes player stats and generates a table of points',
           tools: 'JavaScript, HTML/CSS',
-          link: 'https://chiuannica.github.io/randompointgenerator/', 
-          github: 'https://github.com/chiuannica/randompointgenerator' 
+          link: 'https://chiuannica.github.io/randompointgenerator/',
+          github: 'https://github.com/chiuannica/randompointgenerator'
         },
-        { name: 'ACM-W Website', 
+        {
+          id: 1,
+          name: 'ACM-W Website',
           description: 'A website for Temple\'s chapter of the Association of Computing Machinery',
           tools: 'Vue, JavaScript, HTML/CSS',
-          link: 'https://github.com/chiuannica/acmw-vue', 
-          github: 'https://acmwtemple.onrender.com' 
+          link: 'https://github.com/chiuannica/acmw-vue',
+          github: 'https://acmwtemple.onrender.com'
         },
-        { name: "Valentine's Day Card Generator", 
-          description: 'A website that take user input and generates a card with a random meme', 
+        {
+          id: 2,
+          name: "Valentine's Day Card Generator",
+          description: 'A website that take user input and generates a card with a random meme',
           tools: 'JavaScript, Meme API, HTML/CSS',
-          link: 'https://chiuannica.github.io/valentinesdaycard/meme.html', 
-          github: 'https://github.com/chiuannica/valentinesdaycard' 
+          link: 'https://chiuannica.github.io/valentinesdaycard/meme.html',
+          github: 'https://github.com/chiuannica/valentinesdaycard'
         },
-        { name: 'Tips From People Older Than Me', 
+        {
+          id: 3,
+          name: 'Tips From People Older Than Me',
           description: 'A webpage displaying tips from older people',
-          tools: 'CSS animations, CSS grid, HTML/CSS', 
-          link: 'https://chiuannica.github.io/tipsfrompeopleolderthanme/', 
-          github: 'https://github.com/chiuannica/tipsfrompeopleolderthanme' 
+          tools: 'CSS animations, CSS grid, HTML/CSS',
+          link: 'https://chiuannica.github.io/tipsfrompeopleolderthanme/',
+          github: 'https://github.com/chiuannica/tipsfrompeopleolderthanme'
         },
-        { name: 'The Effects of Video Games', 
-          description: 'A website displaying research on the mental effects of video games', 
-          tools: 'Customized Bootstrap, HTML/CSS', 
-          link: 'https://chiuannica.github.io/videogamesproject/', 
-          github: 'https://github.com/chiuannica/videogamesproject' 
+        {
+          id: 4,
+          name: 'The Effects of Video Games',
+          description: 'A website displaying research on the mental effects of video games',
+          tools: 'Customized Bootstrap, HTML/CSS',
+          link: 'https://chiuannica.github.io/videogamesproject/',
+          github: 'https://github.com/chiuannica/videogamesproject'
         }
       ]
-    }   
+    }
   }
 }
 </script>
@@ -102,7 +112,7 @@ export default {
   grid-column: 1 / 3;
   grid-row: 1;
 }
-.project:nth-child(2) { 
+.project:nth-child(2) {
   grid-column: 3;
   grid-row: 1;
 }
@@ -124,7 +134,7 @@ export default {
   }
   .project{
     margin: 1%;
-  }   
+  }
 }
 /*SHOW ON SCROLL ANIMATION*/
 .magic-project {

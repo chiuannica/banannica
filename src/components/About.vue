@@ -6,7 +6,7 @@
     </div>
     <div id="content">
       <div class="text">
-        <p class="show-on-scroll magic-text" v-for="text in texts" :id="text.id">{{ text.p }}</p>
+        <p class="show-on-scroll magic-text" v-for="text in texts" :key="text.id">{{ text.p }}</p>
       </div>
       <div>
         <img class="mypicture" :src="mypicture">
@@ -51,8 +51,6 @@ export default {
   align-items: center;
   margin-bottom: -15%;
   margin-top: -15%;
-
-
 }
 #content{
   width: 100%;
