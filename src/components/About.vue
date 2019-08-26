@@ -41,8 +41,8 @@ export default {
 #about{
   background: hsl(348, 92%, 80%);
   padding-top: 10vh;
-  padding: 5%;
-  min-height: 80vh;
+  padding: 5vh;
+  height: 90vh;
   width: 100%;
 }
 #titlelogo{

@@ -30,13 +30,14 @@ export default {
 
 <style>
 main{
-  margin-bottom: 20vh;
-  width: 100%;
+  min-width: 100%;
+  height: 100vh;
 }
 #logo{
-  max-width: 50vh;
+  width: 50vh;
   display: block;
   margin: -15vh auto;
+  margin-top: 0;
 }
 .subtitle{
   text-align: center;

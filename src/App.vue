@@ -36,7 +36,8 @@ export default {
   -webkit-font-smoothin: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333333;
-  margin: 0
+  margin: 0;
+  margin-bottom: 10vh;
 }
 body {
   font-size:62.5%;
@@ -61,9 +62,11 @@ a {
   font-size: 1.4rem;
   color: #F73F52;
   text-decoration: none;
+  transition: color 0.5s;
 }
 a:hover{
   color:#333;
+  transition: color 0.7s;
 }
 .magic-text {
   opacity: 0;

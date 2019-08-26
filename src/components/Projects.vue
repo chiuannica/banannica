@@ -69,6 +69,7 @@ export default {
 <style>
 #projects{
   width: 100%;
+  min-height: 90vh;
 }
 .project:nth-child(even){
   background: #F73F52;
@@ -100,7 +101,6 @@ export default {
 .grid > div {
   border-radius: 10px;
   padding: 3%;
-  min-height: 40vh;
 }
 .grid{
   display: grid;
