@@ -1,10 +1,10 @@
 <template>
   <div id="contact">
     <h2>{{ title }}</h2>
-    <div :key=media.id v-for="media in medias">
-      <a class="contact-link" :href="media.link">
+    <div class="contact-links">
+      <a :key=media.id v-for="media in medias" class="contact-link" :href="media.link">
         <i :class="media.icon"></i>
-        {{ media.name }}
+        <p>{{ media.handle }}</p>
       </a>
     </div>
   </div>
@@ -15,11 +15,11 @@ export default {
   name: 'Contact',
   data () {
     return {
-      title: 'Contact Banannica',
+      title: 'Contact',
       medias: [
-        { id: 0, name: 'Instagram', link: 'https://instagram.com/javascriptqueen', icon: 'fa fa-instagram' },
-        { id: 1, name: 'Github', link: 'https://github.com/chiuannica', icon: 'fa fa-github' },
-        { id: 2, name: 'Email', link: 'mailto:chiuannica@gmail.com', icon: 'fa fa-envelope-o' }
+        { id: 0, name: 'Instagram', handle: 'JavaScriptQueen', link: 'https://instagram.com/javascriptqueen', icon: 'fa fa-instagram' },
+        { id: 1, name: 'GitHub', handle: 'chiuannica', link: 'https://github.com/chiuannica', icon: 'fa fa-github' },
+        { id: 2, name: 'Email', handle: 'chiuannica@gmail.com', link: 'mailto:chiuannica@gmail.com', icon: 'fa fa-envelope-o' }
       ]
     }
   }
@@ -27,15 +27,21 @@ export default {
 </script>
 
 <style>
-#contact{
-  text-align: center;
+#contact {
   width: 100%;
 }
-.contact-link{
-  color: #F73F52;
-  margin-bottom: 10%;
+.contact-links {
+  display: flex;
+  justify-content: space-around;
 }
-.contact-link:hover{
+.fa {
+  font-size: 4em;
+}
+.contact-link {
+  color: #F73F52;
+  margin-bottom: 2vh;
+}
+.contact-link:hover {
   color: hsl(348, 92%, 80%);
 }
 </style>

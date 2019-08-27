@@ -42,12 +42,11 @@ export default {
   background: hsl(348, 92%, 80%);
   padding-top: 10vh;
   padding: 5vh;
-  height: 90vh;
-  width: 100%;
+  height: 100vh;
 }
 #titlelogo{
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   margin-bottom: -15%;
   margin-top: -15%;
@@ -63,9 +62,8 @@ export default {
   height: 50%;
 }
 .mypicture{
-  border: 0.rem #FFEA85 solid;
+  border: 0.5rem #FFEA85 solid;
   border-radius: 50%;
   width: 80%;
-  margin-top: 20%;
 }
 </style>

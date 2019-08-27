@@ -52,8 +52,8 @@ h1 {
 }
 h2 { font-family: 'Dosis' }
 h2, h3 {
+  margin-left: 10%;
   font-size: 2.4rem;
-  text-align: center;
   font-style: none;
 }
 h4, h5 { font-size: 1.6rem; }

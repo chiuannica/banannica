@@ -2,7 +2,7 @@
   <div id="home">
     <main>
       <img id="logo" :src="logo">
-      <p class="subtitle">{{ subtitle }}</p>
+      <p class="show-on-scroll magic-text subtitle">{{ subtitle }}</p>
     </main>
     <About></About>
     <Projects></Projects>
@@ -22,7 +22,7 @@ export default {
     return {
       title: 'Banannica',
       logo: require('@/assets/logo_transparent.png'),
-      subtitle: 'Web Developer'
+      subtitle: 'JavaScript Queen'
     }
   }
 }
