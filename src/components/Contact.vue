@@ -34,9 +34,7 @@ export default {
   display: flex;
   justify-content: space-around;
 }
-.fa {
-  font-size: 4em;
-}
+
 .contact-link {
   color: #F73F52;
   margin-bottom: 2vh;
