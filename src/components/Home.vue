@@ -8,9 +8,11 @@
           <p class="show-on-scroll magic-text subtitle">{{ subtitle }}</p>
         </div>
       </div>
+      <!--
       <div class="button-container">
         <a :key="link.id" v-for="link in links" :href="link">{{ link.name }}</a>
       </div>
+      -->
     </main>
     <About></About>
     <Projects></Projects>
