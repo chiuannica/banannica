@@ -3,7 +3,7 @@
     <h2>{{ title }}</h2>
     <div class="grid">
       <div :key=project.id class="project magic-project show-on-scroll" v-for="project in projects">
-        <h4>{{ project.name }}</h4>
+        <h4 class="project-title">{{ project.name }}</h4>
         <p>{{ project.description }}</p>
         <p>{{ project.tools }}</p>
         <a :href="project.link">Website</a><br>
@@ -33,8 +33,8 @@ export default {
           name: 'ACM-W Website',
           description: 'A website for Temple\'s chapter of the Association of Computing Machinery',
           tools: 'Vue, JavaScript, HTML/CSS',
-          link: 'https://github.com/chiuannica/acmw-vue',
-          github: 'https://acmwtemple.onrender.com'
+          link: 'https://acmwtemple.onrender.com',
+          github: 'https://github.com/chiuannica/acmw-vue'
         },
         {
           id: 2,
@@ -44,6 +44,7 @@ export default {
           link: 'https://chiuannica.github.io/valentinesdaycard/meme.html',
           github: 'https://github.com/chiuannica/valentinesdaycard'
         },
+        /*
         {
           id: 3,
           name: 'Tips From People Older Than Me',
@@ -52,6 +53,7 @@ export default {
           link: 'https://chiuannica.github.io/tipsfrompeopleolderthanme/',
           github: 'https://github.com/chiuannica/tipsfrompeopleolderthanme'
         },
+        */
         {
           id: 4,
           name: 'The Effects of Video Games',
@@ -98,22 +100,26 @@ export default {
 .project:nth-child(1) > a:hover{
   color: hsl(348, 92%, 80%);
 }
+.project > .project-title{
+  font-size: 3em;
+}
 .grid > div {
   border-radius: 10px;
   padding: 3%;
 }
 .grid{
+  padding: 5%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1fr;
   grid-gap: 4%;
 }
 .project:nth-child(1) {
-  grid-column: 1 / 3;
+  grid-column: 1;
   grid-row: 1;
 }
 .project:nth-child(2) {
-  grid-column: 3;
+  grid-column: 2;
   grid-row: 1;
 }
 .project:nth-child(3) {

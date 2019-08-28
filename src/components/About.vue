@@ -21,9 +21,9 @@ export default {
       title: 'About Annica',
       mypicture: require('@/assets/mypicture.jpg'),
       texts: [
-        { p: 'Bubble tea lover, Temple University student, soccer fan, instructor, and web developer.' },
-        { p: 'Annica is a web developer based in her hometown, Philadelphia, PA. She works as an instructor for web development and Python at Upward Bound.' },
-        { p: 'She started volunteering at thirteen with kindergarteners and currently with cats. She spends her time writing and making websites.' }
+        { p: 'I love bubble tea, Temple University, my dog, and watching soccer.' },
+        { p: 'I am a novice web developer based Philadelphia, PA. I have had the amazing opportunity to be an instructor for web development and Python at Upward Bound.' },
+        { p: 'I started volunteering at thirteen with kindergarteners, and currently with cats. I spend my freetime working on my web development skills and watching soccer games.' }
       ],
       resume: { p: 'Check out my resume.', link: 'https://google.com' }
     }
