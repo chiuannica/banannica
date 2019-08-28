@@ -35,7 +35,9 @@ export default {
 #about{
   background: hsl(348, 92%, 80%);
   padding-top: 5vh;
-  height: 100vh;
+  padding: 5vh;
+  width: 100%;
+  min-height: 100vh;
 }
 .mypicture{
   border: 0.5rem #FFEA85 solid;
@@ -46,5 +48,10 @@ export default {
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin: 10vh;
+}
+@media screen and (max-width: 768px) {
+  .content {
+    margin: 5vh;
+  }
 }
 </style>

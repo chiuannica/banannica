@@ -1,17 +1,15 @@
 <template>
   <div id="blog">
     <h2>{{ title }}</h2>
-    <table id="blog-nav">
-      <tr class="blog-nav-row">
-        <td>Click on title to view</td>
-      </tr>
+    <div id="blog-nav">
+        <p>{{ navText }}</p>
       <a :key="blog.id" v-for="blog in blogs" :href="blog.link" v-on:click="blog.showBlog = !blog.showBlog">
-        <tr class="blog-nav-row">
-          <td>{{ blog.date }}</td>
-          <td>{{ blog.title }}</td>
-        </tr>
+        <div class="blog-nav-row">
+          <p>{{ blog.date }}</p>
+          <p>{{ blog.title }}</p>
+        </div>
       </a>
-    </table>
+    </div>
     <div id="content">
       <article :key="blog.date" v-for="blog in blogs" v-on:click="blog.showBlog = !blog.showBlog">
         <h5 class="blog-title">{{ blog.title }}</h5>
@@ -30,6 +28,8 @@ export default {
   data () {
     return {
       title: 'Blog',
+      navText: 'Click on Title to View',
+      navIcon: 'fa fa-hand-pointer-o',
       blogs: [
         {
           id: 0,
@@ -53,7 +53,7 @@ export default {
         {
           id: 1,
           link: '#1',
-          title: 'Why is Diversity in Tech Controversial?',
+          title: 'What Women In Tech Means',
           date: '8/--/2019',
           author: 'Annica',
           paragraphs: [
@@ -90,22 +90,20 @@ export default {
   background: hsl(348, 92%, 80%);
   padding: 3%;
   width: 100%;
+  display: grid;
+  grid-template-rows: auto;
 }
 .blog-nav-row{
   color: #333;
   border-bottom: #333 solid 1px;
   font-size: 1.4rem;
   text-decoration: none;
-  display: flex;
-  white-space: nowrap;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
   transition: border-bottom 0.7s;
 }
-tr:hover{
+.blog-nav-row:hover{
   border-bottom: #F73F52 solid 1px;
-}
-td{
-  margin-right: 10%;
 }
 #content{
   margin: 5%;
@@ -123,5 +121,12 @@ article:hover{
 .blog-title{
   margin-bottom: 0;
 }
-
+@media screen and (max-width: 768px) {
+  .content {
+    margin: 5vh;
+  }
+  .blog-nav-row {
+    display: block;
+  }
+}
 </style>

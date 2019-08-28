@@ -70,7 +70,6 @@ a:hover{
 }
 .fa {
   font-size: 3em;
-  color: #F73F52;
 }
 .magic-text {
   opacity: 0;

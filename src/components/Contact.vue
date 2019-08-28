@@ -34,12 +34,17 @@ export default {
   display: flex;
   justify-content: space-around;
 }
-
 .contact-link {
   color: #F73F52;
   margin-bottom: 2vh;
 }
 .contact-link:hover {
   color: hsl(348, 92%, 80%);
+}
+@media screen and (max-width: 768px) {
+  .contact-links {
+    display: block;
+    margin: 10%;
+  }
 }
 </style>

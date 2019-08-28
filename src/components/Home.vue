@@ -5,9 +5,12 @@
         <div class="circle-content">
           <p><i :class="icon"></i></p>
           <h1>{{ title }}</h1>
+          <p class="show-on-scroll magic-text subtitle">{{ subtitle }}</p>
         </div>
       </div>
-      <p class="show-on-scroll magic-text subtitle">{{ subtitle }}</p>
+      <div class="button-container">
+        <a :key="link.id" v-for="link in links" :href="link">{{ link.name }}</a>
+      </div>
     </main>
     <About></About>
     <Projects></Projects>
@@ -25,9 +28,13 @@ export default {
   },
   data () {
     return {
-      title: 'Annica Chiu',
+      title: 'Annica',
       icon: 'fa fa-file-code-o',
-      subtitle: 'JavaScript Queen'
+      subtitle: 'JavaScript Queen',
+      links: [
+        { id: 0, name: 'About', link: '#about' },
+        { id: 1, name: 'Projects', link: '#projects' }
+      ]
     }
   }
 }
@@ -51,9 +58,17 @@ main{
 .circle-content {
   text-align: center;
 }
-.subtitle{
+.subtitle {
   text-align: center;
   font-size: 3em;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-container > a {
+  padding: 1em;
 }
 
 </style>
