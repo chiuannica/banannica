@@ -11,10 +11,10 @@
       </a>
     </div>
     <div id="content">
-      <article :key="blog.date" v-for="blog in blogs" v-on:click="blog.showBlog = !blog.showBlog">
-        <h5 class="blog-title">{{ blog.title }}</h5>
+      <article :key="blog.date" v-for="blog in blogs">
+        <h5 :id="blog.link" class="blog-title">{{ blog.title }}</h5>
         <p>{{ blog.date }} by {{ blog.author }}</p>
-        <div :key="paragraph.id" class="blog-body" v-show="blog.showBlog" v-for="paragraph in blog.paragraphs">
+        <div v-show="blog.showBlog" :key="paragraph.id" class="blog-body" v-for="paragraph in blog.paragraphs">
           <p>{{ paragraph.text }}</p>
         </div>
       </article>
@@ -87,36 +87,35 @@ export default {
   display: block;
 }
 #blog-nav{
-  background: hsl(348, 92%, 80%);
-  padding: 3%;
+  margin: 3%;
   width: 100%;
   display: grid;
   grid-template-rows: auto;
 }
 .blog-nav-row{
   color: #333;
-  border-bottom: #333 solid 1px;
-  font-size: 1.4rem;
+  border-left: #333 solid 0.5vh;
+  background: #fef3b7;
   text-decoration: none;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  transition: border-bottom 0.7s;
+  max-width: 100vh;
+  margin-bottom: 1%;
+  padding: 1%;
+  transition: border-left 0.7s;
 }
 .blog-nav-row:hover{
-  border-bottom: #F73F52 solid 1px;
+  border-left: #F73F52 solid 1vh;
 }
 #content{
-  margin: 5%;
+  margin: 3%;
   display: block;
 }
 article{
   max-width: 100vh;
-  border-bottom:  hsl(348, 92%, 80%) 1px solid;
-  transition: border-bottom 0.7s;
-}
-article:hover{
-  cursor: pointer;
-  border-bottom: red 1px solid;
+  transition: border-left 0.7s;
+  margin-bottom: 1%;
+  padding: 1%;
 }
 .blog-title{
   margin-bottom: 0;

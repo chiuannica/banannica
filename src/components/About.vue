@@ -35,12 +35,11 @@ export default {
 #about{
   background: hsl(348, 92%, 80%);
   padding-top: 5vh;
-  padding: 5vh;
   width: 100%;
   min-height: 100vh;
 }
 .mypicture{
-  border: 0.5rem #FFEA85 solid;
+  border: 0.5rem #fef3b7 solid;
   border-radius: 50%;
   width: 80%;
 }

@@ -35,11 +35,11 @@ export default {
   justify-content: space-around;
 }
 .contact-link {
-  color: #F73F52;
+  color: #fa9daf;
   margin-bottom: 2vh;
 }
 .contact-link:hover {
-  color: hsl(348, 92%, 80%);
+  color: #F73F52;
 }
 @media screen and (max-width: 768px) {
   .contact-links {

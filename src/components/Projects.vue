@@ -1,7 +1,7 @@
 <template>
   <div id="projects">
     <h2>{{ title }}</h2>
-    <div class="grid">
+    <div class="projects-grid">
       <div :key=project.id class="project magic-project show-on-scroll" v-for="project in projects">
         <h4 class="project-title">{{ project.name }}</h4>
         <p>{{ project.description }}</p>
@@ -71,19 +71,23 @@ export default {
 <style>
 #projects{
   width: 100%;
-  min-height: 90vh;
+  height: 100vh;
+  margin: 0;
+  margin-left: -1%;
 }
-.project:nth-child(even){
-  background: #F73F52;
-}
-.project:nth-child(even) > a{
-  color: hsl(50, 100%, 86%);
-}
-.project:nth-child(odd){
+.project{
   background: hsl(348, 92%, 80%);
+  box-sizing: border-box;
+  border-left: 0.5vh solid #333;
+  padding: 1em;
+  transition: border-left 0.7s;
 }
-.project:nth-child(odd) > a{
-  color: #F73F52;
+.project > .project-title{
+  margin: 0;
+  font-size: 3em;
+}
+.project > a:hover{
+  color: hsl(50, 100%, 86%);
 }
 .project:nth-child(1){
   background: hsl(50, 100%, 86%);
@@ -91,23 +95,10 @@ export default {
 .project:nth-child(1) > a{
   color: #F73F52;
 }
-.project:nth-child(even) > a:hover{
-  color: hsl(348, 92%, 80%);
-}
-.project:nth-child(odd) > a:hover{
-  color: hsl(50, 100%, 86%);
-}
 .project:nth-child(1) > a:hover{
   color: hsl(348, 92%, 80%);
 }
-.project > .project-title{
-  font-size: 3em;
-}
-.grid > div {
-  border-radius: 10px;
-  padding: 3%;
-}
-.grid{
+.projects-grid{
   padding: 5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -135,11 +126,16 @@ export default {
   grid-row: 2;
 }
 @media screen and (max-width: 768px) {
-  .grid{
+  .projects-grid{
     display: block;
+    padding: 0;
+    margin: 2%;
+  }
+  .projects-grid > div {
+    padding: 1%;
   }
   .project{
-    margin: 1%;
+    margin-bottom: 2%;
   }
 }
 /*SHOW ON SCROLL ANIMATION*/
