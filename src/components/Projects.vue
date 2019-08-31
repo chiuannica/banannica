@@ -91,6 +91,7 @@ export default {
   transition: border-left 0.7s;
 }
 .project > a:hover{
+  color: #F73F52;
   border-left: #F73F52 solid 1vh;
 }
 .project:nth-child(1){

@@ -24,8 +24,16 @@ export default {
 
 <style>
 @font-face {
-  font-family: 'Dosis';
-  src: url('assets/Dosis-Medium.ttf');
+  font-family: 'Poppins';
+  src: url('assets/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('assets/Poppins-Light.ttf');
+}
+@font-face {
+  font-family: 'Varela';
+  src: url('assets/VarelaRound-Regular.ttf');
 }
 @font-face {
   font-family: 'Roboto';
@@ -45,11 +53,14 @@ body {
 h1 {
   font-size: 3.2rem;
   color: #f73f52;
-  font-family: 'Dosis';
+  font-family: 'Poppins';
   text-align: center;
 
 }
-h2 { font-family: 'Dosis' }
+h2 {
+  font-family: 'Poppins';
+  color: #333;
+}
 h2, h3 {
   margin-left: 10%;
   font-size: 2.4rem;

@@ -40,6 +40,6 @@ export default {
 #progress{
   width: 8px;
   height: 8px;
-  background: hsl(50, 100%, 90%);
+  background: hsl(50, 100%, 84%);
 }
 </style>

@@ -30,9 +30,6 @@ export default {
 #contact {
   width: 100%;
 }
-.contact-box {
-
-}
 .contact-links {
   display: flex;
   justify-content: space-around;
