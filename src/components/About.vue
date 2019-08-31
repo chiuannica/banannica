@@ -5,7 +5,7 @@
       <div class="text">
         <p class="show-on-scroll magic-text" v-for="text in texts" :key="text.id">{{ text.p }}</p>
       </div>
-      <img class="mypicture" :src="mypicture">
+      <img class="my-picture" :src="myPicture">
       <!--
       <a class="show-on-scroll magic-text" :href="resume.link">{{ resume.p }}</a>
       -->
@@ -19,7 +19,7 @@ export default {
   data () {
     return {
       title: 'About Annica',
-      mypicture: require('@/assets/mypicture.jpg'),
+      myPicture: require('@/assets/mypicture.jpg'),
       texts: [
         { p: 'I love bubble tea, Temple University, my dog, and watching soccer.' },
         { p: 'I am a novice web developer based Philadelphia, PA. I have had the amazing opportunity to be an instructor for web development and Python at Upward Bound.' },
@@ -32,25 +32,28 @@ export default {
 </script>
 
 <style>
-#about{
-  background: hsl(348, 92%, 80%);
-  padding-top: 5vh;
+#about {
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
 }
-.mypicture{
-  border: 0.5rem #fef3b7 solid;
+.my-picture {
+  border: 0.5rem hsl(51, 97%, 84%) solid;
   border-radius: 50%;
   width: 80%;
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
-.content{
+.content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin: 10vh;
+  grid-template-columns: 3fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text {
+  margin-left: 10%;
 }
 @media screen and (max-width: 768px) {
-  .content {
-    margin: 5vh;
+  .my-picture {
+    width: 87%;
   }
 }
 </style>

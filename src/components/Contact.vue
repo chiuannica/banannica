@@ -17,7 +17,7 @@ export default {
     return {
       title: 'Contact',
       medias: [
-        { id: 0, name: 'Instagram', handle: 'JavaScriptQueen', link: 'https://instagram.com/javascriptqueen', icon: 'fa fa-instagram' },
+        // { id: 0, name: 'Instagram', handle: 'JavaScriptQueen', link: 'https://instagram.com/javascriptqueen', icon: 'fa fa-instagram' },
         { id: 1, name: 'GitHub', handle: 'chiuannica', link: 'https://github.com/chiuannica', icon: 'fa fa-github' },
         { id: 2, name: 'Email', handle: 'chiuannica@gmail.com', link: 'mailto:chiuannica@gmail.com', icon: 'fa fa-envelope-o' }
       ]
@@ -30,12 +30,15 @@ export default {
 #contact {
   width: 100%;
 }
+.contact-box {
+
+}
 .contact-links {
   display: flex;
   justify-content: space-around;
 }
 .contact-link {
-  color: #fa9daf;
+  color: #333;
   margin-bottom: 2vh;
 }
 .contact-link:hover {

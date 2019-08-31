@@ -11,9 +11,11 @@
       </a>
     </div>
     <div id="content">
-      <article :key="blog.date" v-for="blog in blogs">
-        <h5 :id="blog.link" class="blog-title">{{ blog.title }}</h5>
-        <p>{{ blog.date }} by {{ blog.author }}</p>
+      <article :key="blog.date" :id="blog.id" v-for="blog in blogs">
+        <div class="clickable" v-on:click="blog.showBlog = !blog.showBlog">
+          <h5 class="blog-title">{{ blog.title }}</h5>
+          <p>{{ blog.date }} by {{ blog.author }}</p>
+        </div>
         <div v-show="blog.showBlog" :key="paragraph.id" class="blog-body" v-for="paragraph in blog.paragraphs">
           <p>{{ paragraph.text }}</p>
         </div>
@@ -82,40 +84,44 @@ export default {
 </script>
 
 <style>
-#blog{
-  width: 100%;
+#blog {
   display: block;
-}
-#blog-nav{
-  margin: 3%;
   width: 100%;
+}
+#blog-nav {
   display: grid;
   grid-template-rows: auto;
+  width: 100%;
+  margin: 3%;
 }
-.blog-nav-row{
-  color: #333;
-  border-left: #333 solid 0.5vh;
-  background: #fef3b7;
-  text-decoration: none;
+.blog-nav-row {
   display: grid;
   grid-template-columns: 1fr 4fr;
   max-width: 100vh;
   margin-bottom: 1%;
   padding: 1%;
+  border-left: #333 solid 0.5vh;
+  color: #333;
+  background: #fef3b7;
+  text-decoration: none;
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
   transition: border-left 0.7s;
 }
-.blog-nav-row:hover{
+.blog-nav-row:hover {
   border-left: #F73F52 solid 1vh;
 }
-#content{
+#content {
   margin: 3%;
   display: block;
 }
-article{
+article {
   max-width: 100vh;
-  transition: border-left 0.7s;
   margin-bottom: 1%;
   padding: 1%;
+  transition: border-left 0.7s;
+}
+.clickable {
+  cursor: pointer;
 }
 .blog-title{
   margin-bottom: 0;
@@ -126,6 +132,7 @@ article{
   }
   .blog-nav-row {
     display: block;
+    width: 90%;
   }
 }
 </style>

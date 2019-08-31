@@ -48,7 +48,7 @@ main{
   height: 100vh;
 }
 .circle {
-  border: #fef3b7 1em solid;
+  border: hsl(51, 97%, 84%) 1em solid;
   width: 50vh;
   height: 50vh;
   border-radius: 50%;

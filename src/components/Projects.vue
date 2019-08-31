@@ -76,9 +76,8 @@ export default {
   margin-left: -1%;
 }
 .project{
-  background: hsl(348, 92%, 80%);
+  background: hsl(50, 100%, 84%);
   box-sizing: border-box;
-  border-left: 0.5vh solid #333;
   padding: 1em;
   transition: border-left 0.7s;
 }
@@ -86,17 +85,23 @@ export default {
   margin: 0;
   font-size: 3em;
 }
+.project > a {
+  padding-left: 1%;
+  border-left: #F73F52 solid 0.5vh;
+  transition: border-left 0.7s;
+}
 .project > a:hover{
-  color: hsl(50, 100%, 86%);
+  border-left: #F73F52 solid 1vh;
 }
 .project:nth-child(1){
-  background: hsl(50, 100%, 86%);
+  background: #F73F52;
 }
 .project:nth-child(1) > a{
-  color: #F73F52;
+  color: hsl(50, 100%, 84%);
+  border-left: hsl(50, 100%, 84%) solid 0.5vh;
 }
 .project:nth-child(1) > a:hover{
-  color: hsl(348, 92%, 80%);
+  border-left: hsl(50, 100%, 84%) solid 1vh;
 }
 .projects-grid{
   padding: 5%;

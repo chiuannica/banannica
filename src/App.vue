@@ -37,7 +37,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #333333;
   margin: 0;
-  margin-bottom: 10vh;
 }
 body {
   font-size:62.5%;
@@ -45,14 +44,14 @@ body {
 }
 h1 {
   font-size: 3.2rem;
-  color: #F73F52;
+  color: #f73f52;
   font-family: 'Dosis';
   text-align: center;
 
 }
 h2 { font-family: 'Dosis' }
 h2, h3 {
-  margin-left: 10vh;
+  margin-left: 10%;
   font-size: 2.4rem;
   font-style: none;
 }
