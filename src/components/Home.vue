@@ -3,7 +3,6 @@
     <main>
       <div class="circle">
         <div class="circle-content">
-          <p><i :class="icon"></i></p>
           <h1>{{ title }}</h1>
           <p class="show-on-scroll magic-text subtitle">{{ subtitle }}</p>
         </div>
@@ -32,7 +31,7 @@ export default {
     return {
       title: 'Annica',
       icon: 'fa fa-file-code-o',
-      subtitle: 'JavaScript Queen',
+      subtitle: 'Future JavaScript Queen',
       links: [
         { id: 0, name: 'About', link: '#about' },
         { id: 1, name: 'Projects', link: '#projects' }
@@ -44,11 +43,11 @@ export default {
 
 <style>
 main{
-  min-width: 100%;
+  max-width: 100%;
   height: 100vh;
 }
 .circle {
-  border: hsl(51, 97%, 84%) 1em solid;
+  border: #354051 1em solid;
   width: 50vh;
   height: 50vh;
   border-radius: 50%;
@@ -72,5 +71,10 @@ main{
 .button-container > a {
   padding: 1em;
 }
-
+@media screen and (max-width: 768px) {
+  .circle{
+    width: 100%;
+    border: none;
+  }
+}
 </style>

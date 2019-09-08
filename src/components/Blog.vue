@@ -17,7 +17,7 @@
           <p>{{ blog.date }} by {{ blog.author }}</p>
         </div>
         <div v-show="blog.showBlog" :key="paragraph.id" class="blog-body" v-for="paragraph in blog.paragraphs">
-          <p>{{ paragraph.text }}</p>
+          <p v-html="paragraph.text"></p>
         </div>
       </article>
     </div>
@@ -55,11 +55,20 @@ export default {
         {
           id: 1,
           link: '#1',
-          title: 'What Women In Tech Means',
-          date: '8/--/2019',
+          title: 'Tech Sexism',
+          date: '9/8/2019',
           author: 'Annica',
           paragraphs: [
-            { id: 0, text: 'Coming Soon' }
+            { id: 0, text: 'A couple of weeks ago, I read <a href="I read “For Young Coders, Internship Interviews can be Toxic,” by Nitasha Tiku. https://www.wired.com/story/for-young-female-coders-internship-interviews-can-be-toxic/">“For Young Coders, Internship Interviews can be Toxic,” by Nitasha Tiku.</a> The article described the negative experiences of Girls Who Code alumnae in their tech interviews and internships. A woman described her experience being ignored by a male mentor and being treated like a piece of meat. These are unfortunate experiences many women have had.' },
+            { id: 1, text: 'Later that day, I received a newsletter from Girls Who Code with a link to the results of a survey conducted. The document was titled, <a href="https://girlswhocode.com/wp-content/uploads/2019/08/GWC_Advocacy_InternshipApplicationExperiences_PDF_z6.pdf"> Applying to Internships as a Woman in Tech</a>.  The main point was half of female respondents reported that they or a woman they know have had a negative experience. One has to remember, even though Girls Who Code has a positive mission, it has an incentive to skew the results of this survey or  support their mission. I kept that in mind while reading this report.' },
+            { id: 2, text: 'Overall, I would say the report was quite upsetting, especially, the direct quotes from some of the respondents. The women were asked gendered questions. “I heard comments like, ‘What makes you stand out as a girl? How would you deal with harassment in the workplace?’” The average age of all respondents is 19.1. It is a problem that women at this age hear these comments.' },
+            { id: 3, text: 'Women have a right to be upset, but some people don’t see why. Many of the comments under the article by Tiku said that people need to toughen up if they want to be in the tech industry and gendered comments come from rude people, not sexism. ' },
+            { id: 4, text: 'I understand why some people are upset that women are complaining about their experiences. No one seems to care about men’s negative experiences. The tech industry is not easy for men at all. People are calling for Google to hire women, not men. I understand why some people believe women get into companies easier. It’s probably true. Tech companies are constantly being grilled for diversity. Hiring managers definitely have the company’s diversity report in mind.' },
+            { id: 5, text: 'There are organizations dedicated to women, including Built by Girls, Tech Ladies, Girls Who Code, and Women Who Code. There are scholarships and diversity programs only for women in tech. If I was a male, I would be sour.' },
+            { id: 6, text: 'A small percentage of men are responsible for outward gendered jerkiness towards women. All men are not responsible for the male-centered world we live in. It’s not right to believe the tech industry and all men are terrible for the actions described by the GWC survey respondents. We all must work together to make our male-centered world less male-centered, while having men as allies.' },
+            { id: 7, text: 'As a new women in tech, I have become more aware of subtle sexism. I found out that a female co-worker was being paid less than a male co-worker for the same work (note: I currently work in education). The reason why was because he was a graduate student and she was an undergraduate. That is an understandable reason, but they had the exact same title and responsibilities, so I think it is unacceptable. If both of them were men, I do not think this would have happened.' },
+            { id: 8, text: 'We all need to look out for each other to ensure people are given equal compensation for equal work. Pay discrimination is illegal, but some individuals do not report dispute discrimination. Some people accept weak reasons or think they don\'t deserve more. We need to encourage advocating for ourselves and each other.' },
+            { id: 9, text: 'Things will change with time. I think we are making the right steps to solve these problems.' }
           ],
           showBlog: false
         }
@@ -100,15 +109,16 @@ export default {
   max-width: 100vh;
   margin-bottom: 1%;
   padding: 1%;
-  border-left: #333 solid 0.5vh;
-  color: #333;
-  background: #fef3b7;
+  border-left: #212D40 solid 0.5vh;
+  color: #EBC1C5;
+  background: #354051;
   text-decoration: none;
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
-  transition: border-left 0.7s;
+  transition: 0.7s;
 }
 .blog-nav-row:hover {
-  border-left: #F73F52 solid 1vh;
+  background: #212D40;
+  border-left: #EBC1C5 solid 1vh;
 }
 #content {
   margin: 3%;

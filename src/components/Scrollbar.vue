@@ -33,13 +33,12 @@ export default {
 #scrollbar{
   position: fixed;
   width: 100%;
-  height: 8px;
   background: transparent;
   z-index: 100;
 }
 #progress{
-  width: 8px;
-  height: 8px;
-  background: hsl(50, 100%, 84%);
+  width: 1em;
+  height: 1em;
+  background: #EBC1C5;
 }
 </style>

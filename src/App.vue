@@ -40,28 +40,24 @@ export default {
   src: url('assets/Roboto-Light.ttf');
 }
 #app {
-  font-family: 'Roboto';
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothin: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #333333;
+  color: #212D40;
   margin: 0;
 }
 body {
-  font-size:62.5%;
+  font-size: 62.5%;
   margin: 0;
+}
+h1, h2, h3, h4, h5, a {
+  font-family: 'Varela';
 }
 h1 {
   font-size: 3.2rem;
-  color: #f73f52;
-  font-family: 'Poppins';
   text-align: center;
-
 }
-h2 {
-  font-family: 'Poppins';
-  color: #333;
-}
-h2, h3 {
+h2 , h3{
   margin-left: 10%;
   font-size: 2.4rem;
   font-style: none;
@@ -69,13 +65,9 @@ h2, h3 {
 h4, h5 { font-size: 1.6rem; }
 p  { font-size: 1.4rem; } /* =14px */
 a {
+  color:#354051;
   font-size: 1.4rem;
-  color: #F73F52;
   text-decoration: none;
-  transition: color 0.5s;
-}
-a:hover{
-  color:#333;
   transition: color 0.7s;
 }
 .fa {

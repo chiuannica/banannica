@@ -22,28 +22,23 @@ export default {
 </script>
 <style scoped>
 a{
-  font-size: 18pt;
-  color: #333333;
   text-align: center;
   text-decoration: none;
   position: relative;
-}
-a:hover{
-  color: #F73F52;
-  text-decoration: none;
 }
 a:hover:after{
   width: 100%;
 }
 a:after{
   content: '';
-  height: 3px;
+  height: 0.7em;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
-  background: #F73F52;
-  transition: 0.3s;
+  background: #EBC1C5;
+  transition: 0.7s;
+  z-index: -10;
 }
 a.block{
   display: block;
@@ -59,9 +54,8 @@ nav{
 }
 @media screen and (max-width: 600px) {
   a {
-    font-size: 14pt;
-    margin-bottom: 10px;
-    margin-left: 30px;
+    font-size: 2em;
+    margin-bottom: 5%;
     float: none;
     display: block;
     text-align: right;
@@ -73,7 +67,7 @@ nav{
 }
 @media screen and (min-width: 1000px) {
   a{
-    font-size: 24pt;
+    font-size: 3em;
   }
 }
 </style>
