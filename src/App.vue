@@ -43,15 +43,16 @@ export default {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothin: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #212D40;
   margin: 0;
+  color: #354051;
 }
 body {
   font-size: 62.5%;
   margin: 0;
 }
-h1, h2, h3, h4, h5, a {
+h1, h2, h3, h4, h5 {
   font-family: 'Varela';
+  color: #212D40;
 }
 h1 {
   font-size: 3.2rem;
@@ -62,17 +63,18 @@ h2 , h3{
   font-size: 2.4rem;
   font-style: none;
 }
-h4, h5 { font-size: 1.6rem; }
+h4, h5 {
+  font-size: 1.6rem;
+  color: #EBC1C5;
+}
 p  { font-size: 1.4rem; } /* =14px */
 a {
-  color:#354051;
+  font-family: 'Varela';
+  color: #354051;
   font-size: 1.4rem;
   text-decoration: none;
   transition: color 0.7s;
-}
-.fa {
-  font-size: 3em;
-}
+}2
 .magic-text {
   opacity: 0;
   transform: translateY(4em);

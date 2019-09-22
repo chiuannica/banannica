@@ -7,11 +7,9 @@
           <p class="show-on-scroll magic-text subtitle">{{ subtitle }}</p>
         </div>
       </div>
-      <!--
       <div class="button-container">
-        <a :key="link.id" v-for="link in links" :href="link">{{ link.name }}</a>
+        <a :key="link.id" v-for="link in links" :href="link.link">{{ link.name }}</a>
       </div>
-      -->
     </main>
     <About></About>
     <Projects></Projects>
@@ -31,7 +29,7 @@ export default {
     return {
       title: 'Annica',
       icon: 'fa fa-file-code-o',
-      subtitle: 'Future JavaScript Queen',
+      subtitle: 'Self-taught Web Developer',
       links: [
         { id: 0, name: 'About', link: '#about' },
         { id: 1, name: 'Projects', link: '#projects' }
@@ -47,7 +45,7 @@ main{
   height: 100vh;
 }
 .circle {
-  border: #354051 1em solid;
+  border: #EBC1C5 1em solid;
   width: 50vh;
   height: 50vh;
   border-radius: 50%;
@@ -70,6 +68,9 @@ main{
 }
 .button-container > a {
   padding: 1em;
+}
+.button-container > a:hover {
+  color: #212D40;
 }
 @media screen and (max-width: 768px) {
   .circle{

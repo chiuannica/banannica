@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <h2>{{ title }}</h2>
+    <h2><i :class="aboutIcon"></i> {{ title }}</h2>
     <div class="content">
       <div class="text">
         <p class="show-on-scroll magic-text" v-for="text in texts" :key="text.id">{{ text.p }}</p>
@@ -18,12 +18,13 @@ export default {
   name: 'About',
   data () {
     return {
-      title: 'About Annica',
+      title: 'About Me',
       myPicture: require('@/assets/mypicture.jpg'),
+      aboutIcon: 'fa fa-female',
       texts: [
-        { p: 'I love bubble tea, Temple University, my dog, and watching soccer.' },
-        { p: 'I am a novice web developer based Philadelphia, PA. I have had the amazing opportunity to be an instructor for web development and Python at Upward Bound.' },
-        { p: 'I started volunteering at thirteen with kindergarteners, and currently with cats. I spend my freetime working on my web development skills and watching soccer games.' }
+        { p: 'Hi! I am a student at Temple University. I am an entirely online-resources-taught web developer.' },
+        { p: 'I have had the amazing opportunity to teach high school students programming and web development.' },
+        { p: 'I love watching the Philadelphia Union and Tottenham Hotspur play football/soccer and drinking bubble tea.' }
       ],
       resume: { p: 'Check out my resume.', link: 'https://google.com' }
     }

@@ -41,6 +41,9 @@ export default {
 .contact-link:hover {
   color: #354051;
 }
+.contact-link > .fa {
+  font-size: 3em;
+}
 @media screen and (max-width: 768px) {
   .contact-links {
     display: block;
