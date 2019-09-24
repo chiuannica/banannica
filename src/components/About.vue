@@ -22,9 +22,10 @@ export default {
       myPicture: require('@/assets/mypicture.jpg'),
       aboutIcon: 'fa fa-female',
       texts: [
-        { p: 'Hi! I am a student at Temple University. I am an entirely online-resources-taught web developer.' },
-        { p: 'I have had the amazing opportunity to teach high school students programming and web development.' },
-        { p: 'I love watching the Philadelphia Union and Tottenham Hotspur play football/soccer and drinking bubble tea.' }
+        { p: 'Hi! I\'m Annica.' },
+        { p: 'I am a student at Temple University and an entirely online-resources-taught web developer.' },
+        { p: 'I have had the amazing opportunity to teach high school students programming and web development at Upward Bound.' },
+        { p: 'I love to watch the Philadelphia Union and Tottenham Hotspur and to drink bubble tea.' }
       ],
       resume: { p: 'Check out my resume.', link: 'https://google.com' }
     }

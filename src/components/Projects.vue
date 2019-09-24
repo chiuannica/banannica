@@ -34,7 +34,7 @@ export default {
           name: 'ACM-W Website',
           description: 'A website for Temple\'s chapter of the Association of Computing Machinery',
           tools: 'Vue, JavaScript, HTML/CSS',
-          link: 'https://acmwtemple.onrender.com',
+          link: 'https://tu-acmw.onrender.com',
           github: 'https://github.com/chiuannica/acmw-vue'
         },
         {

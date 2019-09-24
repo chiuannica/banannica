@@ -55,7 +55,7 @@ export default {
         {
           id: 1,
           link: '#1',
-          title: 'Tech Sexism',
+          title: 'Is Tech Sexism Real?',
           date: '9/8/2019',
           author: 'Annica',
           paragraphs: [
@@ -71,19 +71,66 @@ export default {
             { id: 9, text: 'Things will change with time. I think we are making the right steps to solve these problems.' }
           ],
           showBlog: false
-        }
-        /*
+        },
         {
-          id: 1,
-          title: "Blog 2 Title",
-          date: "1/1/2020",
-          author: "Annica",
+          id: 2,
+          link: '#2',
+          title: 'HopHacks: Face Tech\'s Reality',
+          date: '9/20/19',
+          author: 'Annica',
           paragraphs: [
-            { text: "hi"},
-            { text: "ho"},
-            { text: "hello"},
-            { text: "yo"},
-          ]
+            { id: 0, text: 'On September 13th, I went to Baltimore to participate in Johns Hopkins University’s hackathon, HopHacks. I was on the bus that the hackathon provided for Northeastern cities. We came off the highway and passed peeling infrastructure, boarded up doors, and barbed wire fences on the way to the university.' },
+            { id: 1, text: 'Once I stepped foot on Johns Hopkins, I saw not a single blade of grass out of place. The roads were completely clear of dead leaves. The buildings and roads matched red bricks almost too uniformly.' },
+            { id: 2, text: 'The difference between the streets and the university is proof of income inequality, the effects of generational poverty and historical discrimination. Our reality is unfortunate.' },
+            { id: 3, text: 'At the hackathon, there was a lot of guys. I have never been to a hackathon with so many dudes. I sat in a row with two other females and greeted them, “hey fellow girls.” The person next to me agreed, there were indeed a lot of guys.' },
+            { id: 4, text: 'I highly doubt HopHacks rejected anyone or crafted their hackathon to be so male-dominated. They probably accepted every applicant because I received the acceptance to the hackathon soon after. This was different from the hackathon I went to the week before, PennApps, because I saw many more girls. The organizers were dominated by females at PennApps and by males at HopHacks.' },
+            { id: 5, text: 'Again, I highly doubt HopHacks was responsible for the lack of girls. Most likely few girls applied. PennApps had a much larger applicant pool to choose from, which is why the speakers at the opening ceremony mentioned that 30% of hackers were female. To be frank, PennApps most likely denied a bunch of dudes for diversity\'s sake.' },
+            { id: 6, text: 'I do not want to say anything bad about HopHacks. I am quite certain they did not intend for there to be so many guys at their hackathon and accepted every applicant. HopHacks would not be a good hackathon for first-time female hackers because seeing so many males would be discouraging.' },
+            { id: 7, text: 'Personally, the first hackathon I attended was Technica, the largest female and non-binary hackathon. I imagine that if I came into HopHacks as a first-time hacker, I would be hesitant to attend other hackathons. If I were a first-time hacker, I would be afraid to talk to all the guys at team building. Fortunately, I have been to a few other hackathons and was not afraid to talk to the wall of men.' },
+            { id: 8, text: 'This is why female-centered hackathons like Technica and TechTogether are so important. Non-males need support in a male-dominated field. My opinion on this runs into some issues.' },
+            { id: 9, text: 'Some people think that the tech industry should not have to bend backwards to get females in the industry. If these females deserve to be in tech, they should be able to get past all of the adversity. I think everyone agrees diversity quotas are not a good idea. A good idea is to have specific support for females just starting. Female-centered hackathons prevent underrepresentation from detering female hackers.' },
+            { id: 10, text: 'Multiple factors contribute to underrepresented individuals quitting tech. These factors include imposter syndrome, only knowing Java, having to retake pre-calc, not being a Machine Learning person, and seeing people who do not look like you at a hackathon. That last factor may be the factor that puts someone over the edge.' },
+            { id: 11, text: 'Luckily, I had a positive experience at my first hackathon. I\'m glad I have have first-hand experience with all the good things about tech before finding the bad.' }
+          ],
+          showBlog: false
+        },
+        {
+          id: 3,
+          link: '#3',
+          title: 'HopHacks: Let Me Speak!',
+          date: '9/24/2019',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: 'My group at HopHacks consisted of three other guys and me. Many hackathons follow this judging format: the judges went to the table number of the projects that fit under their category. The presenters would have to present multiple times. For one of the judges, I was talked over every time I tried to speak.' },
+            { id: 1, text: 'When groups present, it looks bad if everyone doesn’t speak. It looks especially bad if the one underrepresented minority doesn’t speak. As the girl in the team of guys, I was trying to get my word in to prove that I wasn’t there for decoration.' },
+            { id: 2, text: 'I tried to speak at least five times and was spoken over by a guy every time. Two dudes kept interrupting me. I was not being neutral at all. I was literally making sounds and got cut off.' },
+            { id: 3, text: 'Me: “Th-” <br>Guy 1: “Blah blah blah…” <br>Me: “Yeah and-” <br>Guy 2: “Yada yada yada...” <br>Judge: “Orly… Cool!” <br>Me: “Our-” <br>Guy 1: “Foo bar foo bar…” <br>Me: “Ye-” <br>Guy 2: “Lala...” <br>Me: *gives up*' },
+            { id: 4, text: 'After the last time, I gave up and let the two who kept cutting me off talk. I tried to speak so many times I am pretty sure the two dudes and the judge noticed at least once. Apparently anything I say will just make us lose points.' },
+            { id: 5, text: 'The judge actually asked and Guy 3 a question directly. Thank you, judge, for making me feel like I deserved some airtime. People like the judge are the people we need in tech!' },
+            { id: 6, text: 'I have never had a negative experience in tech until now.' },
+            { id: 7, text: 'Perhaps I am being too sensitive. Actually, I have ruled that out. I have already mentioned this: for group projects, everyone should speak, otherwise, the group looks bad. In every single case for a group project, everyone needs to speak. For group projects at school, Hell’s Kitchen, KPop, companies, and every other context, as many members as possible should speak. Even BTS has at least half of the group say something when accepting an award because they value all of the members’ perspective and contribution. This is how I know I am not being sensitive.' },
+            { id: 8, text: 'After the judge left, I suggested that we determine exactly what each of us would talk about. Everyone agreed and I spoke for the next presentation.' },
+            { id: 9, text: 'I do not want to assume poor intentions, but I tried to speak so many times and was cut off every time. One would think that after the third time I would get my word in. People these days think they are Socrates and no one else can say it like they can.' },
+            { id: 10, text: 'Never let arrogant people keep you from talking!' }
+          ],
+          showBlog: false
+        }
+        /* Template
+        {
+          id: 2,
+          link: '#2',
+          title: 'Blog 2 Title',
+          date: '1/1/2020',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: '.' },
+            { id: 1, text: '.' },
+            { id: 2, text: '.' },
+            { id: 3, text: '.' },
+            { id: 4, text: '.' },
+            { id: 5, text: '.' }
+          ],
+          showBlog: false
         }
         */
       ]
@@ -133,7 +180,8 @@ article {
 .clickable {
   cursor: pointer;
 }
-.blog-title{
+.blog-title {
+  color: #212D40;
   margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
