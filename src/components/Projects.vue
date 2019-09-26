@@ -78,7 +78,7 @@ export default {
 }
 .project{
   background: #354051;
-  color: #EBC1C5;
+  color: #ebc1c5cc;
   box-sizing: border-box;
   padding: 1em;
   transition: border-left 0.7s;
@@ -90,11 +90,11 @@ export default {
 .project > a {
   padding-left: 1%;
   border-left: #212D40 solid 0.5vh;
-  color: #EBC1C5;
+  color: #ebc1c5cc;
   transition: border-left 0.7s;
 }
 .project > a:hover{
-  border-left: #EBC1C5 solid 1vh;
+  border-left: #ebc1c5cc solid 1vh;
 }
 .project:nth-child(1){
   background: #212D40;
@@ -103,7 +103,7 @@ export default {
   border-left: #354051 solid 0.5vh;
 }
 .project:nth-child(1) > a:hover{
-  border-left: #EBC1C5 solid 1vh;
+  border-left: #ebc1c5cc solid 1vh;
 }
 .projects-grid{
   padding: 5%;

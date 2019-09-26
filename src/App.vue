@@ -65,7 +65,7 @@ h2 , h3{
 }
 h4, h5 {
   font-size: 1.6rem;
-  color: #EBC1C5;
+  color: #ebc1c5cc;
 }
 p  { font-size: 1.4rem; } /* =14px */
 a {

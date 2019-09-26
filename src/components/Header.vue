@@ -36,7 +36,7 @@ a:after{
   bottom: 0;
   left: 0;
   width: 0%;
-  background: #EBC1C5;
+  background: rgba(235, 193, 197, 0.55);
   transition: 0.7s;
   z-index: -10;
 }
