@@ -29,7 +29,7 @@ export default {
     return {
       title: 'Annica',
       icon: 'fa fa-file-code-o',
-      subtitle: 'Self-taught Web Developer',
+      subtitle: 'Web Monkey',
       links: [
         { id: 0, name: 'About', link: '#about' },
         { id: 1, name: 'Projects', link: '#projects' }
@@ -70,7 +70,7 @@ main{
   padding: 1em;
 }
 .button-container > a:hover {
-  color: #212D40;
+  color: hsl(216, 21%, 13%);
 }
 @media screen and (max-width: 768px) {
   .circle{

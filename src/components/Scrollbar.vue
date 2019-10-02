@@ -39,6 +39,6 @@ export default {
 #progress{
   width: 1em;
   height: 1em;
-  background: linear-gradient(90deg, rgba(235,193,197,1) 0%, rgba(235,193,197,0.2) 100%);
+  background: linear-gradient(0deg, rgba(235,193,197,0.3) 0%, rgba(235,193,197,1) 100%);
 }
 </style>

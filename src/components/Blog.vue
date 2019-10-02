@@ -1,6 +1,6 @@
 <template>
   <div id="blog">
-    <h2>{{ title }}<p>{{ navText }}</p></h2>
+    <h2> <i class="fa fa-quote-left"></i> {{ title }}<p>{{ navText }}</p></h2>
     <div id="blog-nav">
       <a :key="blog.id" v-for="blog in blogs" :href="blog.link" v-on:click="blog.showBlog = !blog.showBlog">
         <div class="blog-nav-row">
@@ -56,7 +56,7 @@ export default {
           id: 2,
           link: '#2',
           title: 'HopHacks: Face Tech\'s Reality',
-          date: '9/20/19',
+          date: '9/20/2019',
           author: 'Annica',
           paragraphs: [
             { id: 0, text: 'On September 13th, I went to Baltimore to participate in Johns Hopkins University’s hackathon, HopHacks. I was on the bus that the hackathon provided for Northeastern cities. We came off the highway and passed peeling infrastructure, boarded up doors, and barbed wire fences on the way to the university.' },
@@ -133,14 +133,14 @@ export default {
   display: grid;
   padding: .5%;
   margin: .1% 0;
-  border-left: #212D40 solid 0.5vh;
+  border-left: hsl(216, 21%, 13%) solid 0.5vh;
   color: #ebc1c5cc;
-  background: #354051;
+  background: hsl(216, 21%, 26%);
   text-decoration: none;
   transition: 0.7s;
 }
 .blog-nav-row:hover {
-  background: #212D40;
+  background: hsl(216, 21%, 13%);
   border-left: #ebc1c5cc solid 1vh;
 }
 #content {
@@ -163,8 +163,8 @@ article {
   transition: all 0.7s;
 }
 .blog-title:hover {
-  color: #212D40;
-  border-left: #212D40 solid 1vh;
+  color: hsl(216, 21%, 13%);
+  border-left: hsl(216, 21%, 13%) solid 1vh;
   transition: all 0.7s;
 }
 @media screen and (max-width: 768px) {

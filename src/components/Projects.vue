@@ -89,7 +89,7 @@ export default {
 }
 .project > a {
   padding-left: 1%;
-  border-left: #212D40 solid 0.5vh;
+  border-left: hsl(216, 21%, 13%) solid 0.5vh;
   color: #ebc1c5cc;
   transition: border-left 0.7s;
 }
@@ -97,7 +97,7 @@ export default {
   border-left: #ebc1c5cc solid 1vh;
 }
 .project:nth-child(1){
-  background: #212D40;
+  background: hsl(216, 21%, 13%);
 }
 .project:nth-child(1) > a{
   border-left: #354051 solid 0.5vh;

@@ -52,7 +52,7 @@ body {
 }
 h1, h2, h3, h4, h5 {
   font-family: 'Varela';
-  color: #212D40;
+  color: hsl(216, 21%, 13%);
 }
 h1 {
   font-size: 3.2rem;

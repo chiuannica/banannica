@@ -1,6 +1,6 @@
 <template>
   <div id="contact">
-    <h2>{{ title }}</h2>
+    <h2> <i class="fa fa-address-book"></i> {{ title }}</h2>
     <div class="contact-links">
       <a :key=media.id v-for="media in medias" class="contact-link" :href="media.link">
         <i :class="media.icon"></i>
@@ -35,11 +35,11 @@ export default {
   justify-content: space-around;
 }
 .contact-link {
-  color: #212D40;
+  color: #354051;
   margin-bottom: 2vh;
 }
 .contact-link:hover {
-  color: #354051;
+  color: hsl(216, 21%, 13%);
 }
 .contact-link > .fa {
   font-size: 3em;
