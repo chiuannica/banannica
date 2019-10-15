@@ -23,9 +23,9 @@ export default {
       aboutIcon: 'fa fa-female',
       texts: [
         { p: 'Hi! I\'m Annica.' },
-        { p: 'I am a student at Temple University and an entirely online-resources-taught web developer.' },
-        { p: 'I am a serial hacker, as in I attend every single hackathon I can. At Upward Bound, I have had the amazing opportunity to teach high school students programming and web development.' },
-        { p: 'I am a proud supporter of Temple University\'s soccer teams, Philadelphia Union, Tottenham Hotspur, and all bubble tea.' }
+        { p: 'I am a student at Temple University ' },
+        { p: 'At Upward Bound, I have had the amazing opportunity to teach high school students programming and web development.' },
+        { p: 'I am a proud supporter of Temple University\'s soccer teams, Tottenham Hotspur, and all bubble tea.' }
       ],
       resume: { p: 'Check out my resume.', link: 'https://google.com' }
     }

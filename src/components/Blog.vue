@@ -4,7 +4,8 @@
     <div id="blog-nav">
       <a :key="blog.id" v-for="blog in blogs" :href="blog.link" v-on:click="blog.showBlog = !blog.showBlog">
         <div class="blog-nav-row">
-          <p>{{ blog.date }} {{ blog.title }}</p>
+          <p>{{ blog.date }}</p>
+          <h5>{{ blog.title }}</h5>
         </div>
       </a>
     </div>
@@ -32,6 +33,24 @@ export default {
       navIcon: 'fa fa-hand-pointer-o',
       blogs: [
         {
+          id: 4,
+          link: '#4',
+          title: 'codeLinc 6.0: Civil Rights Museum, Food, and First Place',
+          date: '10/6/2019',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: 'I went to codeLinc this September 28-29th in Greensboro, NC. It was an amazing experience. We went to a civil rights museum, ate delicious food, and won first place.' },
+            { id: 1, text: 'Our bus arrived early and we were in a historic city, so the organizers took us to the International Civil Rights Museum. Greensboro is where a group of four students began a movement to protest segregation by sitting at a whites only counter. The museum has the exact counter that the students sat at. Being in the museum was incredibly powerful and can’t be explained by words. it showed me the ugly things humans have done. Everyone should go there at least once. I think more hackathons should take the attendees out into the city, since lots of hackers travel to cities far away.' },
+            { id: 2, text: 'The food at codeLinc was incredible. It was really good. They put out an infinite amount of delicious food. Breakfast, breakfast part two, lunch, lunch part two, dinner, dinner again, midnight food, and always available coffee. I have never had such good food. I heard that they spent an incredible amount of money to pay for the incredible quality of food. I drank so much coffee. Other hackathons really need to step it up.' },
+            { id: 3, text: 'While I was at the museum, I met a person at Lincoln. I thought he was just a regular software guy because he was so casual. I told him how my group trespassed on the museum by accident earlier, and how Geno\'s and Pat\'s cheesesteaks are super overrated. I wiped my little tears at the museum next to him. He spoke at the opening ceremony, I found out he was right below the CTO. Pretty surprising.' },
+            { id: 4, text: 'Long story short, my team won. I drank so much coffee.' },
+            { id: 5, text: 'I never expected our team to win. After the other teams presented and showed their apps, super cool websites, and data analysis tools, I thought we weren’t going to place. Well, we did, at the top. They liked our idea the best. I concur. It was a pretty good idea, but everyone else had all of these bells and whistles that ours didn’t.' },
+            { id: 6, text: 'I feel strange taking the win, because I am used to seeing other people take the win. I have been to so many hackathons and watched other people stand at the front smiling. I couldn’t believe when they said we won. Also, on the bus ride back home, someone said that I was a winner. I didn\'t understand what they meant until I thought about it.' },
+            { id: 7, text: 'So that was fun!' }
+          ],
+          showBlog: false
+        },
+        {
           id: 3,
           link: '#3',
           title: 'HopHacks: Let Me Speak!',
@@ -48,7 +67,7 @@ export default {
             { id: 7, text: 'Perhaps I am being too sensitive. Actually, I have ruled that out. I have already mentioned this: for group projects, everyone should speak, otherwise, the group looks bad. In every single case for a group project, everyone needs to speak. For group projects at school, Hell’s Kitchen, KPop, companies, and every other context, as many members as possible should speak. Even BTS has at least half of the group say something when accepting an award because they value all of the members’ perspective and contribution. This is how I know I am not being sensitive.' },
             { id: 8, text: 'After the judge left, I suggested that we determine exactly what each of us would talk about. Everyone agreed and I spoke for the next presentation.' },
             { id: 9, text: 'I do not want to assume poor intentions, but I tried to speak so many times and was cut off every time. One would think that after the third time I would get my word in. People these days think they are Socrates and no one else can say it like they can.' },
-            { id: 10, text: 'Never let arrogant people keep you from talking!' }
+            { id: 10, text: 'I really need to learn to be more assertive.' }
           ],
           showBlog: false
         },
@@ -120,6 +139,9 @@ export default {
 </script>
 
 <style>
+h5 {
+  margin: 0;
+}
 #blog {
   display: block;
   max-width: 120vh;
