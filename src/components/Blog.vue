@@ -3,9 +3,8 @@
     <h2> <i class="fa fa-quote-left"></i> {{ title }}<p>{{ navText }}</p></h2>
     <div id="blog-nav">
       <a :key="blog.id" v-for="blog in blogs" :href="blog.link" v-on:click="blog.showBlog = !blog.showBlog">
-        <div class="blog-nav-row">
-          <p>{{ blog.date }}</p>
-          <h5>{{ blog.title }}</h5>
+        <div class="blog-nav-item">
+          <p>{{ blog.date }}: {{ blog.title }}</p>
         </div>
       </a>
     </div>
@@ -32,10 +31,64 @@ export default {
       navText: 'Click on Title to View',
       navIcon: 'fa fa-hand-pointer-o',
       blogs: [
+        /*
+        {
+          id: 1000,
+          link: '#1000',
+          title: 'Title',
+          date: '0/0/2019',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: '' },
+            { id: 0, text: '' },
+            { id: 0, text: '' },
+            { id: 0, text: '' }
+          ],
+          showBlog: false
+        },
+        */
+        {
+          id: 6,
+          link: '#6',
+          title: 'Trust the Process',
+          date: '12/24/2019',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: 'This semester, I totally burned out. In short, I got food poisoning from eating kimbap in November, which put me behind in school. I was totally burned out from going to school, working, and applying for internships.' },
+            { id: 1, text: 'I would like to write more about my experience with applying for internships later. To summarize, it was frustrating to coordinate with the companies’ representatives, and some people have unrealistic expectations for interns.' },
+            { id: 2, text: 'It was tiresome to be on top of my obligations and responsibilities. I couldn’t see that I was overworking myself until I got physically sick from eating kimbap. It didn’t help that I have narcolepsy, which I recently found out.' },
+            { id: 3, text: 'When I learned I have narcolepsy, my symptoms made sense. I was always sleepy and had cataplexy. Even though nothing has changed, I am relieved that I am sleepy not because I am lazy.' },
+            { id: 4, text: 'I finally found an internship after starting my search in September. I am over the moon with the company. The people who represented the company infinitely better than the people who represented other companies. I spoke with a representative who assured that my narcolepsy/sleepiness would not be an issue and would be accomodated. Someone from within the company helped me prepare for the interview. For the interview, I spoke with a person who was much higher up than who I was used to. Unlike every other company, I only had to wait a day to get my decision. I accepted because I had such a good experience with the people who represented the company.' },
+            { id: 5, text: 'This came right after I had been rejected by a company I was aiming for. I couldn’t see it then, but I am so happy they rejected me (I am still of the belief they made a huge mistake). If they didn’t, then I would have never interviewed with this company who treated me much better and is a much better fit.' },
+            { id: 6, text: 'This turn of events has taught me the meaning of “trust the process.” After I got rejected by the other company, I ran on the treadmill to run away from obligations, blasting kpop in the ears. I tried to get myself to cry to finally let out the pent up emotions, while convincing myself there was nothing to cry about. I wasn’t just upset about the rejection. I was upset about all of my obligations. My school assignments, my job that I wanted to quit, my other job, my fear of not finding an internship after declining an offer in September, and the lack of contact I had with friends. With all of these issues on my mind, the rejection was like the final punch that knocked me out.' },
+            { id: 7, text: 'I finished my finals and received my offer in the same week. Literally, after my last final, I was on the phone receiving my offer. Finally, I could breathe.' },
+            { id: 8, text: 'I can’t believe the stress I have been putting myself under while having narcolepsy. To put it in basic terms, narcolepsy causes someone to not get proper rest during the night because they lack cells which produce hormones that regulate the stages of sleep. This causes them to get sleepy during the day to make up for the poor quality of sleep they get at night. I have been depriving myself of sleep for my whole life without knowing. No wonder I was crashing and burning.' },
+            { id: 9, text: 'Again, finally, I can breathe. And sleep.' }
+          ],
+          showBlog: false
+        },
+        {
+          id: 5,
+          link: '#5',
+          title: 'Happy Every Day',
+          date: '10/25/2019',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: 'Note: I wrote this on 10/25/2019 and was hesistant to upload. I uploaded this on 12/24/2019.' },
+            { id: 1, text: 'This blog post is quite sad and somewhat unrelated to technology.' },
+            { id: 2, text: 'The first time I saw Sulli was in f(x)’s music video of Electric Shock. She always showed off her super gorgeous smile.' },
+            { id: 3, text: 'On October 14, 2019, Sulli passed away.' },
+            { id: 4, text: 'I don’t want to hunt for reasons for why she left. We will never know why for sure.' },
+            { id: 5, text: 'She reminded me to live in the moment every day. She was unhappy even though she was incredibly successful. She was gorgeous, and a former member of a successful K-pop group from one of the top companies. She attained what tons of young people are working for. Her company accepts way below 1%, and not everyone in the company makes it into a group. Her group\'s music videos have millions and millions of views. Even as successful as she was, she was not happy.' },
+            { id: 6, text: 'I have an image in my head that once I graduate and work at a top company, I\'ll be happy. That image is not true at all. I have to be happy every day with what I have.' },
+            { id: 7, text: 'I have to live every day and be happy. It is hard to remember that happiness does not come from acquisition. I need to be happy now.' }
+          ],
+          showBlog: false
+        },
         {
           id: 4,
           link: '#4',
-          title: 'codeLinc 6.0: Civil Rights Museum, Food, and First Place',
+          title: 'codeLinc 6.0: Civil Rights and 1st Place',
           date: '10/6/2019',
           author: 'Annica',
           paragraphs: [
@@ -149,19 +202,19 @@ h5 {
 #blog-nav {
   display: grid;
   grid-template-rows: auto;
-  margin-left: 3%;
+  margin: 0% 3%;
 }
-.blog-nav-row {
+.blog-nav-item {
   display: grid;
-  padding: .5%;
-  margin: .1% 0;
+  padding: 0% 1%;
+  margin-bottom: 0.5%;
   border-left: hsl(216, 21%, 13%) solid 0.5vh;
   color: #ebc1c5cc;
   background: hsl(216, 21%, 26%);
   text-decoration: none;
   transition: 0.7s;
 }
-.blog-nav-row:hover {
+.blog-nav-item:hover {
   background: hsl(216, 21%, 13%);
   border-left: #ebc1c5cc solid 1vh;
 }

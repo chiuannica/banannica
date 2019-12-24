@@ -28,8 +28,7 @@ export default {
   data () {
     return {
       title: 'Annica',
-      icon: 'fa fa-file-code-o',
-      subtitle: 'Web Monkey',
+      subtitle: 'The Next Big Thing',
       links: [
         { id: 0, name: 'About', link: '#about' },
         { id: 1, name: 'Projects', link: '#projects' }

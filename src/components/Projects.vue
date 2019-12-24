@@ -8,6 +8,9 @@
         <p>{{ project.tools }}</p>
         <a :href="project.link">Website</a><br>
         <a :href="project.github">GitHub</a>
+        <!--
+          <embed :src="project.link" width="50%" height=""></embed>
+        -->
       </div>
     </div>
   </div>
@@ -45,16 +48,6 @@ export default {
           link: 'https://chiuannica.github.io/valentinesdaycard/meme.html',
           github: 'https://github.com/chiuannica/valentinesdaycard'
         },
-        /*
-        {
-          id: 3,
-          name: 'Tips From People Older Than Me',
-          description: 'A webpage displaying tips from older people',
-          tools: 'CSS animations, CSS grid, HTML/CSS',
-          link: 'https://chiuannica.github.io/tipsfrompeopleolderthanme/',
-          github: 'https://github.com/chiuannica/tipsfrompeopleolderthanme'
-        },
-        */
         {
           id: 4,
           name: 'The Effects of Video Games',
@@ -76,7 +69,7 @@ export default {
   margin: 0;
   margin-left: -1%;
 }
-.project{
+.project {
   background: #354051;
   color: #ebc1c5cc;
   box-sizing: border-box;
@@ -93,16 +86,16 @@ export default {
   color: #ebc1c5cc;
   transition: border-left 0.7s;
 }
-.project > a:hover{
+.project > a:hover {
   border-left: #ebc1c5cc solid 1vh;
 }
 .project:nth-child(1){
   background: hsl(216, 21%, 13%);
 }
-.project:nth-child(1) > a{
+.project:nth-child(1) > a {
   border-left: #354051 solid 0.5vh;
 }
-.project:nth-child(1) > a:hover{
+.project:nth-child(1) > a:hover {
   border-left: #ebc1c5cc solid 1vh;
 }
 .projects-grid{
