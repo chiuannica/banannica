@@ -1,6 +1,6 @@
 <template>
   <div id="projects">
-    <h2> <i :class="projectsIcon"></i> {{ title }}</h2>
+    <h2>{{ title }} <i :class="projectsIcon"></i></h2>
     <div class="projects-grid">
       <div :key=project.id class="project magic-project show-on-scroll" v-for="project in projects">
         <h4 class="project-title">{{ project.name }}</h4>

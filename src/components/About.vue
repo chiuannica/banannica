@@ -1,9 +1,9 @@
 <template>
   <div id="about">
-    <h2> <i :class="aboutIcon"></i> {{ title }}</h2>
+    <h2>{{ title }} <i :class="aboutIcon"></i></h2>
     <div class="content">
       <div class="text">
-        <p class="show-on-scroll magic-text" v-for="text in texts" :key="text.id">{{ text.p }}</p>
+        <p v-for="text in texts" :key="text.id">{{ text.p }}</p>
       </div>
       <img class="my-picture" :src="myPicture" alt="picture of me">
       <!--
@@ -37,29 +37,33 @@ export default {
 #about {
   width: 100%;
   min-height: 50vh;
+  border-left: #354051 1vh solid;
+  margin: 0 5%;
+}
+#about > h2 {
+  margin: 0 3%;
 }
 .my-picture {
   border: 0.5rem #354051 solid;
   border-radius: 50%;
-  width: 80%;
+  max-width: 50%;
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
 .content {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   margin-left: auto;
   margin-right: auto;
 }
 .text {
-  margin: 0 10%;
-  max-width: 90vh;
+  margin: 0 3%;
 }
 @media screen and (max-width: 768px) {
   .my-picture {
-    width: 87%;
+    width: 150%;
   }
   .text {
-  margin-right: 2%;
-}
+    margin-right: 2%;
+  }
 }
 </style>

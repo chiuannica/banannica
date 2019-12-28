@@ -1,6 +1,6 @@
 <template>
   <div id="blog">
-    <h2> <i class="fa fa-quote-left"></i> {{ title }}<p>{{ navText }}</p></h2>
+    <h2>{{ title }} <i :class="navIcon"></i><p>{{ navText }}</p></h2>
     <div id="blog-nav">
       <a :key="blog.id" v-for="blog in blogs" :href="blog.link" v-on:click="blog.showBlog = !blog.showBlog">
         <div class="blog-nav-item">
@@ -29,7 +29,7 @@ export default {
     return {
       title: 'Blog',
       navText: 'Click on Title to View',
-      navIcon: 'fa fa-hand-pointer-o',
+      navIcon: 'fa fa-pencil',
       blogs: [
         /*
         {

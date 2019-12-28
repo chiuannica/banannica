@@ -40,7 +40,7 @@ export default {
   src: url('assets/Roboto-Light.ttf');
 }
 #app {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   -webkit-font-smoothin: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;

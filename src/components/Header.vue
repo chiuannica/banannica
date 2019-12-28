@@ -31,7 +31,7 @@ a:hover:after{
 }
 a:after{
   content: '';
-  height: 0.7em;
+  height: 0.1em;
   position: absolute;
   bottom: 0;
   left: 0;

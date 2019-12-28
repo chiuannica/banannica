@@ -1,6 +1,6 @@
 <template>
   <div id="contact">
-    <h2> <i class="fa fa-address-book"></i> {{ title }}</h2>
+    <h2>{{ title }} <i :class="icon"></i></h2>
     <div class="contact-links">
       <a :key=media.id v-for="media in medias" class="contact-link" :href="media.link">
         <i :class="media.icon"></i>
@@ -16,6 +16,7 @@ export default {
   data () {
     return {
       title: 'Contact',
+      icon: 'fa fa-address-book',
       medias: [
         // { id: 0, name: 'Instagram', handle: 'JavaScriptQueen', link: 'https://instagram.com/javascriptqueen', icon: 'fa fa-instagram' },
         { id: 1, name: 'GitHub', handle: 'chiuannica', link: 'https://github.com/chiuannica', icon: 'fa fa-github' },
