@@ -24,7 +24,7 @@ export default {
       texts: [
         { p: 'Hi! I\'m Annica.' },
         { p: 'I am studying Information Science & Technology at Temple University.' },
-        { p: 'I have had the amazing opportunity to teach students to code at Upward Bound. I am over the moon with the opportunity I have with PwC this summer.' },
+        { p: 'I have had the amazing opportunity to teach students to code at Upward Bound.' },
         { p: 'I love bubble tea and many soccer teams, including the Philadelphia Union, Temple\'s soccer teams, and Tottenham Hotspur.' }
       ],
       resume: { p: 'Check out my resume.', link: 'https://google.com' }

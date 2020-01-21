@@ -48,6 +48,23 @@ export default {
         },
         */
         {
+          id: 7,
+          link: '#7',
+          title: 'My Empty Skyscrapers',
+          date: '1/21/2020',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: 'I saw an article written for <em>The Atlantic</em> called, “Why Manhattan’s Skyscrapers Are Empty.” Without reading the article, I thought of the title as a way of thinking of myself.' },
+            { id: 1, text: 'In basic terms, the article is about how there are not enough affordable housing options for people who are low or middle class, while there are empty apartments in Manhattan skyscrapers. This causes less homeownership in younger people and homelessness.' },
+            { id: 2, text: 'I continue to develop myself, as Manhattan does. Manhattan builds skyscrapers, I build titles on my resume. While Manhattan has, what the author calls, “stalagmites” growing from the ground, the city still has an alarming homeless population. This makes me think of how I am getting more experience to grow myself, but I still have the same underlying problems that keep me from truly feeling secure with myself.' },
+            { id: 3, text: 'In high school, I was very sad. I became bitter because of the vicious competition young people face now. I saw it in my friends. I think of my high school friends as acquisitionary, if that is even a word. They were focused on attaining goals and points to use to impress colleges. Many of them succeeded in that and continue to acquire titles, as many of my friends entered the Ivy League and other notable schools.' },
+            { id: 4, text: 'The mindset of acquisition is still what hurts my mind. It gives me a false purpose to want to continue building up my skyscrapers, or my resume, while I still have homeless people on the streets, or my problems. ' },
+            { id: 5, text: 'I have improved myself by starting to exercise regularly, being more conscious of what I eat, and acknowledging my narcolepsy. I have built strong connections with high school students who have the same struggles I did and have a sense of purpose for my work. With all of these improvements, I still feel as though the lofts I have built are empty. ' }
+
+          ],
+          showBlog: false
+        },
+        {
           id: 6,
           link: '#6',
           title: 'Trust the Process',
@@ -58,12 +75,14 @@ export default {
             { id: 1, text: 'I would like to write more about my experience with applying for internships later. To summarize, it was frustrating to coordinate with the companies’ representatives, and some people have unrealistic expectations for interns.' },
             { id: 2, text: 'It was tiresome to be on top of my obligations and responsibilities. I couldn’t see that I was overworking myself until I got physically sick from eating kimbap. It didn’t help that I have narcolepsy, which I recently found out.' },
             { id: 3, text: 'When I learned I have narcolepsy, my symptoms made sense. I was always sleepy and had cataplexy. Even though nothing has changed, I am relieved that I am sleepy not because I am lazy.' },
+            /*
             { id: 4, text: 'I finally found an internship after starting my search in September. I am over the moon with the company. The people who represented the company infinitely better than the people who represented other companies. I spoke with a representative who assured that my narcolepsy/sleepiness would not be an issue and would be accomodated. Someone from within the company helped me prepare for the interview. For the interview, I spoke with a person who was much higher up than who I was used to. Unlike every other company, I only had to wait a day to get my decision. I accepted because I had such a good experience with the people who represented the company.' },
             { id: 5, text: 'This came right after I had been rejected by a company I was aiming for. I couldn’t see it then, but I am so happy they rejected me (I am still of the belief they made a huge mistake). If they didn’t, then I would have never interviewed with this company who treated me much better and is a much better fit.' },
             { id: 6, text: 'This turn of events has taught me the meaning of “trust the process.” After I got rejected by the other company, I ran on the treadmill to run away from obligations, blasting kpop in the ears. I tried to get myself to cry to finally let out the pent up emotions, while convincing myself there was nothing to cry about. I wasn’t just upset about the rejection. I was upset about all of my obligations. My school assignments, my job that I wanted to quit, my other job, my fear of not finding an internship after declining an offer in September, and the lack of contact I had with friends. With all of these issues on my mind, the rejection was like the final punch that knocked me out.' },
             { id: 7, text: 'I finished my finals and received my offer in the same week. Literally, after my last final, I was on the phone receiving my offer. Finally, I could breathe.' },
+            */
             { id: 8, text: 'I can’t believe the stress I have been putting myself under while having narcolepsy. To put it in basic terms, narcolepsy causes someone to not get proper rest during the night because they lack cells which produce hormones that regulate the stages of sleep. This causes them to get sleepy during the day to make up for the poor quality of sleep they get at night. I have been depriving myself of sleep for my whole life without knowing. No wonder I was crashing and burning.' },
-            { id: 9, text: 'Again, finally, I can breathe. And sleep.' }
+            { id: 9, text: 'The semester is over. Finally, I can breathe.' }
           ],
           showBlog: false
         },
