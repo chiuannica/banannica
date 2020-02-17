@@ -46,6 +46,20 @@ export default {
           ],
           showBlog: false
         },
+        {
+          id: 8,
+          link: '#8',
+          title: 'My Complicated Relationship With My Chinese Identity',
+          date: '2/10/2019',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: '' },
+            { id: 0, text: '' },
+            { id: 0, text: '' },
+            { id: 0, text: '' }
+          ],
+          showBlog: false
+        },
         */
         {
           id: 7,
@@ -54,12 +68,12 @@ export default {
           date: '1/21/2020',
           author: 'Annica',
           paragraphs: [
-            { id: 0, text: 'I saw an article written for <em>The Atlantic</em> called, “Why Manhattan’s Skyscrapers Are Empty.” Without reading the article, I thought of the title as a way of thinking of myself.' },
+            { id: 0, text: 'I saw an article written for <em>The Atlantic</em> called, <a href="https://www.theatlantic.com/ideas/archive/2020/01/american-housing-has-gone-insane/605005/">“Why Manhattan’s Skyscrapers Are Empty.”</a> Without reading the article, I thought of the title as a way of thinking of myself.' },
             { id: 1, text: 'In basic terms, the article is about how there are not enough affordable housing options for people who are low or middle class, while there are empty apartments in Manhattan skyscrapers. This causes less homeownership in younger people and homelessness.' },
-            { id: 2, text: 'I continue to develop myself, as Manhattan does. Manhattan builds skyscrapers, I build titles on my resume. While Manhattan has, what the author calls, “stalagmites” growing from the ground, the city still has an alarming homeless population. This makes me think of how I am getting more experience to grow myself, but I still have the same underlying problems that keep me from truly feeling secure with myself.' },
-            { id: 3, text: 'In high school, I was very sad. I became bitter because of the vicious competition young people face now. I saw it in my friends. I think of my high school friends as acquisitionary, if that is even a word. They were focused on attaining goals and points to use to impress colleges. Many of them succeeded in that and continue to acquire titles, as many of my friends entered the Ivy League and other notable schools.' },
+            { id: 2, text: 'I continue to develop myself, as Manhattan does. Manhattan builds skyscrapers, I build titles on my resume. While Manhattan has, what the author calls, “stalagmites” growing from the ground, the city still has an alarming homeless population. This makes me think of how I am growing through experience, but I still have the same underlying problems that keep me from truly feeling secure with myself.' },
+            { id: 3, text: 'In high school, I was very sad. I became bitter because of the vicious competition at my school. I saw it in my friends. I think of my high school friends as acquisitionary, if that is even a word. They were focused on attaining goals and points to use to impress colleges. Many of them succeeded in that and continue to acquire titles, as many of my friends study in the Ivy League.' },
             { id: 4, text: 'The mindset of acquisition is still what hurts my mind. It gives me a false purpose to want to continue building up my skyscrapers, or my resume, while I still have homeless people on the streets, or my problems. ' },
-            { id: 5, text: 'I have improved myself by starting to exercise regularly, being more conscious of what I eat, and acknowledging my narcolepsy. I have built strong connections with high school students who have the same struggles I did and have a sense of purpose for my work. With all of these improvements, I still feel as though the lofts I have built are empty. ' }
+            { id: 5, text: 'I have improved myself by starting to exercise regularly, being more conscious of what I eat, and acknowledging my narcolepsy. I have built strong connections with high school students who have the same struggles I did and have a sense of purpose for my work. With all of these improvements, I still feel as though the tall buildings I have are empty. ' }
 
           ],
           showBlog: false
