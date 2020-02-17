@@ -8,7 +8,7 @@
       <img class="my-picture" :src="myPicture" alt="picture of me">
       <!--
       <a class="show-on-scroll magic-text" :href="resume.link">{{ resume.p }}</a>
-      -->
+    -->
     </div>
   </div>
 </template>
@@ -19,7 +19,7 @@ export default {
   data () {
     return {
       title: 'About Me',
-      myPicture: require('@/assets/mypicture.jpg'),
+      myPicture: require('@/assets/me.jpg'),
       aboutIcon: 'fa fa-female',
       texts: [
         { p: 'Hi! I\'m Annica.' },
@@ -27,7 +27,7 @@ export default {
         { p: 'I have had the amazing opportunity to teach students to code at Upward Bound.' },
         { p: 'I love bubble tea and many soccer teams, including the Philadelphia Union, Temple\'s soccer teams, and Tottenham Hotspur.' }
       ],
-      resume: { p: 'Check out my resume.', link: 'https://google.com' }
+      resume: { p: 'I am on LinkedIn!', link: 'https://www.linkedin.com/in/annica-chiu-45369a17b/' }
     }
   }
 }
