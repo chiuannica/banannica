@@ -3,8 +3,11 @@
     <h2>{{ title }} <i :class="projectsIcon"></i></h2>
     <div class="projects-grid">
       <div :key=project.id class="project magic-project show-on-scroll" v-for="project in projects">
-        <h4 class="project-title">{{ project.question }}</h4>
-        <p>{{ project.answer }}</p>
+        <h4 class="project-title">{{ project.name }}</h4>
+        <p>{{ project.description }}</p>
+        <p>{{ project.tools }}</p>
+        <a :href="project.link">Website</a><br>
+        <a :href="project.github">GitHub</a>
         <!--
           <embed :src="project.link" width="50%" height=""></embed>
         -->
@@ -18,28 +21,40 @@ export default {
   name: 'Projects',
   data () {
     return {
-      title: 'Frequently Asked Questions',
-      projectsIcon: 'fa ',
+      title: 'Projects',
+      projectsIcon: 'fa fa-file-code-o',
       projects: [
         {
-          id: 4,
-          question: 'Why invest at all?',
-          answer: 'The average inflation rate in the United States is about 2%. This means, the buying power of a $1 now will be $1.02 next year, which means money will be required to buy the same things. Investing allows you to grow your money over time, as opposed to allowing it to lose value.',
-        },
-        {
           id: 0,
-          question: 'Why buy ETFs as opposed to stocks?',
-          answer: 'ETFs make it easier for investors to diversify their investments compared to stocks. ETFs are better for people who are plan to grow their money over an extended period of time, as opposed to beating the market.',
+          name: 'Random Basketball Point Generator',
+          description: 'A website that takes player stats and generates a table of points',
+          tools: 'JavaScript, HTML/CSS',
+          link: 'https://chiuannica.github.io/randompointgenerator/',
+          github: 'https://github.com/chiuannica/randompointgenerator'
         },
         {
           id: 1,
-          question: 'Why buy ETFs as opposed to mutual funds?',
-          answer: 'While both offer diversification, ETFs require less upfront cost than mutual funds. Investing in ETFs allows for greater control over exposure to certain markets.',
+          name: 'ACM-W Website',
+          description: 'A website for Temple\'s chapter of the Association of Computing Machinery',
+          tools: 'Vue, JavaScript, HTML/CSS',
+          link: 'https://tu-acmw.onrender.com',
+          github: 'https://github.com/chiuannica/acmw-vue'
         },
         {
           id: 2,
-          question: 'How do I buy ETFs?',
-          answer: 'Open a brokerage or retirement account with an investment firm to exchange ETFs.',
+          name: "Valentine's Day Card Generator",
+          description: 'A website that take user input and generates a card with a random meme',
+          tools: 'JavaScript, Meme API, HTML/CSS',
+          link: 'https://chiuannica.github.io/valentinesdaycard/meme.html',
+          github: 'https://github.com/chiuannica/valentinesdaycard'
+        },
+        {
+          id: 4,
+          name: 'The Effects of Video Games',
+          description: 'A website displaying research on the mental effects of video games',
+          tools: 'Customized Bootstrap, HTML/CSS',
+          link: 'https://chiuannica.github.io/videogamesproject/',
+          github: 'https://github.com/chiuannica/videogamesproject'
         }
       ]
     }
@@ -54,13 +69,9 @@ export default {
   margin: 0;
   margin-left: -1%;
 }
-.project-title{
-  color: hsla(134, 100%, 90%, 0.70);
-  margin: 0;
-}
 .project {
   background: #354051;
-  color: hsla(134, 100%, 90%, 0.55);
+  color: #ebc1c5cc;
   box-sizing: border-box;
   padding: 1em;
   transition: border-left 0.7s;
