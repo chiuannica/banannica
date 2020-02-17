@@ -1,7 +1,7 @@
 <template>
   <nav class="show-on-scroll magic-text-bottom">
     <div :key=tab.id v-for="tab in tabs">
-      <router-link :onclick="tab.func" :to="tab.link" exact>{{ tab.title }}</router-link>
+      <a :onclick="tab.func" :href="tab.link" exact>{{ tab.title }}</a>
     </div>
   </nav>
 </template>
@@ -13,8 +13,8 @@ export default {
       logo: require('@/assets/logo_transparent.png'),
       tabs: [
         {title: 'Home', link: '/', func: 'window.location.reload()', id: 0},
-        {title: 'Blog', link: '/blog', func: null, id: 1},
-        {title: 'Contact', link: '/contact', func: null, id: 2}
+        {title: 'Timeline', link: '#about', func: null, id: 1},
+        {title: 'FAQ', link: '#projects', func: null, id: 2}
       ]
     }
   }
