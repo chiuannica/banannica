@@ -22,10 +22,10 @@ export default {
       myPicture: require('@/assets/me.jpg'),
       aboutIcon: 'fa fa-female',
       texts: [
-        { p: 'Hi! I\'m Annica.' },
+        { p: 'Hi! I\'m Annica!' },
         { p: 'I am studying Information Science & Technology at Temple University.' },
-        { p: 'I have had the amazing opportunity to teach students to code at Upward Bound.' },
-        { p: 'I love bubble tea and many soccer teams, including the Philadelphia Union, Temple\'s soccer teams, and Tottenham Hotspur.' }
+        { p: 'I have had the amazing opportunity to teach Computer Science and Web Development to high school students at Upward Bound.' },
+        { p: 'I love bubble tea and my dog. I aspire to be someone people look up to.' }
       ],
       resume: { p: 'I am on LinkedIn!', link: 'https://www.linkedin.com/in/annica-chiu-45369a17b/' }
     }
@@ -46,12 +46,13 @@ export default {
 .my-picture {
   border: 0.5rem #354051 solid;
   border-radius: 50%;
-  max-width: 50%;
+  max-width: 25em;
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+  margin: auto;
 }
 .content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-left: auto;
   margin-right: auto;
 }
@@ -59,8 +60,10 @@ export default {
   margin: 0 3%;
 }
 @media screen and (max-width: 768px) {
-  .my-picture {
-    width: 150%;
+  .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   }
   .text {
     margin-right: 2%;

@@ -14,8 +14,11 @@
           <h5 class="blog-title">{{ blog.title }}</h5>
           <p>{{ blog.date }} by {{ blog.author }}</p>
         </div>
-        <div v-show="blog.showBlog" :key="paragraph.id" class="blog-body" v-for="paragraph in blog.paragraphs">
-          <p v-html="paragraph.text"></p>
+        <div v-show="blog.showBlog" class="blog-body">
+          <img class="blog-img" :src="blog.img">
+          <div :key="paragraph.id" v-for="paragraph in blog.paragraphs">
+            <p v-html="paragraph.text"></p>
+          </div>
         </div>
       </article>
     </div>
@@ -67,6 +70,7 @@ export default {
           title: 'My Empty Skyscrapers',
           date: '1/21/2020',
           author: 'Annica',
+          /* img: require('@/assets/me.jpg'), */
           paragraphs: [
             { id: 0, text: 'I saw an article written for <em>The Atlantic</em> called, <a href="https://www.theatlantic.com/ideas/archive/2020/01/american-housing-has-gone-insane/605005/">“Why Manhattan’s Skyscrapers Are Empty.”</a> Without reading the article, I thought of the title as a way of thinking of myself.' },
             { id: 1, text: 'In basic terms, the article is about how there are not enough affordable housing options for people who are low or middle class, while there are empty apartments in Manhattan skyscrapers. This causes less homeownership in younger people and homelessness.' },
@@ -274,6 +278,10 @@ article {
   color: hsl(216, 21%, 13%);
   border-left: hsl(216, 21%, 13%) solid 1vh;
   transition: all 0.7s;
+}
+.blog-img {
+  max-width: 25em;
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
 @media screen and (max-width: 768px) {
   .content {

@@ -27,7 +27,7 @@ export default {
   },
   data () {
     return {
-      title: 'Annica',
+      title: 'Annica Chiu',
       subtitle: 'The Next Big Thing',
       links: [
         { id: 0, name: 'About', link: '#about' },
