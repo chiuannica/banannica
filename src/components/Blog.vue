@@ -49,21 +49,28 @@ export default {
           ],
           showBlog: false
         },
+        */
         {
           id: 8,
           link: '#8',
-          title: 'My Complicated Relationship With My Chinese Identity',
-          date: '2/10/2019',
+          title: 'Mentorship and Me',
+          date: '2/23/2019',
           author: 'Annica',
+          /* img: require('@/assets/me.jpg'), */
           paragraphs: [
-            { id: 0, text: '' },
-            { id: 0, text: '' },
-            { id: 0, text: '' },
-            { id: 0, text: '' }
+            { id: 0, text: 'A few months ago, I wrote this story of my mentor impacting me in a way he will probably never know.' },
+            { id: 0, text: '<i>"I was sitting at a school computer writing an essay. I started thinking of how alone I was and got really down on myself. I was resentful at my terrible luck, how alone I was, and how I had things to do while I just wanted to do nothing.</i>' },
+            { id: 0, text: '<i>I continued to do my homework and someone called me. I had my earbuds in and I wasn’t even listening to music. It was the person who drove me to dragon boat practice a few times, and he had become a father-figure-mentor-idk person to me. At first, I thought it might have been a mistake. I answered and he told me he was on campus and wanted to grab lunch with me to catch up.</i>' },
+            { id: 0, text: '<i>I went and watched him eat because I had already eaten. He kept asking if I wanted anything and I kept denying because that’s just what I do. He listened to my problems and offered his advice. He said that if I ever go to a party and need a ride home that he would drive me home. It made me realize there are people who really care about me.</i>' },
+            { id: 0, text: '<i>What is pretty amazing is that I usually miss calls because I always have my phone on mute, but that time, I had my earphones in without even listening to music. Such a coincidence."</i>' },
+            { id: 0, text: 'This happened around last year. Reading this back always makes me feel happier because I feel so lucky to have people who care about me in my life. He also brought me to my first soccer game and drove me to dragon boat practice too many times to count. He brought me out to eat sushi when I got my first internship.' },
+            { id: 0, text: 'It means a lot to me, and I will probably never be able to express my gratitude. I have baked him a pie and some cookies, but still, I probably won’t ever be able to repay him for what he has done for me.' },
+            { id: 0, text: 'There are plenty of other mentors in my life. I can think of them all right now. There are plenty of them on my dragon boat team. They have watched me grow up from a sophomore in high school to a sophomore in college. There are plenty of things they have done to make me happy.' },
+            { id: 0, text: 'The coach bought my friend and I ice cream twice. Someone went with me to the gym and showed me workouts to do. Someone else talked to me about stocks and told me to open a Roth IRA. They are always willing to listen and give advice. There are plenty of other things people on this team have done for me. There are too many to list and it would just get redundant if I did. ' },
+            { id: 0, text: 'The mentors in my life may never understand the impact they have had on me and I am grateful to have them in my life.' }
           ],
           showBlog: false
         },
-        */
         {
           id: 7,
           link: '#7',
