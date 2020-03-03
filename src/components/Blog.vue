@@ -39,7 +39,7 @@ export default {
           id: 1000,
           link: '#1000',
           title: 'Title',
-          date: '0/0/2019',
+          date: '0/0/2020',
           author: 'Annica',
           paragraphs: [
             { id: 0, text: '' },
@@ -54,7 +54,7 @@ export default {
           id: 8,
           link: '#8',
           title: 'Mentorship and Me',
-          date: '2/23/2019',
+          date: '2/23/2020',
           author: 'Annica',
           /* img: require('@/assets/me.jpg'), */
           paragraphs: [
