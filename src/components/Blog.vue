@@ -242,6 +242,8 @@ h5 {
 #blog {
   display: block;
   max-width: 120vh;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 #blog-nav {
   display: grid;
@@ -291,6 +293,9 @@ article {
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
 @media screen and (max-width: 768px) {
+  #blog {
+    margin: 0;
+  }
   .content {
     margin: 5vh;
   }
