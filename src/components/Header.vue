@@ -10,7 +10,6 @@ export default {
   name: 'Header',
   data () {
     return {
-      logo: require('@/assets/logo_transparent.png'),
       tabs: [
         {title: 'Home', link: '/', func: 'window.location.reload()', id: 0},
         {title: 'Blog', link: '/blog', func: null, id: 1},

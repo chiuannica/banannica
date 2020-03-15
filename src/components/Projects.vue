@@ -74,7 +74,8 @@ export default {
   background: #354051;
   color: #ebc1c5cc;
   box-sizing: border-box;
-  padding: 1em;
+  padding: 2em;
+  margin: 2em;
   transition: border-left 0.7s;
 }
 .project > .project-title{
@@ -104,7 +105,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1fr;
-  grid-gap: 4%;
+  grid-gap: 3%;
 }
 .project:nth-child(1) {
   grid-column: 1;
@@ -129,8 +130,8 @@ export default {
 @media screen and (max-width: 768px) {
   .projects-grid{
     display: block;
-    padding: 0;
-    margin: 2%;
+    padding: auto;
+    margin: auto;
   }
   .projects-grid > div {
     padding: 1%;

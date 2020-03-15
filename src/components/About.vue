@@ -8,7 +8,7 @@
       <img class="my-picture" :src="myPicture" alt="picture of me">
       <!--
       <a class="show-on-scroll magic-text" :href="resume.link">{{ resume.p }}</a>
-      -->
+    -->
     </div>
   </div>
 </template>
@@ -19,7 +19,7 @@ export default {
   data () {
     return {
       title: 'About Me',
-      myPicture: require('@/assets/mypicture.jpg'),
+      myPicture: require('@/assets/me.jpg'),
       aboutIcon: 'fa fa-female',
       texts: [
         { p: '<h6>Hi! I\'m Annica.</h6>' },
@@ -27,7 +27,7 @@ export default {
         { p: 'I teach high school students to code at Upward Bound.' },
         { p: 'I am interested in finance, education, tech, and soccer.' }
       ],
-      resume: { p: 'Check out my resume.', link: 'https://google.com' }
+      resume: { p: 'I am on LinkedIn!', link: 'https://www.linkedin.com/in/annica-chiu-45369a17b/' }
     }
   }
 }
@@ -46,12 +46,13 @@ export default {
 .my-picture {
   border: 0.5rem #354051 solid;
   border-radius: 50%;
-  max-width: 50%;
+  max-width: 25em;
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+  margin: auto;
 }
 .content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-left: auto;
   margin-right: auto;
 }
@@ -59,8 +60,10 @@ export default {
   margin: 0 3%;
 }
 @media screen and (max-width: 768px) {
-  .my-picture {
-    width: 150%;
+  .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   }
   .text {
     margin-right: 2%;
