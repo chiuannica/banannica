@@ -67,6 +67,11 @@ h4, h5 {
   font-size: 1.6rem;
   color: #ebc1c5cc;
 }
+h6 {
+  font-size: 1.6rem;
+  color: #354051;
+  margin: 0;
+}
 p  { font-size: 1.4rem; } /* =14px */
 a {
   font-family: 'Varela';
@@ -74,7 +79,7 @@ a {
   font-size: 1.4rem;
   text-decoration: none;
   transition: color 0.7s;
-}2
+}
 .magic-text {
   opacity: 0;
   transform: translateY(4em);

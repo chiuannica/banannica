@@ -64,10 +64,11 @@ export default {
 
 <style>
 #projects{
-  width: 100%;
+  max-width: 90%;
   height: 100vh;
   margin: 0;
-  margin-left: -1%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .project {
   background: #354051;

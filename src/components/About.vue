@@ -3,7 +3,7 @@
     <h2>{{ title }} <i :class="aboutIcon"></i></h2>
     <div class="content">
       <div class="text">
-        <p v-for="text in texts" :key="text.id">{{ text.p }}</p>
+        <p v-for="text in texts" :key="text.id" v-html="text.p"></p>
       </div>
       <img class="my-picture" :src="myPicture" alt="picture of me">
       <!--
@@ -22,10 +22,10 @@ export default {
       myPicture: require('@/assets/mypicture.jpg'),
       aboutIcon: 'fa fa-female',
       texts: [
-        { p: 'Hi! I\'m Annica.' },
+        { p: '<h6>Hi! I\'m Annica.</h6>' },
         { p: 'I am studying Information Science & Technology at Temple University.' },
-        { p: 'I have had the amazing opportunity to teach students to code at Upward Bound.' },
-        { p: 'I love bubble tea and many soccer teams, including the Philadelphia Union, Temple\'s soccer teams, and Tottenham Hotspur.' }
+        { p: 'I teach high school students to code at Upward Bound.' },
+        { p: 'I am interested in finance, education, tech, and soccer.' }
       ],
       resume: { p: 'Check out my resume.', link: 'https://google.com' }
     }
@@ -37,8 +37,8 @@ export default {
 #about {
   width: 100%;
   min-height: 50vh;
-  border-left: #354051 1vh solid;
-  margin: 0 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 #about > h2 {
   margin: 0 3%;

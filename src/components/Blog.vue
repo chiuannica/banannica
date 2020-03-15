@@ -231,6 +231,7 @@ h5 {
 #blog {
   display: block;
   max-width: 120vh;
+  margin: 0 10%;
 }
 #blog-nav {
   display: grid;
@@ -282,6 +283,9 @@ article {
   .blog-nav-row {
     display: block;
     width: 90%;
+  }
+  #blog {
+    margin: 0;
   }
 }
 </style>
