@@ -9,12 +9,12 @@
       </a>
     </div>
     <div id="content">
-      <article :key="blog.date" :id="blog.id" v-for="blog in blogs">
+      <article v-show="blog.showBlog" :key="blog.date" :id="blog.id" v-for="blog in blogs">
         <div class="clickable" v-on:click="blog.showBlog = !blog.showBlog">
           <h5 class="blog-title">{{ blog.title }}</h5>
           <p>{{ blog.date }} by {{ blog.author }}</p>
         </div>
-        <div v-show="blog.showBlog" class="blog-body">
+        <div class="blog-body">
           <img class="blog-img" :src="blog.img">
           <div :key="paragraph.id" v-for="paragraph in blog.paragraphs">
             <p v-html="paragraph.text"></p>
@@ -243,6 +243,9 @@ h5 {
   display: block;
   max-width: 120vh;
   margin: 0 10%;
+}
+#blog > h2 {
+  text-align: center;
 }
 #blog-nav {
   display: grid;

@@ -25,7 +25,7 @@ export default {
         { p: '<h6>Hi! I\'m Annica.</h6>' },
         { p: 'I am studying Information Science & Technology at Temple University.' },
         { p: 'I teach high school students to code at Upward Bound.' },
-        { p: 'I am interested in finance, education, tech, and soccer.' }
+        { p: 'I like to sleep and listen to Bloomberg podcasts.' }
       ],
       resume: { p: 'I am on LinkedIn!', link: 'https://www.linkedin.com/in/annica-chiu-45369a17b/' }
     }
@@ -35,13 +35,13 @@ export default {
 
 <style>
 #about {
-  width: 100%;
+  width: 85%;
   min-height: 50vh;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
 }
 #about > h2 {
-  margin: 0 3%;
+  text-align: center;
 }
 .my-picture {
   border: 0.5rem #354051 solid;
@@ -61,12 +61,23 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .content {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .text {
-    margin-right: 2%;
+    width: 100%;
+  }
+  .my-picture {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+
+  }
+  #about {
+    margin: 0;
+    width: 100%;
   }
 }
 </style>

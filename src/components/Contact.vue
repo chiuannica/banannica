@@ -31,6 +31,9 @@ export default {
 #contact {
   width: 100%;
 }
+#contact > h2 {
+  text-align: center;
+}
 .contact-links {
   display: flex;
   justify-content: space-around;

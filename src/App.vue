@@ -59,7 +59,6 @@ h1 {
   text-align: center;
 }
 h2 , h3{
-  margin-left: 10%;
   font-size: 2.4rem;
   font-style: none;
 }

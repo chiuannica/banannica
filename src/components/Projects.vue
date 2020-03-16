@@ -64,19 +64,21 @@ export default {
 
 <style>
 #projects{
-  max-width: 90%;
+  width: 80%;
   height: 100vh;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#projects > h2 {
+  text-align: center;
 }
 .project {
   background: #354051;
   color: #ebc1c5cc;
   box-sizing: border-box;
   padding: 2em;
-  margin: 2em;
   transition: border-left 0.7s;
+  margin: 0;
 }
 .project > .project-title{
   margin: 0;
@@ -101,7 +103,6 @@ export default {
   border-left: #ebc1c5cc solid 1vh;
 }
 .projects-grid{
-  padding: 5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1fr;
@@ -130,14 +131,20 @@ export default {
 @media screen and (max-width: 768px) {
   .projects-grid{
     display: block;
+    width: 100%;
     padding: auto;
-    margin: auto;
+    margin: 0;
   }
   .projects-grid > div {
     padding: 1%;
   }
   .project{
     margin-bottom: 2%;
+  }
+  #projects{
+    width: 96%;
+    height: 100vh;
+    margin: 0 2%;
   }
 }
 /*SHOW ON SCROLL ANIMATION*/
