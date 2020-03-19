@@ -61,10 +61,10 @@ export default {
             { id: 0, text: 'A few months ago, I wrote this story of my mentor impacting me in a way he will probably never know.' },
             { id: 0, text: '<i>"I was sitting at a school computer writing an essay. I started thinking of how alone I was and got really down on myself. I was resentful at my terrible luck, how alone I was, and how I had things to do while I just wanted to do nothing.</i>' },
             { id: 0, text: '<i>I continued to do my homework and someone called me. I had my earbuds in and I wasn’t even listening to music. It was the person who drove me to dragon boat practice a few times, and he had become a father-figure-mentor-idk person to me. At first, I thought it might have been a mistake. I answered and he told me he was on campus and wanted to grab lunch with me to catch up.</i>' },
-            { id: 0, text: '<i>I went and watched him eat because I had already eaten. He kept asking if I wanted anything and I kept denying because that’s just what I do. He listened to my problems and offered his advice. He said that if I ever go to a party and need a ride home that he would drive me home. It made me realize there are people who really care about me.</i>' },
+            { id: 0, text: '<i>I went and watched him eat because I had already eaten. He kept asking if I wanted anything and I kept denying because that’s just what I do. He listened to my problems and offered his advice. <strong>He said that if I ever go to a party and need a ride home that he would drive me home. It made me realize there are people who really care about me.</strong></i>' },
             { id: 0, text: '<i>What is pretty amazing is that I usually miss calls because I always have my phone on mute, but that time, I had my earphones in without even listening to music. Such a coincidence."</i>' },
             { id: 0, text: 'This happened around last year. Reading this back always makes me feel happier because I feel so lucky to have people who care about me in my life. He also brought me to my first soccer game and drove me to dragon boat practice too many times to count. He brought me out to eat sushi when I got my first internship.' },
-            { id: 0, text: 'It means a lot to me, and I will probably never be able to express my gratitude. I have baked him a pie and some cookies, but still, I probably won’t ever be able to repay him for what he has done for me.' },
+            { id: 0, text: '<strong>It means a lot to me, and I will probably never be able to express my gratitude.</strong> I have baked him a pie and some cookies, but still, I probably won’t ever be able to repay him for what he has done for me.' },
             { id: 0, text: 'There are plenty of other mentors in my life. I can think of them all right now. There are plenty of them on my dragon boat team. They have watched me grow up from a sophomore in high school to a sophomore in college. There are plenty of things they have done to make me happy.' },
             { id: 0, text: 'The coach bought my friend and I ice cream twice. Someone went with me to the gym and showed me workouts to do. Someone else talked to me about stocks and told me to open a Roth IRA. They are always willing to listen and give advice. There are plenty of other things people on this team have done for me. There are too many to list and it would just get redundant if I did. ' },
             { id: 0, text: 'The mentors in my life may never understand the impact they have had on me and I am grateful to have them in my life.' }
@@ -81,7 +81,7 @@ export default {
           paragraphs: [
             { id: 0, text: 'I saw an article written for <em>The Atlantic</em> called, <a href="https://www.theatlantic.com/ideas/archive/2020/01/american-housing-has-gone-insane/605005/">“Why Manhattan’s Skyscrapers Are Empty.”</a> Without reading the article, I thought of the title as a way of thinking of myself.' },
             { id: 1, text: 'In basic terms, the article is about how there are not enough affordable housing options for people who are low or middle class, while there are empty apartments in Manhattan skyscrapers. This causes less homeownership in younger people and homelessness.' },
-            { id: 2, text: 'I continue to develop myself, as Manhattan does. Manhattan builds skyscrapers, I build titles on my resume. While Manhattan has, what the author calls, “stalagmites” growing from the ground, the city still has an alarming homeless population. This makes me think of how I am growing through experience, but I still have the same underlying problems that keep me from truly feeling secure with myself.' },
+            { id: 2, text: 'I continue to develop myself, as Manhattan does. Manhattan builds skyscrapers, I build titles on my resume. While Manhattan has, what the author calls, “stalagmites” growing from the ground, the city still has an alarming homeless population. This makes me think of how <strong>I am growing through experience, but I still have the same underlying problems that keep me from truly feeling secure with myself.</strong>' },
             { id: 3, text: 'In high school, I was very sad. I became bitter because of the vicious competition at my school. I saw it in my friends. I think of my high school friends as acquisitionary, if that is even a word. They were focused on attaining goals and points to use to impress colleges. Many of them succeeded in that and continue to acquire titles, as many of my friends study in the Ivy League.' },
             { id: 4, text: 'The mindset of acquisition is still what hurts my mind. It gives me a false purpose to want to continue building up my skyscrapers, or my resume, while I still have homeless people on the streets, or my problems. ' },
             { id: 5, text: 'I have improved myself by starting to exercise regularly, being more conscious of what I eat, and acknowledging my narcolepsy. I have built strong connections with high school students who have the same struggles I did and have a sense of purpose for my work. With all of these improvements, I still feel as though the tall buildings I have are empty. ' }
@@ -155,7 +155,7 @@ export default {
           author: 'Annica',
           paragraphs: [
             { id: 0, text: 'My group at HopHacks consisted of three other guys and me. Many hackathons follow this judging format: the judges went to the table number of the projects that fit under their category. The presenters would have to present multiple times. For one of the judges, I was talked over every time I tried to speak.' },
-            { id: 1, text: 'When groups present, it looks bad if everyone doesn’t speak. It looks especially bad if the one underrepresented minority doesn’t speak. As the girl in the team of guys, I was trying to get my word in to prove that I wasn’t there for decoration.' },
+            { id: 1, text: 'When groups present, it looks bad if everyone doesn’t speak. It looks especially bad if the one underrepresented minority doesn’t speak. As the girl in the team of guys, <strong>I was trying to get my word in to prove that I wasn’t there for decoration.</strong>' },
             { id: 2, text: 'I tried to speak at least five times and was spoken over by a guy every time. Two dudes kept interrupting me. I was not being neutral at all. I was literally making sounds and got cut off.' },
             { id: 3, text: 'Me: “Th-” <br>Guy 1: “Blah blah blah…” <br>Me: “Yeah and-” <br>Guy 2: “Yada yada yada...” <br>Judge: “Orly… Cool!” <br>Me: “Our-” <br>Guy 1: “Foo bar foo bar…” <br>Me: “Ye-” <br>Guy 2: “Lala...” <br>Me: *gives up*' },
             { id: 4, text: 'After the last time, I gave up and let the two who kept cutting me off talk. I tried to speak so many times I am pretty sure the two dudes and the judge noticed at least once. Apparently anything I say will just make us lose points.' },
@@ -223,7 +223,7 @@ export default {
             { id: 3, text: 'Every day, I scrambled to make materials for upcoming lessons, and I was so terrified of looking like I didn’t know what I was doing. Admittedly, they weren’t the greatest lesson plans, and I could have mapped out the course better. I wish I could have had more time to give more assignments.' },
             { id: 4, text: 'Honestly, I did a pretty good job. The end products were great for the time the students had. I was so happy when the students showed me their projects. They made projects on imaginary restaurants, best basketball team lists, and random other things.' },
             { id: 5, text: 'My goal was to introduce the students to basic web development and push one to go deeper into the subject. I really really hope one of them is making websites for fun using what they have learned.' },
-            { id: 6, text: 'I learned a lot from being on the other side. I learned what it is like to be so passionate about a subject and teach students who don’t care nearly as much. I learned that you can offer all the resources in the world, but the students don’t care enough to use them.' },
+            { id: 6, text: 'I learned a lot from being on the other side. <strong>I learned what it is like to be so passionate about a subject and teach students who don’t care nearly as much.</strong> I learned that you can offer all the resources in the world, but the students don’t care enough to use them.' },
             { id: 6, text: 'Becoming a teacher taught me to appreciate my teachers and professors. I realized how much of a terrible student I am. I promise I will try to be a better student for my teachers by participating in class and seeking help.' },
             { id: 8, text: 'That being said, I know I will continue to teach web development and coding languages for as long as I can. More students should learn about these technologies, because they are essential tools for the future!' }
           ],
@@ -241,8 +241,8 @@ h5 {
 }
 #blog {
   display: block;
-  max-width: 120vh;
-  margin: 0 10%;
+  max-width: 70em;
+  margin: 0 auto;
 }
 #blog > h2 {
   text-align: center;

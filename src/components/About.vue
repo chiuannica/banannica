@@ -34,11 +34,11 @@ export default {
 </script>
 
 <style>
-#about {
-  width: 85%;
+.content {
+  width: 80%;
   min-height: 50vh;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 #about > h2 {
   text-align: center;
