@@ -2,16 +2,13 @@
   <div id="blog">
     <h2>{{ title }} <i :class="navIcon"></i><p>{{ navText }}</p></h2>
     <div id="blog-nav">
-      <a :key="blog.id" v-for="blog in blogs" :href="blog.link" v-on:click="blog.showBlog = !blog.showBlog">
-        <div class="blog-nav-item">
+      <div :key="blog.id" v-for="blog in blogs">
+        <a class="blog-nav-item" v-on:click="blog.showBlog = !blog.showBlog">
           <p>{{ blog.date }}: {{ blog.title }}</p>
-        </div>
-      </a>
-    </div>
-    <div id="content">
-      <article v-show="blog.showBlog" :key="blog.date" :id="blog.id" v-for="blog in blogs">
-        <div class="clickable" v-on:click="blog.showBlog = !blog.showBlog">
-          <h5 class="blog-title">{{ blog.title }}</h5>
+        </a>
+        <article v-show="blog.showBlog" :key="blog.date" :id="blog.id">
+        <div>
+          <h5 class="blog-title" v-on:click="blog.showBlog = !blog.showBlog">{{ blog.title }}</h5>
           <p>{{ blog.date }} by {{ blog.author }}</p>
         </div>
         <div class="blog-body">
@@ -20,7 +17,9 @@
             <p v-html="paragraph.text"></p>
           </div>
         </div>
+        <a class="blog-close-btn" v-on:click="blog.showBlog = !blog.showBlog">Close this blog</a>
       </article>
+      </div>
     </div>
   </div>
 </template>
@@ -52,7 +51,6 @@ export default {
         */
         {
           id: 8,
-          link: '#8',
           title: 'Mentorship and Me',
           date: '2/23/2020',
           author: 'Annica',
@@ -73,7 +71,6 @@ export default {
         },
         {
           id: 7,
-          link: '#7',
           title: 'My Empty Skyscrapers',
           date: '1/21/2020',
           author: 'Annica',
@@ -91,7 +88,6 @@ export default {
         },
         {
           id: 6,
-          link: '#6',
           title: 'Trust the Process',
           date: '12/24/2019',
           author: 'Annica',
@@ -113,7 +109,6 @@ export default {
         },
         {
           id: 5,
-          link: '#5',
           title: 'Happy Every Day',
           date: '10/25/2019',
           author: 'Annica',
@@ -131,7 +126,6 @@ export default {
         },
         {
           id: 4,
-          link: '#4',
           title: 'codeLinc 6.0: Civil Rights and 1st Place',
           date: '10/6/2019',
           author: 'Annica',
@@ -149,7 +143,6 @@ export default {
         },
         {
           id: 3,
-          link: '#3',
           title: 'HopHacks: Let Me Speak!',
           date: '9/24/2019',
           author: 'Annica',
@@ -170,7 +163,6 @@ export default {
         },
         {
           id: 2,
-          link: '#2',
           title: 'HopHacks: Face Tech\'s Reality',
           date: '9/20/2019',
           author: 'Annica',
@@ -192,7 +184,6 @@ export default {
         },
         {
           id: 1,
-          link: '#1',
           title: 'Is Tech Sexism Real?',
           date: '9/8/2019',
           author: 'Annica',
@@ -265,34 +256,42 @@ h5 {
 .blog-nav-item:hover {
   background: hsl(216, 21%, 13%);
   border-left: #ebc1c5cc solid 1vh;
-}
-#content {
-  display: block;
-  margin-left: 3%;
+  cursor: pointer;
 }
 article {
   margin: .5% 0;
   padding: 1%;
   transition: border-left 0.7s;
 }
-.clickable {
-  cursor: pointer;
-}
 .blog-title {
   color: #354051;
-  border-left: #354051 solid 0.5vh;
+  border-left: #354051 solid 1vh;
   padding-left: 1%;
   margin-bottom: 0;
   transition: all 0.7s;
+  cursor: pointer;
 }
 .blog-title:hover {
   color: hsl(216, 21%, 13%);
-  border-left: hsl(216, 21%, 13%) solid 1vh;
+  border-left: hsl(216, 21%, 13%) solid 0.5vh;
   transition: all 0.7s;
 }
 .blog-img {
   max-width: 25em;
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+}
+.blog-close-btn {
+  color: #354051;
+  border-left: #354051 solid 1vh;
+  padding-left: 1%;
+  margin-bottom: 0;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+.blog-close-btn:hover{
+  color: hsl(216, 21%, 13%);
+  border-left: hsl(216, 21%, 13%) solid 0.5vh;
+  transition: all 0.7s;
 }
 @media screen and (max-width: 768px) {
   #blog {
