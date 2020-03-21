@@ -50,6 +50,26 @@ export default {
         },
         */
         {
+          id: 9,
+          title: 'My Proudest Moment',
+          date: '3/21/2020',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: 'Yesterday, a student who I have built a relationship with for almost two years told me he received a full-tuition scholarship to college. He told me right after he told his parents.' },
+            { id: 1, text: 'I had written a letter of recommendation for his application to this college as his Computer Science instructor. I have also been working with him since September on his college applications. I knew from the beginning his work would pay off in his college applications, but the news really seals the deal.' },
+            { id: 2, text: 'To summarize what I do, I help a group of seniors apply to college by offering my advice, reading over their essays, or helping them brainstorm prompts. These seniors are low-income first-generation students. They are the students who need college the most, and need the most help to access it.' },
+            { id: 3, text: 'This is one of the proudest moments in my life because my investment is paid off. This student is just like me. We both are first-generation, children of immigrants, and current/former Philadelphia school district students. ' },
+            { id: 31, text: 'First-gen students struggle with the college process because no one in our family knows English well enough to help us, our public schools don’t have enough resources going towards college access, and we don’t know how to ask for help. First-generation and the children of immigrants don’t know how to reach out because we are used to helping ourselves and don’t want to look weak. It is up to people who have been through it to reach out.' },
+            { id: 4, text: 'I remember being a senior in high school. As a senior, I wrote a few dark journal entries. They are upsetting to read. I was lost, overwhelmed, and afraid of my future, not to mention my undiagnosed narcolepsy. I was angry that my family couldn’t help me apply to college. My parents still don’t know what the FAFSA is. My counselor didn’t like me. I became resentful because of my stress and lack of sleep. I know that I am not alone in being resentful because of the expectations of seniors. ' },
+            { id: 5, text: 'A couple months ago, a portion of the seniors I was working with were extremely overwhelmed by their obligations. They needed to work on college applications and had to study for an upcoming final in a college class they were taking at the community college. They were caught in the middle of a disagreement and got lectured at. I could see the steam rising from their heads. I tried to empathize. As I gave one of the students a hug, they said, <strong>“thanks, I haven’t had that in a while.”</strong>' },
+            { id: 6, text: 'I can still hear this comment and the tone of this person’s voice clearly in my head. It reminded me of the anger and hopelessness I had as a senior and it told me that plenty of other students feel the same way. Seniors are under extreme pressure, especially if they are the first in their family to go to college. ' },
+            { id: 7, text: 'The students’ non-college-educated parents expect them to go to college to get a high paying job to lift their family to the next class. The students expect themselves to pay back their parents for their sacrifices. The counselors expect the students to be applying to scholarships and colleges. The teachers expect the students to keep getting high grades in class. The colleges don’t care that their entire system is catered towards those who have more, and expect students to have a plan to save the world. All of this, while these students haven\'t even voted in their first election yet.' },
+            { id: 8, text: 'This proud moment shows that my effort in mentoring these students has gone somewhere. I wish that no 17 or 18 year old student would have to be under this pressue and that ould make more of a dent in this issue. ' },
+            { id: 9, text: 'Still, this is a great accomplishment. I am glad that my effort has gone somewhere. After all of this, one student receives the award he deserves.' }
+          ],
+          showBlog: false
+        },
+        {
           id: 8,
           title: 'Mentorship and Me',
           date: '2/23/2020',
