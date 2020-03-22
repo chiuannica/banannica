@@ -39,8 +39,16 @@ export default {
   font-family: 'Roboto';
   src: url('assets/Roboto-Light.ttf');
 }
+@font-face {
+  font-family: 'Lora';
+  src: url('assets/Lora-Regular.ttf');
+}
+@font-face {
+  font-family: 'Catamaran';
+  src: url('assets/Catamaran-Regular.ttf');
+}
 #app {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   -webkit-font-smoothin: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
