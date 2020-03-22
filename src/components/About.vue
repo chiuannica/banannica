@@ -23,7 +23,7 @@ export default {
       aboutIcon: 'fa fa-female',
       texts: [
         { p: '<h6>Hi! I\'m Annica.</h6>' },
-        { p: 'I am studying Information Science & Technology at Temple University.' },
+        { p: 'I am studying Information Science & Technology at Temple University. One day, I will have a Master\'s degree, and maybe a doctorate.' },
         { p: 'I teach high school students to code at Upward Bound.' },
         { p: 'I like to sleep and listen to Bloomberg podcasts.' }
       ],
