@@ -23,9 +23,10 @@ export default {
       aboutIcon: 'fa fa-female',
       texts: [
         { p: '<h6>Hi! I\'m Annica.</h6>' },
-        { p: 'I am studying Information Science & Technology at Temple University. One day, I will have a Master\'s degree, and maybe a doctorate.' },
+        { p: 'I am studying Information Science & Technology at Temple University.' },
+        { p: 'I used to want to be a writer, now I want to be a coder, but I still write on my blog!' },
         { p: 'I teach high school students to code at Upward Bound.' },
-        { p: 'I like to sleep and listen to Bloomberg podcasts.' }
+        { p: 'I like to sleep, eat chocolate, and listen to Bloomberg podcasts.' }
       ],
       resume: { p: 'I am on LinkedIn!', link: 'https://www.linkedin.com/in/annica-chiu-45369a17b/' }
     }

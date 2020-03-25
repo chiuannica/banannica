@@ -34,7 +34,7 @@ export default {
         },
         {
           id: 1,
-          name: 'ACM-W Website',
+          name: 'ACM -W Website',
           description: 'A website for Temple\'s chapter of the Association of Computing Machinery',
           tools: 'Vue, JavaScript, HTML/CSS',
           link: 'https://tu-acmw.onrender.com',
@@ -83,6 +83,7 @@ export default {
 .project > .project-title{
   margin: 0;
   font-size: 3em;
+  line-height: 1;
 }
 .project > a {
   padding-left: 1%;
