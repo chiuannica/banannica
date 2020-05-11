@@ -1,5 +1,6 @@
 <template>
   <div id="home">
+    <!--
     <main>
       <div class="circle">
         <div class="circle-content">
@@ -11,6 +12,7 @@
         <a :key="link.id" v-for="link in links" :href="link.link">{{ link.name }}</a>
       </div>
     </main>
+    -->
     <About></About>
     <Projects></Projects>
   </div>
