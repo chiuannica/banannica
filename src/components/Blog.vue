@@ -36,7 +36,6 @@ export default {
         /*
         {
           id: 1000,
-          link: '#1000',
           title: 'Title',
           date: '0/0/2020',
           author: 'Annica',
@@ -49,6 +48,19 @@ export default {
           showBlog: false
         },
         */
+        {
+          id: 10,
+          title: 'Defining “Success”',
+          date: '5/1/2020',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: 'During the rule of Queen Rona, I have had more time to sleep, eat, and think.' },
+            { id: 1, text: 'In one of my earlier blog posts, “My Empty Skyscrapers,” I wrote about how I acquire and acquire, and still remain unsatisfied. It is kind of like how I eat and eat, and still get hungry, especially now that I am inside all day. ' },
+            { id: 2, text: 'I learned that I am chasing an image that will never satisfy me. In my head, I have an image of the future me smiling, with everything I want right now. It is fake and will never be realized, yet it rules my life. I have plenty of things I have wanted before, and I am still unsatisfied and chasing new images. I work towards these images to be successful in the eyes of others. I need to learn to pursue my own definition of success. ' },
+            { id: 3, text: 'I really don\'t know what my own definition of success means. I guess I just have to do things until I know.' }
+          ],
+          showBlog: false
+        },
         {
           id: 9,
           title: 'My Proudest Moment',
