@@ -59,7 +59,7 @@ export default {
             { id: 0, text: 'I just got rejected to an opportunity that I really wanted and I am slightly, actually extremely, upset. The world is my enemy! The world is out to get me! My efforts are futile!' },
             { id: 1, text: 'That is what I thought immediately after, then I remembered that it is good to be rejected.' },
             { id: 2, text: 'Being rejected tons of times taught me that rejection is a good thing. Although it is hard to accept, rejection means the thing isn’t right for me and that I should use my capacity for something else. A key example is when I got rejected by Company A. I am glad I got rejected by them because if I didn’t, I wouldn’t have applied and been accepted by Company B (so suck it, Company A).' },
-            { id: 3, text: 'Before I got my super cool job helping high school students code and write college essays, I applied to a zillion random jobs. I applied everywhere because I was desperate for a job, Starbucks, Staples, Chipotle, and some other places I don’t care about. I am very happy that they all rejected me because if they didn’t, I wouldn’t have applied to my current job (so suck it).' },
+            { id: 3, text: 'Before I got my super cool job helping high school students code and write college essays, I applied to a zillion random jobs. I applied everywhere because I was desperate for a job: Starbucks, Staples, Chipotle, and some other places I don’t care about. I am happy that they all rejected me because if they didn’t, I wouldn’t have applied to my current job (so suck it).' },
             { id: 4, text: 'Thank u, next.' }
           ],
           showBlog: false
