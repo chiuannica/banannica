@@ -49,12 +49,28 @@ export default {
         },
         */
         {
+          id: 12,
+          title: 'I want to be me',
+          date: '5/28/2020',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: 'This blog post is related to “Dealing With Rejection.”' },
+            { id: 1, text: 'I have been successful and unsuccessful at many interviews. Sometimes, the interviewer just doesn’t like me. Maybe it is something about how I look or speak. The person might be having a bad day or something I said put them off. ' },
+            { id: 2, text: 'The goal of an interview is to please the interviewer. To please the interviewer, we have to be “professional.” Our answers need a “professional” mask over them. It’s more like “artificial” to me.' },
+            { id: 3, text: 'I don’t want to be somebody. I want to be me. <strong>I am tired of acting “professional” at the expense of who I am. </strong>' },
+            { id: 4, text: '<iframe width="560" height="315" src="https://www.youtube.com/embed/fE2h3lGlOsk?start=177" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' },
+            { id: 5, text: 'I love KPop. I love cats. I love to cook runny scrambled eggs. I am me. Why do I have to hide the “unprofessional” side of me? ' },
+            { id: 6, text: 'I started my job tutoring high school students and became a figure of authority to people, some of whom were a few months younger than me. I had to appear to have some maturity. I spent so much time thinking of what other people thought of me and became miserable being someone I am not.' },
+            { id: 7, text: 'I relinquish ingenuine Annica!' }
+          ],
+          showBlog: false
+        },
+        {
           id: 11,
           title: 'Dealing With Rejection',
           date: '5/27/2020',
           author: 'Annica',
           paragraphs: [
-            { id: 5, text: 'This song is not entirely related, but I like it, so here it is.' },
             { id: 5, text: '<iframe width="560" height="315" src="https://www.youtube.com/embed/gl1aHhXnN1k?start=39" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' },
             { id: 0, text: 'I just got rejected to an opportunity that I really wanted and I am slightly, actually extremely, upset. The world is my enemy! The world is out to get me! My efforts are futile!' },
             { id: 1, text: 'That is what I thought immediately after, then I remembered that it is good to be rejected.' },
@@ -340,6 +356,10 @@ article {
   color: hsl(216, 21%, 13%);
   border-left: hsl(216, 21%, 13%) solid 0.5vh;
   transition: all 0.7s;
+}
+iframe, .desc {
+  border-left: #ebc1c5cc solid 1vh;
+  padding-left: 1%;
 }
 @media screen and (max-width: 768px) {
   #blog {

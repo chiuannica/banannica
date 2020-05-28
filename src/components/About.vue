@@ -25,7 +25,7 @@ export default {
         { p: '<h6>Hi! I\'m Annica.</h6>' },
         { p: 'I am studying <strong>Information Science & Technology at Temple University.</strong>' },
         { p: 'I like to write code and English. I teach high school students to code at Upward Bound and help students with their college essays.' },
-        { p: 'In my freetime, I code, sleep, eat chocolate, and listen to finance podcasts.' }
+        { p: 'In my freetime, I code, sleep, write, and make bubble tea.' }
       ],
       resume: { p: 'I am on LinkedIn!', link: 'https://www.linkedin.com/in/annica-chiu-45369a17b/' }
     }
