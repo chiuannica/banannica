@@ -18,7 +18,7 @@ export default {
   name: 'About',
   data () {
     return {
-      title: 'About Annica',
+      title: 'About Me',
       myPicture: require('@/assets/me.jpg'),
       aboutIcon: 'fa fa-female',
       texts: [
@@ -34,11 +34,16 @@ export default {
 </script>
 
 <style>
+#about {
+  width: 100%;
+}
 .content {
   width: 80%;
   min-height: 50vh;
   margin-left: 10%;
   margin-right: 10%;
+  justify-content: center;
+  align-content: center;
 }
 #about > h2 {
   text-align: center;

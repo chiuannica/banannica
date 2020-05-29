@@ -360,6 +360,7 @@ article {
 iframe, .desc {
   border-left: #ebc1c5cc solid 1vh;
   padding-left: 1%;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   #blog {
