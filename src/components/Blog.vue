@@ -9,7 +9,9 @@
         <article v-show="blog.showBlog" :key="blog.date" :id="blog.id">
         <div>
           <h5 class="blog-title" v-on:click="blog.showBlog = !blog.showBlog">{{ blog.title }}</h5>
-          <p>{{ blog.date }} by {{ blog.author }}</p>
+          <!--
+            <p>{{ blog.date }} by {{ blog.author }}</p>
+          -->
         </div>
         <div class="blog-body">
           <img class="blog-img" :src="blog.img">
@@ -17,7 +19,7 @@
             <p v-html="paragraph.text"></p>
           </div>
         </div>
-        <a class="blog-close-btn" v-on:click="blog.showBlog = !blog.showBlog">Close this blog</a>
+        <a class="blog-close-btn" v-on:click="blog.showBlog = !blog.showBlog">Close “{{blog.title}}”</a>
       </article>
       </div>
     </div>
@@ -76,7 +78,6 @@ export default {
             { id: 1, text: 'That is what I thought immediately after, then I remembered that it is good to be rejected.' },
             { id: 2, text: 'Being rejected tons of times taught me that rejection is a good thing. Although it is hard to accept, rejection means the thing isn’t right for me and that I should use my capacity for something else. A key example is when I got rejected by Company A. I am glad I got rejected by them because if I didn’t, I wouldn’t have applied and been accepted by Company B (so suck it, Company A).' },
             { id: 3, text: 'Before I got my super cool job helping high school students code and write college essays, I applied to a zillion random jobs. I applied everywhere because I was desperate for a job: Starbucks, Staples, Chipotle, and some other places I don’t care about. I am happy that they all rejected me because if they didn’t, I wouldn’t have applied to my current job (so suck it).' },
-            { id: 4, text: 'Thank u, next.' }
           ],
           showBlog: false
         },
