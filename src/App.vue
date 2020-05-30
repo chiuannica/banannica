@@ -89,4 +89,15 @@ a {
   text-decoration: none;
   transition: color 0.7s;
 }
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 1.2rem;
+  }
+  a {
+    font-size: 1.2rem;
+  }
+  h1, h2, h3, h4, h5 {
+    font-size: 1.8rem;
+  }
+}
 </style>

@@ -143,5 +143,8 @@ export default {
     margin-right: 2%;
     margin-bottom: 5%;
   }
+  .project > .project-title{
+    font-size: 1.4rem;
+  }
 }
 </style>

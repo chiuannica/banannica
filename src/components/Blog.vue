@@ -311,7 +311,7 @@ h5 {
 .blog-nav-item {
   display: grid;
   padding: 0% 1%;
-  margin-bottom: 0.5%;
+  margin-bottom: 1.5%;
   border-left: hsl(216, 21%, 13%) solid 0.5vh;
   color: #ebc1c5cc;
   background: hsl(216, 21%, 26%);
@@ -373,9 +373,6 @@ iframe {
   .blog-nav-row {
     display: block;
     width: 90%;
-  }
-  .blog-nav-item {
-    margin-bottom: 2%;
   }
 }
 </style>

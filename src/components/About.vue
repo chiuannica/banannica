@@ -70,6 +70,9 @@ export default {
     margin: 0;
     width: 100%;
   }
+  h6 {
+    font-size: 1.4rem;
+  }
   .content {
     display: block;
     width: 100%;
