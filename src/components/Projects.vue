@@ -2,15 +2,12 @@
   <div id="projects">
     <h2>{{ title }} <i :class="projectsIcon"></i></h2>
     <div class="projects-grid">
-      <div :key=project.id class="project magic-project show-on-scroll" v-for="project in projects">
+      <div :key=project.id class="project" v-for="project in projects">
         <h4 class="project-title">{{ project.name }}</h4>
         <p>{{ project.description }}</p>
         <p>{{ project.tools }}</p>
         <a :href="project.link">Website</a><br>
         <a :href="project.github">GitHub</a>
-        <!--
-          <embed :src="project.link" width="50%" height=""></embed>
-        -->
       </div>
     </div>
   </div>
@@ -65,9 +62,9 @@ export default {
 <style>
 #projects{
   width: 80%;
-  height: 100vh;
   margin-left: 10%;
   margin-right: 10%;
+  overflow-Y: hidden;
 }
 #projects > h2 {
   text-align: center;
@@ -79,6 +76,7 @@ export default {
   padding: 2em;
   transition: border-left 0.7s;
   margin: 0;
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
 .project > .project-title{
   margin: 0;
@@ -130,45 +128,20 @@ export default {
   grid-row: 2;
 }
 @media screen and (max-width: 768px) {
-  .projects-grid{
-    display: block;
+  #projects{
     width: 100%;
-    padding: auto;
     margin: 0;
   }
-  .projects-grid > div {
-    padding: 1%;
+  .projects-grid{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .project{
-    margin-bottom: 2%;
+    padding: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
   }
-  #projects{
-    width: 96%;
-    height: 100vh;
-    margin: 0 2%;
-  }
-}
-/*SHOW ON SCROLL ANIMATION*/
-.magic-project {
-  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
-  opacity: 0;
-  transform: translateY(6em);
-  transition: transform 4s .25s cubic-bezier(0,1,0.3,1),
-              opacity .3s .25s ease-out;
-  width: 100%;
-  will-change: transform, opacity;
-}
-.magic-project:nth-child(even) {
-  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
-  opacity: 0;
-  transform: translateY(-6em);
-  transition: transform 4s .25s cubic-bezier(0,1,0.3,1),
-              opacity .3s .25s ease-out;
-  width: 100%;
-  will-change: transform, opacity;
-}
-.magic-project.is-visible {
-  opacity: 1;
-  transform: rotateZ(0deg);
 }
 </style>

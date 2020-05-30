@@ -53,6 +53,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   color: #354051;
+  width: 100%;
 }
 body {
   line-height: 1.2;
@@ -87,27 +88,5 @@ a {
   font-size: 1.4rem;
   text-decoration: none;
   transition: color 0.7s;
-}
-.magic-text {
-  opacity: 0;
-  transform: translateY(4em);
-  transition: transform 4s .25s cubic-bezier(0,1,0.3,1),
-              opacity .3s .25s ease-out;
-  will-change: transform, opacity;
-}
-.magic-text.is-visible {
-  opacity: 1;
-  transform: rotateZ(0deg);
-}
-.magic-text-bottom {
-  opacity: 0;
-  transform: translateY(-4em);
-  transition: transform 4s .25s cubic-bezier(0,1,0.3,1),
-              opacity .3s .25s ease-out;
-  will-change: transform, opacity;
-}
-.magic-text-bottom.is-visible {
-  opacity: 1;
-  transform: rotateZ(0deg);
 }
 </style>

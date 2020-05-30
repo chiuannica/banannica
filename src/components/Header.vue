@@ -1,5 +1,5 @@
 <template>
-  <nav class="show-on-scroll magic-text-bottom">
+  <nav>
     <div :key=tab.id v-for="tab in tabs">
       <router-link :onclick="tab.func" :to="tab.link" exact>{{ tab.title }}</router-link>
     </div>
