@@ -73,8 +73,8 @@ export default {
     margin: 0;
   }
   .text {
-  width: 98%;
-  margin-left: 2%;
+    width: 98%;
+    margin-left: 2%;
   }
   .my-picture {
     width: 40%;

@@ -11,7 +11,7 @@ export default {
   data () {
     return {
       tabs: [
-        {title: 'Home', link: '/', func: 'window.location.reload()', id: 0},
+        {title: 'Home', link: '/', func: 'null', id: 0},
         {title: 'Blog', link: '/blog', func: null, id: 1},
         {title: 'Contact', link: '/contact', func: null, id: 2}
       ]
