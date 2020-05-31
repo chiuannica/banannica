@@ -73,6 +73,7 @@ export default {
           date: '5/27/2020',
           author: 'Annica',
           paragraphs: [
+            { id: 5, text: 'Thank you, next to this program that rejected me.' },
             { id: 5, text: '<iframe width="560" height="315" src="https://www.youtube.com/embed/gl1aHhXnN1k?start=39" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' },
             { id: 0, text: 'I got rejected by a program that I really wanted to be part of and I am slightly, actually extremely, upset. The world is my enemy! The world is out to get me! My efforts are futile!' },
             { id: 1, text: 'That is what I thought immediately after, then I remembered that it is good to be rejected.' },

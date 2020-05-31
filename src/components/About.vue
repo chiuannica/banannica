@@ -78,7 +78,7 @@ export default {
   }
   .my-picture {
     width: 40%;
-    margin-left: 30%;
+    margin-left: 20%;
     margin-right: 30%;
   }
 }
