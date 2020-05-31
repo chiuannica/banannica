@@ -57,7 +57,7 @@ export default {
 }
 .text {
   width: 90%;
-  margin: 0 5%;
+  margin-left: 5%;
 }
 @media screen and (max-width: 768px) {
   #about {
@@ -71,6 +71,10 @@ export default {
     display: block;
     width: 100%;
     margin: 0;
+  }
+  .text {
+  width: 98%;
+  margin-left: 2%;
   }
   .my-picture {
     width: 40%;
