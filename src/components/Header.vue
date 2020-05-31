@@ -20,7 +20,7 @@ export default {
 }
 </script>
 <style scoped>
-a{
+a {
   text-align: center;
   text-decoration: none;
   position: relative;
@@ -38,6 +38,7 @@ a:after{
   background: rgba(235, 193, 197, 0.55);
   transition: 0.7s;
   z-index: -10;
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
 a.block{
   display: block;

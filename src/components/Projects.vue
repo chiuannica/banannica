@@ -34,7 +34,7 @@ export default {
           name: 'ACM -W Website',
           description: 'A website for Temple\'s chapter of the Association of Computing Machinery',
           tools: 'Vue, JavaScript, HTML/CSS',
-          link: 'https://tu-acmw.onrender.com',
+          link: 'https://tuacmw.com',
           github: 'https://github.com/chiuannica/acmw-vue'
         },
         {
@@ -62,9 +62,8 @@ export default {
 <style>
 #projects{
   width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  overflow-Y: hidden;
+  margin: 10%;
+  margin-top: 0;
 }
 #projects > h2 {
   text-align: center;
@@ -85,9 +84,10 @@ export default {
 }
 .project > a {
   padding-left: 1%;
-  border-left: hsl(216, 21%, 13%) solid 0.5vh;
+  border-left: hsl(217, 4%, 44%) solid 0.5vh;
   color: #ebc1c5cc;
   transition: border-left 0.7s;
+  line-height: 2rem;
 }
 .project > a:hover {
   border-left: #ebc1c5cc solid 1vh;

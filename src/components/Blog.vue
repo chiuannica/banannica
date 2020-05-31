@@ -4,7 +4,7 @@
     <div id="blog-nav">
       <div :key="blog.id" v-for="blog in blogs">
         <a class="blog-nav-item" v-on:click="blog.showBlog = !blog.showBlog">
-          <p>{{ blog.date }}: {{ blog.title }}</p>
+          <p> {{ blog.title }}</p> <p class="date">{{ blog.date }}</p>
         </a>
         <article v-show="blog.showBlog" :key="blog.date" :id="blog.id">
         <div>
@@ -310,13 +310,18 @@ h5 {
 }
 .blog-nav-item {
   display: grid;
+  grid-template-columns: 3fr 1fr;
   padding: 0% 1%;
   margin-bottom: 1.5%;
   border-left: hsl(216, 21%, 13%) solid 0.5vh;
   color: #ebc1c5cc;
   background: hsl(216, 21%, 26%);
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
   text-decoration: none;
   transition: 0.7s;
+}
+.date {
+  text-align: right;
 }
 .blog-nav-item:hover {
   background: hsl(216, 21%, 13%);
@@ -373,6 +378,9 @@ iframe {
   .blog-nav-row {
     display: block;
     width: 90%;
+  }
+  .blog-title {
+    font-size: 1.4rem;
   }
 }
 </style>

@@ -29,7 +29,9 @@ export default {
 
 <style>
 #contact {
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 #contact > h2 {
   text-align: center;
@@ -51,7 +53,7 @@ export default {
 @media screen and (max-width: 768px) {
   .contact-links {
     display: block;
-    margin: 10%;
+    margin: 15%;
   }
 }
 </style>
