@@ -6,9 +6,6 @@
         <p v-for="text in texts" :key="text.id" v-html="text.p"></p>
       </div>
       <img class="my-picture" :src="myPicture" alt="picture of me">
-      <!--
-      <a :href="resume.link">{{ resume.p }}</a>
-      -->
     </div>
   </div>
 </template>
@@ -26,8 +23,7 @@ export default {
         { p: 'I am studying <strong>Information Science & Technology at Temple University.</strong>' },
         { p: 'I like to write code and English. I teach high school students to code at Upward Bound and help students with their college essays.' },
         { p: 'In my freetime, I code, sleep, write, and make bubble tea.' }
-      ],
-      resume: { p: 'I am on LinkedIn!', link: 'https://www.linkedin.com/in/annica-chiu-45369a17b/' }
+      ]
     }
   }
 }
@@ -60,7 +56,8 @@ export default {
   margin-bottom: 10%;
 }
 .text {
-  margin: 0 3%;
+  width: 90%;
+  margin: 0 5%;
 }
 @media screen and (max-width: 768px) {
   #about {
