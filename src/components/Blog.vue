@@ -1,6 +1,7 @@
 <template>
   <div id="blog">
-    <h2>{{ title }} <i :class="navIcon"></i><p>{{ navText }}</p></h2>
+    <h2>{{ title }} <i :class="navIcon"></i></h2>
+    <p class="nav-text">{{ navText }}</p>
     <div id="blog-nav">
       <div :key="blog.id" v-for="blog in blogs">
         <a class="blog-nav-item" v-on:click="blog.showBlog = !blog.showBlog">
@@ -19,7 +20,9 @@
             <p v-html="paragraph.text"></p>
           </div>
         </div>
-        <a class="blog-close-btn" v-on:click="blog.showBlog = !blog.showBlog">Close “{{blog.title}}”</a>
+        <div class="blog-close-wrapper">
+          <button class="blog-close-btn" v-on:click="blog.showBlog = !blog.showBlog">Close “{{blog.title}}”</button>
+        </div>
       </article>
       </div>
     </div>
@@ -309,6 +312,9 @@ h5 {
   grid-template-rows: auto;
   margin: 0% 3%;
 }
+.nav-text {
+  text-align: center;
+}
 .blog-nav-item {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -336,32 +342,42 @@ article {
 }
 .blog-title {
   color: #354051;
-  border-left: #354051 solid 1vh;
-  padding-left: 1%;
+  text-align: center;
   margin-bottom: 0;
-  transition: all 0.7s;
   cursor: pointer;
+  transition: all 0.7s;
 }
 .blog-title:hover {
   color: hsl(216, 21%, 13%);
-  border-left: hsl(216, 21%, 13%) solid 0.5vh;
   transition: all 0.7s;
 }
 .blog-img {
   max-width: 25em;
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
+.blog-close-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
 .blog-close-btn {
-  color: #354051;
-  border-left: #354051 solid 1vh;
-  padding-left: 1%;
-  margin-bottom: 0;
+  font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+  display: block;
+  color: #ebc1c5cc;
+  background: #354051;
+  border: 0;
+  border-radius: 0.5vh;
+  padding: 1%;
+  padding-left: auto;
+  padding-right: auto;
   transition: all 0.7s;
   cursor: pointer;
 }
 .blog-close-btn:hover{
-  color: hsl(216, 21%, 13%);
-  border-left: hsl(216, 21%, 13%) solid 0.5vh;
+  background: hsl(216, 21%, 13%);
   transition: all 0.7s;
 }
 iframe {
