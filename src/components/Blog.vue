@@ -396,7 +396,7 @@ iframe {
     width: 90%;
   }
   .blog-title {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .blog-close-btn {
     width: 60%;

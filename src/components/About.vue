@@ -38,7 +38,8 @@ export default {
   overflow: hidden;
 }
 .content {
-  width: 100%;
+  width: 80%;
+  margin: 0 10%;
   justify-content: center;
   align-content: center;
   display: grid;
@@ -74,9 +75,11 @@ export default {
   }
   .content {
     display: block;
+    width: 100%;
+    margin-left: 5%;
   }
   .text {
-    margin-left: 5%;
+    margin: 0;
     width: 80%;
   }
   .my-picture {
