@@ -91,13 +91,13 @@ a {
 }
 @media screen and (max-width: 768px) {
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   h1, h2, h3, h4, h5 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 }
 </style>

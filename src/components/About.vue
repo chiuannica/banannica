@@ -5,7 +5,9 @@
       <div class="text">
         <p v-for="text in texts" :key="text.id" v-html="text.p"></p>
       </div>
-      <img class="my-picture" :src="myPicture" alt="picture of me">
+      <div class="my-picture">
+        <img :src="myPicture" alt="picture of me">
+      </div>
     </div>
   </div>
 </template>
@@ -32,13 +34,11 @@ export default {
 <style>
 #about {
   width: 100%;
+  margin: 0;
   overflow: hidden;
 }
 .content {
-  width: 80%;
-  min-height: 50vh;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 100%;
   justify-content: center;
   align-content: center;
   display: grid;
@@ -48,16 +48,21 @@ export default {
   text-align: center;
 }
 .my-picture {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 10%;
+}
+.my-picture > img {
+  width: 80%;
   border: 0.5rem #354051 solid;
   border-radius: 50%;
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
-  margin: auto;
-  width: 80%;
-  margin-bottom: 10%;
 }
 .text {
+  margin-left: auto;
+  margin-right: auto;
   width: 90%;
-  margin-left: 5%;
 }
 @media screen and (max-width: 768px) {
   #about {
@@ -69,17 +74,15 @@ export default {
   }
   .content {
     display: block;
-    width: 100%;
-    margin: 0;
   }
   .text {
-    width: 90%;
-    margin: 0;
+    margin-left: 5%;
+    width: 80%;
   }
   .my-picture {
-    width: 40%;
-    margin-left: 20%;
-    margin-right: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 }
 </style>

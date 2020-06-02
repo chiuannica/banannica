@@ -132,6 +132,9 @@ export default {
     width: 100%;
     margin: 0;
   }
+  h4 {
+    font-size: 1.2rem;
+  }
   .projects-grid{
     display: block;
     margin-left: auto;
