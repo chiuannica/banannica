@@ -69,9 +69,9 @@ export default {
   text-align: center;
 }
 .project {
-  background: #354051;
+  background: hsl(216, 21%, 13%);
   border-radius: 0.5vh;
-  color: #ebc1c5cc;
+  color: hsla(354, 51%, 88%, 0.8);
   box-sizing: border-box;
   padding: 2em;
   transition: border-left 0.7s;

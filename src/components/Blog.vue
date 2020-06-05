@@ -320,7 +320,7 @@ h5 {
   margin-bottom: 1.5%;
   border-left: hsl(216, 21%, 13%) solid 0.5vh;
   border-radius: 0.5vh;
-  color: #ebc1c5cc;
+  color: hsla(354, 51%, 88%, 0.8);
   background: hsl(216, 21%, 26%);
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
   text-decoration: none;
@@ -331,7 +331,7 @@ h5 {
 }
 .blog-nav-item:hover {
   background: hsl(216, 21%, 13%);
-  border-left: #ebc1c5cc solid 1vh;
+  border-left: hsla(354, 51%, 88%, 0.8) solid 1vh;
   cursor: pointer;
 }
 article {
@@ -366,7 +366,7 @@ article {
   font-size: 1rem;
   display: block;
   width: 20%;
-  color: hsla(354, 51%, 90%, 0.8);
+  color: hsla(354, 51%, 95%, 0.8);
   background: hsla(354, 51%, 38%, 0.8);
   border: 0;
   border-radius: 0.5vh;
@@ -381,7 +381,7 @@ article {
   transition: all 0.7s;
 }
 iframe {
-  border-left: #ebc1c5cc solid 1vh;
+  border-left: hsla(354, 51%, 88%, 0.8) solid 1vh;
   padding-left: 1%;
   max-width: 100%;
 }

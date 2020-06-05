@@ -52,7 +52,7 @@ export default {
   -webkit-font-smoothin: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
-  color: #354051;
+  color: hsl(216, 21%, 13%);
   width: 100%;
 }
 body {
