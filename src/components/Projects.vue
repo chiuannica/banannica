@@ -70,6 +70,7 @@ export default {
 }
 .project {
   background: #354051;
+  border-radius: 5%;
   color: #ebc1c5cc;
   box-sizing: border-box;
   padding: 2em;
@@ -80,26 +81,19 @@ export default {
 .project > .project-title{
   margin: 0;
   font-size: 3em;
+  font-display: bold;
   line-height: 1;
 }
 .project > a {
   padding-left: 1%;
-  border-left: hsl(217, 4%, 44%) solid 0.5vh;
-  color: #ebc1c5cc;
+  border-left: hsla(217, 34%, 52%, 0.9) solid 0.5vh;
+  color: hsla(217, 34%, 52%, 0.9);
   transition: border-left 0.7s;
   line-height: 2rem;
 }
 .project > a:hover {
-  border-left: #ebc1c5cc solid 1vh;
-}
-.project:nth-child(1){
-  background: hsl(216, 21%, 13%);
-}
-.project:nth-child(1) > a {
-  border-left: #354051 solid 0.5vh;
-}
-.project:nth-child(1) > a:hover {
-  border-left: #ebc1c5cc solid 1vh;
+  color: hsla(217, 34%, 52%, 0.9);
+  border-left: hsla(217, 34%, 52%, 0.9) solid 1vh;
 }
 .projects-grid{
   display: grid;

@@ -365,8 +365,8 @@ article {
   font-size: 1rem;
   display: block;
   width: 20%;
-  color: #ebc1c5cc;
-  background: #354051;
+  color: hsla(354, 51%, 90%, 0.8);
+  background: hsla(354, 51%, 38%, 0.8);
   border: 0;
   border-radius: 0.5vh;
   padding: 1%;
@@ -376,13 +376,13 @@ article {
   cursor: pointer;
 }
 .blog-close-btn:hover{
-  background: hsl(216, 21%, 13%);
+  background: hsla(354, 51%, 30%, 0.8);
   transition: all 0.7s;
 }
 iframe {
   border-left: #ebc1c5cc solid 1vh;
   padding-left: 1%;
-  width: 100%;
+  max-width: 100%;
 }
 @media screen and (max-width: 768px) {
   #blog {
