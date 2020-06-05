@@ -70,7 +70,7 @@ export default {
 }
 .project {
   background: #354051;
-  border-radius: 5%;
+  border-radius: 0.5vh;
   color: #ebc1c5cc;
   box-sizing: border-box;
   padding: 2em;

@@ -319,6 +319,7 @@ h5 {
   padding: 0% 1%;
   margin-bottom: 1.5%;
   border-left: hsl(216, 21%, 13%) solid 0.5vh;
+  border-radius: 0.5vh;
   color: #ebc1c5cc;
   background: hsl(216, 21%, 26%);
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
