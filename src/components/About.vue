@@ -56,7 +56,7 @@ export default {
 }
 .my-picture > img {
   width: 80%;
-  border: 0.5rem hsla(354, 51%, 38%, 0.8) solid;
+  border: 0.5rem solid hsl(216, 21%, 13%);
   border-radius: 50%;
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }

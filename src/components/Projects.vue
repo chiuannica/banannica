@@ -93,7 +93,7 @@ export default {
 }
 .project > a:hover {
   color: hsla(217, 34%, 52%, 0.9);
-  border-left: hsla(217, 34%, 52%, 0.9) solid 1vh;
+  border-left: hsla(217, 34%, 52%, 1) solid 1vh;
 }
 .projects-grid{
   display: grid;
