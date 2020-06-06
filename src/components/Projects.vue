@@ -86,10 +86,9 @@ export default {
 }
 .project > a {
   padding-left: 1%;
-  border-left: hsla(217, 34%, 52%, 0.9) solid 0.5vh;
+  border-left: hsla(217, 34%, 52%, 1) solid 0.5vh;
   color: hsla(217, 34%, 52%, 0.9);
   transition: border-left 0.7s;
-  line-height: 2rem;
 }
 .project > a:hover {
   color: hsla(217, 34%, 52%, 0.9);
