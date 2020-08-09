@@ -4,6 +4,7 @@
     <div class="content">
       <div class="text">
         <p v-for="text in texts" :key="text.id" v-html="text.p"></p>
+        <router-link to=/Bio exact>Extended Biography</router-link>
       </div>
       <div class="my-picture">
         <img :src="myPicture" alt="picture of me">
@@ -22,8 +23,8 @@ export default {
       aboutIcon: 'fa fa-female',
       texts: [
         { p: 'I am studying <strong>Information Science & Technology at Temple University.</strong>' },
-        { p: 'I like to write code and English. I teach high school students to code at Upward Bound and help students with their college essays.' },
-        { p: 'In my freetime, I code, sleep, write, and make bubble tea.' }
+        { p: 'I like to code in Java and Python, and make websites! During the summer, I worked with applications of Data Science and Analytics in Compliance at TD Bank using Tableau and Python. I teach high school students to code at Upward Bound and help students with their college essays.' },
+        { p: 'In my freetime, I code, take naps, cook delicious food, and make bubble tea.' }
       ]
     }
   }

@@ -23,6 +23,14 @@ export default {
       projects: [
         {
           id: 0,
+          name: 'Tea Time Chat',
+          description: 'A chatbot and web application that acts as a daily journal with data visualizations',
+          tools: 'JavaScript, Facebook Messenger API, wit.ai, HTML/CSS',
+          link: 'https://teatimechat.herokuapp.com/home',
+          github: 'https://github.com/chiuannica/teatimechat'
+        },
+        {
+          id: 0,
           name: 'Random Basketball Point Generator',
           description: 'A website that takes player stats and generates a table of points',
           tools: 'JavaScript, HTML/CSS',
@@ -44,14 +52,6 @@ export default {
           tools: 'JavaScript, Meme API, HTML/CSS',
           link: 'https://chiuannica.github.io/valentinesdaycard/meme.html',
           github: 'https://github.com/chiuannica/valentinesdaycard'
-        },
-        {
-          id: 4,
-          name: 'The Effects of Video Games',
-          description: 'A website displaying research on the mental effects of video games',
-          tools: 'Customized Bootstrap, HTML/CSS',
-          link: 'https://chiuannica.github.io/videogamesproject/',
-          github: 'https://github.com/chiuannica/videogamesproject'
         }
       ]
     }
