@@ -18,9 +18,9 @@ export default {
       title: 'Contact',
       icon: 'fa fa-address-book',
       medias: [
-        // { id: 0, name: 'Instagram', handle: 'JavaScriptQueen', link: 'https://instagram.com/javascriptqueen', icon: 'fa fa-instagram' },
         { id: 1, name: 'GitHub', handle: 'chiuannica', link: 'https://github.com/chiuannica', icon: 'fa fa-github' },
-        { id: 2, name: 'Email', handle: 'chiuannica@gmail.com', link: 'mailto:chiuannica@gmail.com', icon: 'fa fa-envelope-o' }
+        { id: 2, name: 'Email', handle: 'chiuannica@gmail.com', link: 'mailto:chiuannica@gmail.com', icon: 'fa fa-envelope-o' },
+        { id: 2, name: 'LinkedIn', handle: 'Annica Chiu', link: 'https://www.linkedin.com/in/annica-chiu-45369a17b/', icon: 'fa fa-linkedin' }
       ]
     }
   }
@@ -42,13 +42,16 @@ export default {
 }
 .contact-link {
   color: #354051;
-  margin-bottom: 2vh;
 }
 .contact-link:hover {
   color: hsl(216, 21%, 13%);
 }
 .contact-link > .fa {
   font-size: 3em;
+}
+.contact-link > p {
+  margin: 2% 0;
+  margin-bottom: 5vh;
 }
 @media screen and (max-width: 768px) {
   .contact-links {

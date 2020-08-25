@@ -5,7 +5,7 @@
       <div :key=project.id class="project" v-for="project in projects">
         <h4 class="project-title">{{ project.name }}</h4>
         <p>{{ project.description }}</p>
-        <p>{{ project.tools }}</p>
+        <p><em>{{ project.tools }}</em></p>
         <a :href="project.link">Website</a><br>
         <a :href="project.github">GitHub</a>
       </div>
@@ -78,11 +78,14 @@ export default {
   margin: 0;
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
-.project > .project-title{
+.project > .project-title {
   margin: 0;
   font-size: 3em;
   font-display: bold;
   line-height: 1;
+}
+.project > p {
+  line-height: 1.2;
 }
 .project > a {
   padding-left: 1%;

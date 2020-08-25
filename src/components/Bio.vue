@@ -1,8 +1,8 @@
 <template>
   <div id="bio">
     <h2>{{ title }} <i :class="icon"></i></h2>
-    <div class="bio-body">
-      <p>Coming soon.</p>
+    <div class="bio-body" :key=paragraph.id v-for="paragraph in paragraphs">
+      <p v-html="paragraph.p"></p>
     </div>
   </div>
 </template>
@@ -13,7 +13,10 @@ export default {
   data () {
     return {
       title: 'Bio',
-      icon: 'fa fa-coffee'
+      icon: 'fa fa-coffee',
+      paragraphs: [
+        { id: 0, p: 'Coming soon' }
+      ]
     }
   }
 }
@@ -33,6 +36,6 @@ export default {
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  
+
 }
 </style>

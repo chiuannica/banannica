@@ -4,7 +4,7 @@
     <div class="content">
       <div class="text">
         <p v-for="text in texts" :key="text.id" v-html="text.p"></p>
-        <router-link to=/Bio exact>Extended Biography</router-link>
+        <router-link class="bio-link" to=/Bio exact>Extended Biography</router-link>
       </div>
       <div class="my-picture">
         <img :src="myPicture" alt="picture of me">
@@ -23,7 +23,8 @@ export default {
       aboutIcon: 'fa fa-female',
       texts: [
         { p: 'I am studying <strong>Information Science & Technology at Temple University.</strong>' },
-        { p: 'I like to code in Java and Python, and make websites! During the summer, I worked with applications of Data Science and Analytics in Compliance at TD Bank using Tableau and Python. I teach high school students to code at Upward Bound and help students with their college essays.' },
+        { p: 'I like to code in Java and Python, and make websites! During the summer, I worked with applications of Data Science and Analytics in Compliance at TD Bank using Tableau and Python.' },
+        { p: 'I teach high school students to code at Upward Bound and help students with their college essays.' },
         { p: 'In my freetime, I code, take naps, cook delicious food, and make bubble tea.' }
       ]
     }
@@ -63,6 +64,17 @@ export default {
 }
 .text {
   width: 80%;
+}
+.bio-link {
+  padding-left: 1%;
+  border-left: hsla(217, 34%, 52%, 1) solid 0.5vh;
+  color: hsla(217, 34%, 52%, 0.9);
+  transition: border-left 0.7s;
+  font-style: strong;
+}
+.bio-link:hover {
+  color: hsla(217, 34%, 52%, 0.9);
+  border-left: hsla(217, 34%, 52%, 1) solid 1vh;
 }
 @media screen and (max-width: 768px) {
   h6 {

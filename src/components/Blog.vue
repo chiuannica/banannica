@@ -54,6 +54,30 @@ export default {
         },
         */
         {
+          id: 13,
+          title: 'How have I changed since graduation?',
+          date: '8/23/2020',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: 'BTS made a commencement speech for graduates of 2020 and it made me think about how different I am from the Annica who had just graduated high school.' },
+            { id: 1, text: 'When I look at Annica from two years ago, I see a troubled girl, who had crazy hair and was following a path chosen for her. I think of that Annica being so different from the current Annica, but really, we aren’t at all. I still use the same phone with the same cracked screen.' },
+            { id: 2, text: 'When I was a senior, I had no idea what I would study. I was going to college because that was the next step in the path chosen for me. I used to have terrible self-esteem. I would tear myself down and turn my insecurities into negativity towards others.' },
+            { id: 3, text: 'During high school, I used writing as a means of coping. I found this old piece of writing I wrote when I was a week away from starting college:' },
+            { id: 4, text: '<em>“Thursday was a cool 80-degree day. I went out to hit some tennis balls at a wall with my racket after skipping 5 days of it. I was pretty bad, although it isn’t like I was any good at it before.</em>' },
+            { id: 5, text: '<em>I finished around 10 as usual and got on the swingset before leaving. I closed my eyes and pretended I was a child again. I hadn’t been on a swing for a long time. I wanted to go back to my childhood. I tried to forget my worries. As hard as I tried to have them fade away, they never did. I relieved some of my stress though. It was a bit reassuring. I don’t know why exactly.”</em>' },
+            { id: 6, text: 'I feel bad about that Annica. She had no direction. She saw no reason for her hard work. I wish I could be there for that Annica.' },
+            { id: 7, text: '<iframe width="560" height="315" src="https://www.youtube.com/embed/AU6uF5sFtwA?start=213" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' },
+            { id: 8, text: 'BTS created a video for graduates of 2020 with messages. BTS helped the past Annica be less lost, and they still make me happy every time I listen to their music. My favorite two messages were from Jin and J-Hope. I liked Jin’s message the most:' },
+            { id: 9, text: '<em>“Sometimes, I’d feel restless, watching my friends go on far ahead of me. And attempting to keep up with their speed would leave me breathless. I soon realized that their pace was not my own. What held me together during those times was a promise I made with myself: to take it slow. I’d go at my own pace, steadily.”</em>' },
+            { id: 10, text: 'This message stood out the most to me because I have felt the same way. I want success to come right away and look at the accomplishments of the people around me. For example, I want to understand all the tree problems right away. This message reminds me to appreciate the path more.' },
+            { id: 11, text: 'Also, in one of my previous blog posts, “Dealing with Rejection,” I talked about learning to think of rejection differently. These past few weeks have tested that mindset, because I have been rejected so many times! It is reassuring than Jin, a member of the biggest KPop group, feels that it is impossible to keep up with some people. I can do it!' },
+            { id: 12, text: 'J-Hope had a message that is related to Jin’s:' },
+            { id: 13, text: '<em>“The next attempt might not be perfect, but the second is better than the first, and the third is even better than the second. And that is the moment I decide, I’m glad I chose not to give up.”</em>' },
+            { id: 14, text: 'I really liked what J-Hope said, not only because he is my favorite member, but also because it reminded me why I should not give up. This is another message I need to do a better job of remembering because I forget how far I have come. Sometimes I forget that I built my programming skills from nothing when doing difficult coding problems and that I have to try and fail before becoming an expert.' }
+          ],
+          showBlog: false
+        },
+        {
           id: 12,
           title: 'I want to be me',
           date: '5/28/2020',
@@ -94,7 +118,7 @@ export default {
             { id: 0, text: 'During the rule of Queen Rona, I have had more time to sleep, eat, and think.' },
             { id: 1, text: 'In one of my earlier blog posts, “My Empty Skyscrapers,” I wrote about how I acquire and acquire, and still remain unsatisfied. It is kind of like how I eat and eat, and still get hungry, especially now that I am inside all day. ' },
             { id: 2, text: 'I learned that I am chasing an image that will never satisfy me. In my head, I have an image of the future me smiling, with everything I want right now. It is fake and will never be realized, yet it rules my life. I have plenty of things I have wanted before, and I am still unsatisfied and chasing new images. I work towards these images to be successful in the eyes of others. I need to learn to pursue my own definition of success. ' },
-            { id: 3, text: 'I really don\'t know what my own definition of success means. I guess I just have to do things until I know.' }
+            { id: 3, text: 'I really don’t know what my own definition of success means. I guess I just have to do things until I know.' }
           ],
           showBlog: false
         },
@@ -112,7 +136,7 @@ export default {
             { id: 4, text: 'I remember being a senior in high school. As a senior, I wrote a few dark journal entries. They are upsetting to read. I was lost, overwhelmed, and afraid of my future, not to mention my undiagnosed narcolepsy. I was angry that my family couldn’t help me apply to college. My parents still don’t know what the FAFSA is. My counselor didn’t like me. I became resentful because of my stress and lack of sleep. I know that I am not alone in being resentful because of the expectations of seniors. ' },
             { id: 5, text: 'A couple months ago, a portion of the seniors I was working with were extremely overwhelmed by their obligations. They needed to work on college applications and had to study for an upcoming final in a college class they were taking at the community college. They were caught in the middle of a disagreement and got lectured at. I could see the steam rising from their heads. I tried to empathize. As I gave one of the students a hug, they said, <strong>“thanks, I haven’t had that in a while.”</strong>' },
             { id: 6, text: 'I can still hear this comment and the tone of this person’s voice clearly in my head. It reminded me of the anger and hopelessness I had as a senior and it told me that plenty of other students feel the same way. Seniors are under extreme pressure, especially if they are the first in their family to go to college. ' },
-            { id: 7, text: 'The students’ non-college-educated parents expect them to go to college to get a high paying job to lift their family to the next class. The students expect themselves to pay back their parents for their sacrifices. The counselors expect the students to be applying to scholarships and colleges at every waking moment. The teachers expect the students to keep getting high grades in class. The colleges, while not caring that their entire system is catered towards those who have more, and expect students to have a plan to save the world. All of this, while these students haven\'t even voted in their first election yet.' },
+            { id: 7, text: 'The students’ non-college-educated parents expect them to go to college to get a high paying job to lift their family to the next class. The students expect themselves to pay back their parents for their sacrifices. The counselors expect the students to be applying to scholarships and colleges at every waking moment. The teachers expect the students to keep getting high grades in class. The colleges, while not caring that their entire system is catered towards those who have more, and expect students to have a plan to save the world. All of this, while these students haven’t even voted in their first election yet.' },
             { id: 8, text: 'This proud moment shows that my effort in mentoring these students has gone somewhere. I wish that no 17 or 18 year old student would have to be under this pressue and that I could make more of a dent in this issue. ' },
             { id: 9, text: 'Still, this is a great accomplishment. I am glad that my effort has gone somewhere. A student receives the award he deserves.' }
           ],
@@ -185,8 +209,8 @@ export default {
             { id: 2, text: 'The first time I saw Sulli was in f(x)’s music video of Electric Shock. She always showed off her super gorgeous smile.' },
             { id: 3, text: 'On October 14, 2019, Sulli passed away.' },
             { id: 4, text: 'I don’t want to hunt for reasons for why she left. We will never know why for sure.' },
-            { id: 5, text: 'She reminded me to live in the moment every day. She was unhappy even though she was incredibly successful. She was gorgeous, and a former member of a successful K-pop group from one of the top companies. She attained what tons of young people are working for. Her company accepts way below 1%, and not everyone in the company makes it into a group. Her group\'s music videos have millions and millions of views. Even as successful as she was, she was not happy.' },
-            { id: 6, text: 'I have an image in my head that once I graduate and work at a top company, I\'ll be happy. That image is not true at all. I have to be happy every day with what I have.' },
+            { id: 5, text: 'She reminded me to live in the moment every day. She was unhappy even though she was incredibly successful. She was gorgeous, and a former member of a successful K-pop group from one of the top companies. She attained what tons of young people are working for. Her company accepts way below 1%, and not everyone in the company makes it into a group. Her group’s music videos have millions and millions of views. Even as successful as she was, she was not happy.' },
+            { id: 6, text: 'I have an image in my head that once I graduate and work at a top company, I’ll be happy. That image is not true at all. I have to be happy every day with what I have.' },
             { id: 7, text: 'I have to live every day and be happy. It is hard to remember that happiness does not come from acquisition. I need to be happy now.' }
           ],
           showBlog: false
@@ -200,10 +224,10 @@ export default {
             { id: 0, text: 'I went to codeLinc this September 28-29th in Greensboro, NC. It was an amazing experience. We went to a civil rights museum, ate delicious food, and won first place.' },
             { id: 1, text: 'Our bus arrived early and we were in a historic city, so the organizers took us to the International Civil Rights Museum. Greensboro is where a group of four students began a movement to protest segregation by sitting at a whites only counter. The museum has the exact counter that the students sat at. Being in the museum was incredibly powerful and can’t be explained by words. it showed me the ugly things humans have done. Everyone should go there at least once. I think more hackathons should take the attendees out into the city, since lots of hackers travel to cities far away.' },
             { id: 2, text: 'The food at codeLinc was incredible. It was really good. They put out an infinite amount of delicious food. Breakfast, breakfast part two, lunch, lunch part two, dinner, dinner again, midnight food, and always available coffee. I have never had such good food. I heard that they spent an incredible amount of money to pay for the incredible quality of food. I drank so much coffee. Other hackathons really need to step it up.' },
-            { id: 3, text: 'While I was at the museum, I met a person at Lincoln. I thought he was just a regular software guy because he was so casual. I told him how my group trespassed on the museum by accident earlier, and how Geno\'s and Pat\'s cheesesteaks are super overrated. I wiped my little tears at the museum next to him. He spoke at the opening ceremony, I found out he was right below the CTO. Pretty surprising.' },
+            { id: 3, text: 'While I was at the museum, I met a person at Lincoln. I thought he was just a regular software guy because he was so casual. I told him how my group trespassed on the museum by accident earlier, and how Geno’s and Pat’s cheesesteaks are super overrated. I wiped my little tears at the museum next to him. He spoke at the opening ceremony, I found out he was right below the CTO. Pretty surprising.' },
             { id: 4, text: 'Long story short, my team won. I drank so much coffee.' },
             { id: 5, text: 'I never expected our team to win. After the other teams presented and showed their apps, super cool websites, and data analysis tools, I thought we weren’t going to place. Well, we did, at the top. They liked our idea the best. I concur. It was a pretty good idea, but everyone else had all of these bells and whistles that ours didn’t.' },
-            { id: 6, text: 'I feel strange taking the win, because I am used to seeing other people take the win. I have been to so many hackathons and watched other people stand at the front smiling. I couldn’t believe when they said we won. Also, on the bus ride back home, someone said that I was a winner. I didn\'t understand what they meant until I thought about it.' },
+            { id: 6, text: 'I feel strange taking the win, because I am used to seeing other people take the win. I have been to so many hackathons and watched other people stand at the front smiling. I couldn’t believe when they said we won. Also, on the bus ride back home, someone said that I was a winner. I didn’t understand what they meant until I thought about it.' },
             { id: 7, text: 'So that was fun!' }
           ],
           showBlog: false
@@ -230,7 +254,7 @@ export default {
         },
         {
           id: 2,
-          title: 'HopHacks: Face Tech\'s Reality',
+          title: 'HopHacks: Face Tech’s Reality',
           date: '9/20/2019',
           author: 'Annica',
           paragraphs: [
@@ -245,7 +269,7 @@ export default {
             { id: 8, text: 'This is why female-centered hackathons like Technica and TechTogether are so important. Non-males need support in a male-dominated field. My opinion on this runs into some issues.' },
             { id: 9, text: 'Some people think that the tech industry should not have to bend backwards to get females in the industry. If these females deserve to be in tech, they should be able to get past all of the adversity. I think everyone agrees diversity quotas are not a good idea. A good idea is to have specific support for females just starting. Female-centered hackathons prevent underrepresentation from detering female hackers.' },
             { id: 10, text: 'Multiple factors contribute to underrepresented individuals quitting tech. These factors include imposter syndrome, only knowing Java, having to retake pre-calc, not being a Machine Learning person, and seeing people who do not look like you at a hackathon. That last factor may be the factor that puts someone over the edge.' },
-            { id: 11, text: 'Luckily, I had a positive experience at my first hackathon. I\'m glad I have have first-hand experience with all the good things about tech before finding the bad.' }
+            { id: 11, text: 'Luckily, I had a positive experience at my first hackathon. I’m glad I have have first-hand experience with all the good things about tech before finding the bad.' }
           ],
           showBlog: false
         },
@@ -263,7 +287,7 @@ export default {
             { id: 5, text: 'There are organizations dedicated to women, including Built by Girls, Tech Ladies, Girls Who Code, and Women Who Code. There are scholarships and diversity programs only for women in tech. If I was a male, I would be sour.' },
             { id: 6, text: 'A small percentage of men are responsible for outward gendered jerkiness towards women. All men are not responsible for the male-centered world we live in. It’s not right to believe the tech industry and all men are terrible for the actions described by the GWC survey respondents. We all must work together to make our male-centered world less male-centered, while having men as allies.' },
             { id: 7, text: 'As a new women in tech, I have become more aware of subtle sexism. I found out that a female co-worker was being paid less than a male co-worker for the same work (note: I currently work in education). The reason why was because he was a graduate student and she was an undergraduate. That is an understandable reason, but they had the exact same title and responsibilities, so I think it is unacceptable. If both of them were men, I do not think this would have happened.' },
-            { id: 8, text: 'We all need to look out for each other to ensure people are given equal compensation for equal work. Pay discrimination is illegal, but some individuals do not report dispute discrimination. Some people accept weak reasons or think they don\'t deserve more. We need to encourage advocating for ourselves and each other.' },
+            { id: 8, text: 'We all need to look out for each other to ensure people are given equal compensation for equal work. Pay discrimination is illegal, but some individuals do not report dispute discrimination. Some people accept weak reasons or think they don’t deserve more. We need to encourage advocating for ourselves and each other.' },
             { id: 9, text: 'Things will change with time. I think we are making the right steps to solve these problems.' }
           ],
           showBlog: false
