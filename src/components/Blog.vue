@@ -9,7 +9,7 @@
         </a>
         <article v-show="blog.showBlog" :key="blog.date" :id="blog.id">
         <div>
-          <h5 class="blog-title" v-on:click="blog.showBlog = !blog.showBlog">{{ blog.title }}</h5>
+          <h5 class="blog-title" v-on:click="blog.showBlog = !blog.showBlog"></h5>
           <!--
             <p>{{ blog.date }} by {{ blog.author }}</p>
           -->
@@ -53,6 +53,24 @@ export default {
           showBlog: false
         },
         */
+        {
+          id: 14,
+          title: 'Having Nothing While Having Everything',
+          date: '11/20/2020',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: 'Note: I wrote this a week ago when I was feeling low. I felt much better after writing it.' },
+            { id: 0, text: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Eo_mo5vA7tw?start=75" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' },
+            { id: 0, text: 'This week was a bad week. My self-esteem had been whittling away for a while, and this week it hit a low I have not experienced for a long time.' },
+            { id: 1, text: 'The people who love me do things that make me feel the worst. Every time I speak to my mom about something that troubles me, she has a bad response. I don’t know why I try to speak to her anymore. She uses it as an opportunity to tell me why I am not enough. She never praises me. She is my second biggest critic, next to myself.' },
+            { id: 2, text: 'I have felt like not enough my whole life. Now, I have a lot of what I have been wanting for a long time. I have a good internship for this summer, I have a lot of experience on my resume, I have been exercising regularly for a while, I don’t have as much acne anymore, I learned to stop feeling ugly, I have a good people in my life, yet I am angry and sad for having this life. ' },
+            { id: 3, text: 'I have everything, while I really have nothing.' },
+            { id: 4, text: 'I am angry that I have felt fat my whole life. I exercise almost every day, yet I still feel fat. I remember being in some early grade, around first grade, when our teacher assigned us characters in a book to read as a group. Each character was a pumpkin. I was assigned the fat pumpkin, and that was the first time I felt terrible about how I looked.' },
+            { id: 5, text: 'For weeks, I have been convincing myself why I should not buy into the beauty standards of being thin and having a flat stomach. I have been convincing myself that keeping my appearance is the only way that having an appearance outside the beauty standards will be acceptable and that if I become that beauty standard, I won’t be happy. It doesn’t work.' },
+            { id: 6, text: 'Why am I so upset over my appearance? I have so many accomplishments to be proud of and I exercise but I don’t feel good. All of these expectations are my own. I am my own worst enemy. I am always striving for things I don’t have. Why can’t I be happy with everything I have now?' }
+          ],
+          showBlog: false
+        },
         {
           id: 13,
           title: 'How have I changed since graduation?',

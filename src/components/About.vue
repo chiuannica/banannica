@@ -24,6 +24,7 @@ export default {
       texts: [
         { p: 'I am studying <strong>Information Science & Technology at Temple University.</strong>' },
         { p: 'I like to code in Java and Python, and make websites! During the summer, I worked with applications of Data Science and Analytics in Compliance at TD Bank using Tableau and Python.' },
+        { p: 'This upcoming summer, I\'ll be participating in Capital One\'s Technology Internship Program and I am so excited!' },
         { p: 'I teach high school students to code at Upward Bound and help students with their college essays.' },
         { p: 'In my freetime, I code, take naps, cook delicious food, and make bubble tea.' }
       ]

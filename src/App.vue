@@ -56,12 +56,12 @@ export default {
   width: 100%;
 }
 body {
-  line-height: 1.2;
+  line-height: 1.1;
   font-size: 62.5%;
   margin: 0;
 }
 h1, h2, h3, h4, h5 {
-  font-family: 'Poppins-Light', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: hsl(216, 21%, 13%);
 }
 h1 {
