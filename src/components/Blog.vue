@@ -54,8 +54,24 @@ export default {
         },
         */
         {
+          id: 1000,
+          title: 'Deriving my own Strength',
+          date: '1/11/2021',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: 'When you derive or integrate e<sup>x</sup>, you always get e<sup>x</sup>. The reason why is at every value of e<sup>x</sup>, the slope will always be the same at the height. ' },
+            { id: 1, text: 'I thought of e<sup>x</sup> as a way of describing myself. I will always have myself, e<sup>x</sup>. Sometimes I might add something to my life, and I will become e<sup>x</sup> + 1. The derivative of this function is e<sup>x</sup>. The 1 disappears, and I am back to being e<sup>x</sup>. Nonetheless, humans aren’t functions.' },
+            { id: 2, text: 'Humans are naturally selfish. We are always looking out for ourselves. It is uncertain that people will always have my back, but it is certain I’ll always have myself.' },
+            { id: 3, text: 'I have a tendency to try to derive my strength from other people. I spoke to a friend asking for motivation for my upcoming interview. I spoke to my supervisor while I was having a hard time during the semester and she encouraged me. I need to learn to see the strength and positive qualities I have within me without asking others to point them out.' },
+            { id: 4, text: 'When I started jogging regularly, I did it to get stronger. For the past few months, I have felt weak while jogging. Today, I went out on a jog and I thought to myself, “I feel strong again.” ' },
+            { id: 5, text: 'This isn’t a thought I have all the time. During this past semester, I felt weak, unconfident, powerless, inadequate. The people who I relied on the most failed to help me see otherwise and I was stuck in my mindset. I can’t rely on other people’s words.' },
+            { id: 6, text: 'Is being confident as simple as believing in myself? I think it is.' }
+          ],
+          showBlog: false
+        },
+        {
           id: 14,
-          title: 'Having Nothing While Having Everything',
+          title: 'Having Nothing while Having Everything',
           date: '11/20/2020',
           author: 'Annica',
           paragraphs: [
@@ -65,7 +81,7 @@ export default {
             { id: 1, text: 'The people who love me do things that make me feel the worst. Every time I speak to my mom about something that troubles me, she has a bad response. I don’t know why I try to speak to her anymore. She uses it as an opportunity to tell me why I am not enough. She never praises me. She is my second biggest critic, next to myself.' },
             { id: 2, text: 'I have felt like not enough my whole life. Now, I have a lot of what I have been wanting for a long time. I have a good internship for this summer, I have a lot of experience on my resume, I have been exercising regularly for a while, I don’t have as much acne anymore, I learned to stop feeling ugly, I have a good people in my life, yet I am angry and sad for having this life. ' },
             { id: 3, text: 'I have everything, while I really have nothing.' },
-            { id: 4, text: 'I am angry that I have felt fat my whole life. I exercise almost every day, yet I still feel fat. I remember being in some early grade, around first grade, when our teacher assigned us characters in a book to read as a group. Each character was a pumpkin. I was assigned the fat pumpkin, and that was the first time I felt terrible about how I looked.' },
+            { id: 4, text: 'I am angry that I have felt bad about myself for so long. I exercise almost every day, yet I still feel like I don\'t do enough. I remember being in some early grade, around first grade, when our teacher assigned us characters in a book to read as a group. Each character was a pumpkin. I was assigned the fat pumpkin, and that was the first time I felt terrible about how I looked.' },
             { id: 5, text: 'For weeks, I have been convincing myself why I should not buy into the beauty standards of being thin and having a flat stomach. I have been convincing myself that keeping my appearance is the only way that having an appearance outside the beauty standards will be acceptable and that if I become that beauty standard, I won’t be happy. It doesn’t work.' },
             { id: 6, text: 'Why am I so upset over my appearance? I have so many accomplishments to be proud of and I exercise but I don’t feel good. All of these expectations are my own. I am my own worst enemy. I am always striving for things I don’t have. Why can’t I be happy with everything I have now?' }
           ],
@@ -114,7 +130,7 @@ export default {
         },
         {
           id: 11,
-          title: 'Dealing With Rejection',
+          title: 'Dealing with Rejection',
           date: '5/27/2020',
           author: 'Annica',
           paragraphs: [
@@ -218,7 +234,7 @@ export default {
         },
         {
           id: 5,
-          title: 'Happy Every Day',
+          title: 'Happy every day',
           date: '10/25/2019',
           author: 'Annica',
           paragraphs: [
@@ -252,7 +268,7 @@ export default {
         },
         {
           id: 3,
-          title: 'HopHacks: Let Me Speak!',
+          title: 'HopHacks: Let me Speak!',
           date: '9/24/2019',
           author: 'Annica',
           paragraphs: [
