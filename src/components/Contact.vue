@@ -19,7 +19,6 @@ export default {
       icon: 'fa fa-address-book',
       medias: [
         { id: 1, name: 'GitHub', handle: 'chiuannica', link: 'https://github.com/chiuannica', icon: 'fa fa-github' },
-        { id: 2, name: 'Email', handle: 'chiuannica@gmail.com', link: 'mailto:chiuannica@gmail.com', icon: 'fa fa-envelope-o' },
         { id: 2, name: 'LinkedIn', handle: 'Annica Chiu', link: 'https://www.linkedin.com/in/annica-chiu-45369a17b/', icon: 'fa fa-linkedin' }
       ]
     }
