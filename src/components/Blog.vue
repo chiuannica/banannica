@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="blog-close-wrapper">
-          <button class="blog-close-btn" v-on:click="blog.showBlog = !blog.showBlog">Close blog</button>
+          <button class="blog-close-btn" v-on:click="blog.showBlog = !blog.showBlog"><i class="fa fa-times"></i></button>
         </div>
       </article>
       </div>
@@ -423,12 +423,11 @@ article {
   font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1rem;
   display: block;
-  width: 20%;
+  width: 10%;
   color: hsla(354, 51%, 95%, 0.8);
   background: hsla(354, 51%, 38%, 0.8);
   border: 0;
   border-radius: 0.5vh;
-  padding: 1%;
   padding-left: auto;
   padding-right: auto;
   transition: all 0.7s;

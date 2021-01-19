@@ -6,9 +6,11 @@
         <p v-for="text in texts" :key="text.id" v-html="text.p"></p>
         <router-link class="bio-link" to=/Bio exact>Extended Biography</router-link>
       </div>
+      <!--
       <div class="my-picture">
         <img :src="myPicture" alt="picture of me">
       </div>
+      -->
     </div>
   </div>
 </template>
@@ -22,10 +24,10 @@ export default {
       myPicture: require('@/assets/me.jpg'),
       aboutIcon: 'fa fa-female',
       texts: [
-        { p: 'I am studying <strong>Information Science & Technology at Temple University.</strong>' },
-        { p: 'I like to code in Java and Python, and make websites! During the summer, I worked with applications of Data Science and Analytics in Compliance at TD Bank using Tableau and Python.' },
+        { p: 'I am a junior studying Information Technology.' },
+        { p: 'During the summer, I worked with applications of Data Science and Analytics in Compliance.' },
         { p: 'This upcoming summer, I\'ll be participating in Capital One\'s Technology Internship Program and I am so excited!' },
-        { p: 'I teach high school students to code at Upward Bound and help students with their college essays.' },
+        { p: 'I teach high school students to code at Upward Bound and engage in some research.' },
         { p: 'In my freetime, I code, take naps, cook delicious food, and make bubble tea.' }
       ]
     }
@@ -45,8 +47,10 @@ export default {
   margin-right: 10%;
   justify-content: center;
   align-content: center;
+  /*
   display: grid;
   grid-template-columns: 3fr 1fr;
+  */
 }
 #about > h2 {
   text-align: center;
@@ -64,7 +68,7 @@ export default {
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
 .text {
-  width: 80%;
+  width: 100%;
 }
 .bio-link {
   padding-left: 1%;

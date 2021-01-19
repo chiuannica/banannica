@@ -15,7 +15,7 @@ export default {
       title: 'Bio',
       icon: 'fa fa-coffee',
       paragraphs: [
-        { id: 0, p: 'Coming soon' }
+        { id: 0, p: 'Coming soon (maybe never)' }
       ]
     }
   }
