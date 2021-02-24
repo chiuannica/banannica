@@ -4,7 +4,7 @@
     <div class="projects-grid">
       <div :key=project.id class="project" v-for="project in projects">
         <h4 class="project-title">{{ project.name }}</h4>
-        <p>{{ project.description }}</p>
+        <p v-html="project.description"></p>
         <p><em>{{ project.tools }}</em></p>
         <a :href="project.link">Website</a><br>
         <a :href="project.github">GitHub</a>
@@ -23,6 +23,22 @@ export default {
       projects: [
         {
           id: 0,
+          name: 'Finding Doge: Cryptocurrency Value and Search Trends',
+          description: 'An investigation of the relationship between Google search trends and cryptocurrency values<br> Best Financial Hack at PearlHacks (255 participants)',
+          tools: 'Python, Pandas, Matplotlib, Scipy',
+          link: 'https://devpost.com/software/search-trends-and-cryptocurrencies',
+          github: 'https://gist.github.com/chiuannica/b40328c39bd816d9e3dd5886925eccfd'
+        },
+        {
+          id: 0,
+          name: 'Comparing Cryptocurrencies: Dogecoin vs. Ethereum',
+          description: 'An analysis of Dogecoin and Ether to evaluate if it is a wise investment or has reliable growth<br> Best Financial Hack at FemmeHacks (210 participants)',
+          tools: 'Python, Pandas, Matplotlib, Keras',
+          link: 'https://devpost.com/software/ethereuming',
+          github: 'https://gist.github.com/chiuannica/df4c95917450d64517750f4e5dd93b1b'
+        },
+        {
+          id: 0,
           name: 'Tea Time Chat',
           description: 'A chatbot and web application that acts as a daily journal with data visualizations',
           tools: 'JavaScript, Facebook Messenger API, wit.ai, HTML/CSS',
@@ -32,7 +48,7 @@ export default {
         {
           id: 0,
           name: 'Random Basketball Point Generator',
-          description: 'A website that takes player stats and generates a table of points',
+          description: 'A website that takes player stats and generates a table of points based on probability',
           tools: 'JavaScript, HTML/CSS',
           link: 'https://chiuannica.github.io/randompointgenerator/',
           github: 'https://github.com/chiuannica/randompointgenerator'
@@ -102,26 +118,6 @@ export default {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1fr;
   grid-gap: 3%;
-}
-.project:nth-child(1) {
-  grid-column: 1;
-  grid-row: 1;
-}
-.project:nth-child(2) {
-  grid-column: 2;
-  grid-row: 1;
-}
-.project:nth-child(3) {
-  grid-column: 1;
-  grid-row: 2;
-}
-.project:nth-child(4) {
-  grid-column: 2;
-  grid-row: 2;
-}
-.project:nth-child(5) {
-  grid-column: 3;
-  grid-row: 2;
 }
 @media screen and (max-width: 768px) {
   #projects{

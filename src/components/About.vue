@@ -20,15 +20,15 @@ export default {
   name: 'About',
   data () {
     return {
-      title: 'Hi! I\'m Annica!',
+      title: 'Hi, I\'m Annica!',
       myPicture: require('@/assets/me.jpg'),
       aboutIcon: 'fa fa-female',
       texts: [
         { p: 'I am a junior studying Information Technology.' },
-        { p: 'During the summer, I worked with applications of Data Science and Analytics in Compliance.' },
-        { p: 'This upcoming summer, I\'ll be participating in Capital One\'s Technology Internship Program and I am so excited!' },
-        { p: 'I teach high school students to code at Upward Bound and engage in some research.' },
-        { p: 'In my freetime, I code, take naps, cook delicious food, and make bubble tea.' }
+        { p: 'During the summer, I worked with applications of Data Science and Analytics in Compliance. This upcoming summer, I\'ll be participating in Capital One\'s Technology Internship Program and I am so excited!' },
+        { p: 'I am a research assistant investigating the relationship of professor citations and university rankings.' },
+        { p: 'In my freetime, I code, take naps, cook delicious food, and make bubble tea.' },
+        { p: 'Yes, I built this website from scratch myself using Vue.js.' }
       ]
     }
   }
