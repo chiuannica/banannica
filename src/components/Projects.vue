@@ -39,11 +39,10 @@ export default {
         },
         {
           id: 0,
-          name: 'Tea Time Chat',
-          description: 'A chatbot and web application that acts as a daily journal with data visualizations',
-          tools: 'JavaScript, Facebook Messenger API, wit.ai, HTML/CSS',
-          link: 'https://teatimechat.herokuapp.com/home',
-          github: 'https://github.com/chiuannica/teatimechat'
+          name: 'DogeMail',
+          description: 'This is a mock email application. This is a school project! Please don\'t enter any real information in this application.',
+          tools: 'ASP.NET, C#, Microsoft SQL Database, SQL HTML/CSS',
+          link: 'http://cis-iis2.temple.edu/Spring2021/CIS3342_tui30639/Project3/'
         },
         {
           id: 0,
@@ -55,7 +54,7 @@ export default {
         },
         {
           id: 1,
-          name: 'ACM -W Website',
+          name: 'ACM-W Website',
           description: 'A website for Temple\'s chapter of the Association of Computing Machinery',
           tools: 'Vue, JavaScript, HTML/CSS',
           link: 'https://tuacmw.com',

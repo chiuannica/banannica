@@ -27,8 +27,7 @@ export default {
         { p: 'I am a junior studying Information Technology.' },
         { p: 'During the summer, I worked with applications of Data Science and Analytics in Compliance. This upcoming summer, I\'ll be participating in Capital One\'s Technology Internship Program and I am so excited!' },
         { p: 'I am a research assistant investigating the relationship of professor citations and university rankings.' },
-        { p: 'In my freetime, I code, take naps, cook delicious food, and make bubble tea.' },
-        { p: 'Yes, I built this website from scratch myself using Vue.js.' }
+        { p: 'In my freetime, I code, take naps, cook delicious food, and make bubble tea.' }
       ]
     }
   }
