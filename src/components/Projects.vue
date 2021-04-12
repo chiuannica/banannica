@@ -7,7 +7,7 @@
         <p v-html="project.description"></p>
         <p><em>{{ project.tools }}</em></p>
         <a :href="project.link">Website</a><br>
-        <a :href="project.github">GitHub</a>
+        <a v-if="project.github" :href="project.github">GitHub</a>
       </div>
     </div>
   </div>
@@ -21,6 +21,14 @@ export default {
       title: 'Projects',
       projectsIcon: 'fa fa-file-code-o',
       projects: [
+        {
+          id: 0,
+          name: 'Computer Science Department Professors\' Citations',
+          description: 'A dashboard to explore Computer Science Professor citation measures. This is part of my research at the Temple Data Science Institute.',
+          tools: 'Python, Pandas, Streamlit API, Microsoft Excel',
+          link: 'https://share.streamlit.io/chiuannica/professorcitationsstreamlitapp/app.py',
+          github: 'https://github.com/chiuannica/professorCitationsStreamlitApp'
+        },
         {
           id: 0,
           name: 'Finding Doge: Cryptocurrency Value and Search Trends',
