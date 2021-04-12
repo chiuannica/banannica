@@ -2,9 +2,12 @@
   <div id="about">
     <h2>{{ title }} <i :class="aboutIcon"></i></h2>
     <div class="content">
+      <h3 v-html="info"></h3>
       <div class="text">
         <p v-for="text in texts" :key="text.id" v-html="text.p"></p>
+        <!--
         <router-link class="bio-link" to=/Bio exact>Extended Biography</router-link>
+        -->
       </div>
       <!--
       <div class="my-picture">
@@ -23,6 +26,7 @@ export default {
       title: 'Hi, I\'m Annica!',
       myPicture: require('@/assets/me.jpg'),
       aboutIcon: 'fa fa-female',
+      info: 'ANNE-EH-KAH CHEW<br>she/her',
       texts: [
         { p: 'I am a junior studying Information Technology.' },
         { p: 'During the summer, I worked with applications of Data Science and Analytics in Compliance. This upcoming summer, I\'ll be participating in Capital One\'s Technology Internship Program and I am so excited!' },
@@ -41,9 +45,9 @@ export default {
   overflow: hidden;
 }
 .content {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
   justify-content: center;
   align-content: center;
   /*
@@ -86,11 +90,8 @@ export default {
   }
   .content {
     display: block;
-    width: 100%;
-  }
-  .text {
-    margin: 0;
-    width: 80%;
+    width: 90%;
+    margin: 5%;
   }
   .my-picture {
     display: flex;

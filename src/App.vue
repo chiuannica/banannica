@@ -68,8 +68,12 @@ h1 {
   font-size: 3.2rem;
   text-align: center;
 }
-h2 , h3{
+h2 {
   font-size: 2.4rem;
+  font-style: none;
+}
+h3 {
+  font-size: 1.8rem;
   font-style: none;
 }
 h4, h5 {
