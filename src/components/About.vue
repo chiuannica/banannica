@@ -28,10 +28,10 @@ export default {
       aboutIcon: 'fa fa-female',
       info: 'ANNE-EH-KAH CHEW<br>she/her',
       texts: [
-        { p: 'I am a junior studying Information Technology.' },
-        { p: 'During the summer, I worked with applications of Data Science and Analytics in Compliance. This upcoming summer, I\'ll be participating in Capital One\'s Technology Internship Program and I am so excited!' },
+        { p: 'I am a senior studying Information Technology.' },
+        { p: 'Last summer, I worked with data science Compliance. This summer, I worked on Capital One\'s Android application!' },
         { p: 'I am a research assistant investigating the relationship of professor citations and university rankings.' },
-        { p: 'In my freetime, I code, take naps, cook delicious food, and make bubble tea.' }
+        { p: 'In my freetime, take naps, cook delicious food, and make bubble tea.' }
       ]
     }
   }
