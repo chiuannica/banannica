@@ -24,26 +24,6 @@ export default {
 
 <style>
 @font-face {
-  font-family: 'Poppins';
-  src: url('assets/Poppins-Regular.ttf');
-}
-@font-face {
-  font-family: 'Poppins-Light';
-  src: url('assets/Poppins-Light.ttf');
-}
-@font-face {
-  font-family: 'Varela';
-  src: url('assets/VarelaRound-Regular.ttf');
-}
-@font-face {
-  font-family: 'Roboto';
-  src: url('assets/Roboto-Light.ttf');
-}
-@font-face {
-  font-family: 'Lora';
-  src: url('assets/Lora-Regular.ttf');
-}
-@font-face {
   font-family: 'Catamaran';
   src: url('assets/Catamaran-Regular.ttf');
 }

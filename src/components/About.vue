@@ -3,17 +3,13 @@
     <h2>{{ title }} <i :class="aboutIcon"></i></h2>
     <div class="content">
       <h3 v-html="info"></h3>
+      <p><em v-html="pronouns"></em></p>
       <div class="text">
         <p v-for="text in texts" :key="text.id" v-html="text.p"></p>
         <!--
         <router-link class="bio-link" to=/Bio exact>Extended Biography</router-link>
         -->
       </div>
-      <!--
-      <div class="my-picture">
-        <img :src="myPicture" alt="picture of me">
-      </div>
-      -->
     </div>
   </div>
 </template>
@@ -26,11 +22,11 @@ export default {
       title: 'Hi, I\'m Annica!',
       myPicture: require('@/assets/me.jpg'),
       aboutIcon: 'fa fa-female',
-      info: 'ANNE-EH-KAH CHEW<br>she/her',
+      info: 'ANNE-EH-KAH CHEW',
+      pronouns: 'she/her',
       texts: [
         { p: 'I am a senior studying Information Technology.' },
-        { p: 'Last summer, I worked with data science Compliance. This summer, I worked on Capital One\'s Android application!' },
-        { p: 'I am a research assistant investigating the relationship of professor citations and university rankings.' },
+        { p: 'I have worked as an intern for Android and Data Science Compliance.' },
         { p: 'In my freetime, take naps, cook delicious food, and make bubble tea.' }
       ]
     }
@@ -43,6 +39,7 @@ export default {
   width: 100%;
   margin: 0;
   overflow: hidden;
+  line-height: 0.5;
 }
 .content {
   width: 60%;
@@ -50,10 +47,6 @@ export default {
   margin-right: 20%;
   justify-content: center;
   align-content: center;
-  /*
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  */
 }
 #about > h2 {
   text-align: center;

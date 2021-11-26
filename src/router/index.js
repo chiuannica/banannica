@@ -28,6 +28,22 @@ export default new Router({
       path: '/bio',
       name: 'Bio',
       component: Bio
+    },
+    {
+      path: '/linkedin',
+      name: 'Linkedin',
+      component: Contact,
+      beforeEnter (to, from, next) {
+        window.location.href = 'https://www.linkedin.com/in/annicachiu/'
+      }
+    },
+    {
+      path: '/github',
+      name: 'GitHub',
+      component: Contact,
+      beforeEnter (to, from, next) {
+        window.location.href = 'https://github.com/chiuannica'
+      }
     }
   ]
 })
