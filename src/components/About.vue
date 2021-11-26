@@ -39,7 +39,7 @@ export default {
   width: 100%;
   margin: 0;
   overflow: hidden;
-  line-height: 0.5;
+  line-height: 0.9;
 }
 .content {
   width: 60%;
