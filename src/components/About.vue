@@ -22,11 +22,11 @@ export default {
       title: 'Hi, I\'m Annica!',
       myPicture: require('@/assets/me.jpg'),
       aboutIcon: 'fa fa-female',
-      info: 'ANNE-EH-KAH CHEW',
+      info: 'ANNE-EH-KAH',
       pronouns: 'she/her',
       texts: [
         { p: 'I am a senior studying Information Technology.' },
-        { p: 'I have worked as an intern for Android and Data Science Compliance.' },
+        { p: 'I have experience in Android, Data Science, and Full-Stack Development.' },
         { p: 'In my freetime, take naps, cook delicious food, and make bubble tea.' }
       ]
     }
