@@ -18,8 +18,7 @@ export default {
       title: 'Contact',
       icon: 'fa fa-address-book',
       medias: [
-        { id: 1, name: 'GitHub', handle: 'chiuannica', link: 'https://github.com/chiuannica', icon: 'fa fa-github' },
-        { id: 2, name: 'LinkedIn', handle: 'Delete LinkedIn for the sake of mental health!', link: 'https://www.linkedin.com/', icon: 'fa fa-linkedin' }
+        { id: 1, name: 'GitHub', handle: 'chiuannica', link: 'https://github.com/chiuannica', icon: 'fa fa-github' }
       ]
     }
   }
