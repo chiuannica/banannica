@@ -20,7 +20,6 @@ export default {
   data () {
     return {
       title: 'Hi, I\'m Annica!',
-      myPicture: require('@/assets/me.jpg'),
       aboutIcon: 'fa fa-female',
       info: 'ANNE-EH-KAH',
       pronouns: 'she/her',
