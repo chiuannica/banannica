@@ -13,7 +13,7 @@ export default {
       tabs: [
         {title: 'Home', link: '/', func: 'null', id: 0},
         {title: 'Blog', link: '/blog', func: null, id: 1},
-        {title: 'Contact', link: '/contact', func: null, id: 2}
+        //{title: 'Contact', link: '/contact', func: null, id: 2}
       ]
     }
   }
