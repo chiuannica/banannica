@@ -35,7 +35,7 @@ export default {
   data () {
     return {
       title: 'Blog',
-      navText: 'Click on Title to View',
+      navText: '',
       navIcon: 'fa fa-pencil',
       blogs: [
         /*
@@ -393,11 +393,10 @@ h5 {
   grid-template-columns: 3fr 1fr;
   padding: 0% 1%;
   margin-bottom: 1.5%;
+  border: hsl(216, 21%, 13%) solid 0.2vh;
   border-left: hsl(216, 21%, 13%) solid 0.5vh;
   border-radius: 0.5vh;
-  color: hsla(354, 51%, 88%, 0.8);
-  background: hsl(216, 21%, 26%);
-  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+  color: hsl(216, 21%, 13%);
   text-decoration: none;
   transition: 0.7s;
 }
@@ -407,7 +406,9 @@ h5 {
 .blog-nav-item:hover {
   background: hsl(216, 21%, 13%);
   border-left: hsla(354, 51%, 88%, 0.8) solid 1vh;
+  color: hsla(354, 51%, 88%, 0.8);
   cursor: pointer;
+  box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
 article {
   margin: .5% 0;

@@ -2,10 +2,12 @@
   <div id="about">
     <h2>{{ title }} <i :class="aboutIcon"></i></h2>
     <div class="content">
-      <h3 v-html="info"></h3>
+      <p v-html="info"></p>
       <p><em v-html="pronouns"></em></p>
       <div class="text">
-        <p v-for="text in texts" :key="text.id" v-html="text.p"></p>
+        <ul>
+          <li v-for="text in texts" :key="text.id" v-html="text.p"></li>
+        </ul>
         <!--
         <router-link class="bio-link" to=/Bio exact>Extended Biography</router-link>
         -->
@@ -21,12 +23,13 @@ export default {
     return {
       title: 'Hi, I\'m Annica!',
       aboutIcon: 'fa fa-female',
-      info: 'ANNE-EH-KAH',
+      info: 'pronounced ANNE-EH-KAH',
       pronouns: 'she/her',
       texts: [
-        { p: 'I am a senior studying Information Technology.' },
-        { p: 'I have experience in Android, Data Science, and Full-Stack Development.' },
-        { p: 'In my freetime, take naps, cook delicious food, and make bubble tea.' }
+        { p: 'I am a graduate of Temple University. I studied Information Technology.' },
+        { p: 'I have experience in Android, Full-Stack Development, and Data Science. ' },
+        { p: 'I used to be a baking teaching assistant for grades K through 8.' },
+        { p: 'I love learning languages! I speak the following languages in descending order of proficiency: English, Spanish, Cantonese, German, Mandarin, and Korean.' }
       ]
     }
   }
@@ -34,6 +37,10 @@ export default {
 </script>
 
 <style>
+li {
+  font-size: 2em;
+  padding: 1%;
+}
 #about {
   width: 100%;
   margin: 0;
