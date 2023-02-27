@@ -54,6 +54,24 @@ export default {
         },
         */
 
+
+
+        {
+          id: 17,
+          title: 'The Guilt of Success',
+          date: '2/27/2023',
+          author: 'Annica',
+          paragraphs: [
+            { id: 0, text: '<iframe width="560" height="315" src="https://www.youtube.com/embed/yZkVXGDD1pg?start=27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>' },
+            { id: 1, text: 'I remember a troubled kid from elementary school, Nasir Livingston. He was picked on and had a hard time defending himself. One day, our teacher told us that he hadn\'t been coming to school because of an accident involving a gun. Two years ago, I learned that he was murdered by gun violence. Sometimes, I still think about him and feel guilty. He never had the chance to do things I did.' },
+            { id: 2, text: 'My guilt about success comes from this and my childhood. I moved schools from that elementary school, to a magnet school. I didn’t have any paper except for the paper in my diary. I did my homework on my diary paper, and my teacher was so upset that I didn’t do it on normal paper. She couldn’t understand the idea that I didn’t have normal 8 by 11 lined paper at home. ' },
+            { id: 3, text: 'I used to think that when I became successful, I would help my community. Although I still hold onto that hope, I know that becoming successful enough to do philanthropy is far from where I am right now. I still feel guilty, however, that I was able to leave that childhood behind, and that Nasir never had the chance to do that too.' },
+            { id: 4, text: 'A lot of normal people wonder how executives become so removed from normal people that they lose empathy for those they lead. But, I too am guilty of forgetting about the kids I used to teach at Upward Bound. Many of them were likely in similar circumstances to Nasir.' },
+            { id: 5, text: 'I was frustrated that all I could do for the kids at Upward Bound was help them with their math homework. I couldn\'t do much else, even though I wanted to. Many people say America is the land of opportunity, and that it is up to ourselves to succeed. They are often removed from the reality of some people\'s circumstances.' },
+            { id: 6, text: 'Despite graduating college and having what some may call a professional career, I find myself caught up in my work and forgetting to live my life. I am obsessed with success. Why do I have a mild caffeine addiction? Why do I check my emails so often? I have financial security, but I\'m not living the life it gives me. This brings me back to Nasir. He\'s no longer here. I am, and not focused on living my life. I’m not focused on helping those kids that I wanted to help more before. I’m focused on my career. ' }
+          ],
+          showBlog: false
+        },
         {
           id: 16,
           title: 'Everything I Need is on the Ground!',
