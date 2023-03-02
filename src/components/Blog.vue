@@ -53,9 +53,6 @@ export default {
           showBlog: false
         },
         */
-
-
-
         {
           id: 17,
           title: 'The Guilt of Success',

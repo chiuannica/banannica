@@ -44,6 +44,14 @@ export default new Router({
       beforeEnter (to, from, next) {
         window.location.href = 'https://github.com/chiuannica'
       }
+    },
+    {
+      path: '/resume',
+      name: 'Resume',
+      component: Contact,
+      beforeEnter (to, from, next) {
+        window.location.href = 'https://drive.google.com/file/d/15w605bjlbpFN_kNhElEoeqV8Furvhu5K/view'
+      }
     }
   ]
 })
