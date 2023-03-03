@@ -2,24 +2,41 @@
   <div id="blog">
     <h2>{{ title }} <i :class="navIcon"></i></h2>
     <p class="nav-text">{{ navText }}</p>
+    <!-- PAGINATION -->
+    <nav>
+      <ul class="pagination">
+        <li class="prev" :class="{ 'disabled': currentPage === 1 }" @click="previousPage()">
+          <a href="#">Prev</a>
+        </li>
+        <li v-for="page in pages"
+            :key="page"
+            @click="changeToPage(page)"
+            :class="{ 'bold-page': page === currentPage }">
+          <a href="#">{{ page }}</a>
+        </li>
+        <li class="next" :class="{ 'disabled': currentPage === pages.length }" @click="nextPage()">
+          <a href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- BLOG LIST -->
+
     <div id="blog-nav">
-      <div :key="blog.id" v-for="blog in blogs">
-        <a class="blog-nav-item" v-on:click="blog.showBlog = !blog.showBlog">
+      <div :key="blog.id" v-for="(blog) in paginatedBlogs">
+        <a class="blog-nav-item" v-on:click="showBlog(blog)">
           <p> {{ blog.title }}</p> <p class="date">{{ blog.date }}</p>
         </a>
         <article v-show="blog.showBlog" :key="blog.date" :id="blog.id">
-        <div>
-          <h5 class="blog-title" v-on:click="blog.showBlog = !blog.showBlog"></h5>
-          <!--
-            <p>{{ blog.date }} by {{ blog.author }}</p>
-          -->
-        </div>
+
+        <!--BODY OF BLOG -->
         <div class="blog-body">
           <img class="blog-img" :src="blog.img">
           <div :key="paragraph.id" v-for="paragraph in blog.paragraphs">
             <p v-html="paragraph.text"></p>
           </div>
         </div>
+
+        <!--CLOSE BUTTON OF BLOG -->
         <div class="blog-close-wrapper">
           <button class="blog-close-btn" v-on:click="blog.showBlog = !blog.showBlog"><i class="fa fa-times"></i></button>
         </div>
@@ -360,7 +377,6 @@ export default {
         },
         {
           id: 0,
-          link: '#0',
           title: 'Becoming a Web Development Instructor',
           date: '8/7/2019',
           author: 'Annica',
@@ -377,7 +393,53 @@ export default {
           ],
           showBlog: false
         }
-      ]
+      ],
+      currentPage: 1,
+      blogsPerPage: 5,
+      currentPageStyle: 'bold-page'
+    }
+  },
+  computed: {
+    paginatedBlogs () {
+      const startIndex = (this.currentPage - 1) * this.blogsPerPage
+      const endIndex = startIndex + this.blogsPerPage
+      return this.blogs.slice(startIndex, endIndex)
+    },
+    pages () {
+      return Math.ceil(this.blogs.length / this.blogsPerPage)
+    }
+  },
+
+  methods: {
+    closeAllBlogs () {
+      this.blogs.forEach(blog => {
+        blog.showBlog = false
+      })
+      if (this.playingVideo) {
+        this.playingVideo.pause()
+        this.playingVideo = null
+      }
+    },
+
+    changeToPage (page) {
+      this.closeAllBlogs()
+      this.currentPage = page
+    },
+    previousPage () {
+      this.closeAllBlogs()
+      if (this.currentPage > 1) {
+        this.currentPage--
+      }
+    },
+    nextPage () {
+      this.closeAllBlogs()
+      if (this.currentPage < this.pages) {
+        this.currentPage++
+      }
+    },
+    showBlog (blog) {
+      this.closeAllBlogs()
+      blog.showBlog = !blog.showBlog
     }
   }
 }
@@ -456,7 +518,9 @@ article {
   font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1rem;
   display: block;
-  width: 10%;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
   color: hsla(354, 51%, 95%, 0.8);
   background: hsla(354, 51%, 38%, 0.8);
   border: 0;
@@ -467,13 +531,40 @@ article {
   cursor: pointer;
 }
 .blog-close-btn:hover{
-  background: hsla(354, 51%, 30%, 0.8);
+  border-bottom: hsla(354, 51%, 30%, 0.8) solid 1vh;
   transition: all 0.7s;
 }
 iframe {
   border-left: hsla(354, 51%, 88%, 0.8) solid 1vh;
   padding-left: 1%;
   max-width: 100%;
+}
+
+/* PAGINATION */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  font-size: 0.4em;
+}
+.pagination li {
+  margin: 0 2%;
+}
+.pagination li a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+.pagination li a:hover,
+.pagination li a.active {
+  font-weight: bold;
+  cursor: pointer;
+}
+.bold-page > a {
+  border-bottom: hsla(354, 51%, 88%, 0.8) solid 1vh;
+  font-weight: bold;
 }
 @media screen and (max-width: 768px) {
   #blog {
@@ -488,9 +579,6 @@ iframe {
   }
   .blog-title {
     font-size: 1rem;
-  }
-  .blog-close-btn {
-    width: 60%;
   }
 
 }

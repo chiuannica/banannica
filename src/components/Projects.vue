@@ -28,28 +28,28 @@ export default {
       title: 'Projects',
       projectsIcon: 'fa fa-file-code-o',
       projectCategories: {
-        dataScience: {
-          id: 0,
-          name: 'Data Science',
-          projects: [
-            {
-              id: 0,
-              name: 'Finding Doge: Cryptocurrency Value and Search Trends',
-              description: 'An investigation of the relationship between Google search trends and cryptocurrency values<br> Best Financial Hack at PearlHacks (255 participants)',
-              tools: 'Python, Pandas, Matplotlib, Scipy',
-              link: 'https://devpost.com/software/search-trends-and-cryptocurrencies',
-              github: 'https://gist.github.com/chiuannica/b40328c39bd816d9e3dd5886925eccfd'
-            },
-            {
-              id: 1,
-              name: 'Comparing Cryptocurrencies: Dogecoin vs. Ethereum',
-              description: 'An analysis of Dogecoin and Ether to evaluate if it is a wise investment or has reliable growth<br> Best Financial Hack at FemmeHacks (210 participants)',
-              tools: 'Python, Pandas, Matplotlib, Keras',
-              link: 'https://devpost.com/software/ethereuming',
-              github: 'https://gist.github.com/chiuannica/df4c95917450d64517750f4e5dd93b1b'
-            }
-          ]
-        },
+        // dataScience: {
+        //   id: 0,
+        //   name: 'Data Science',
+        //   projects: [
+        //     {
+        //       id: 0,
+        //       name: 'Finding Doge: Cryptocurrency Value and Search Trends',
+        //       description: 'An investigation of the relationship between Google search trends and cryptocurrency values<br> Best Financial Hack at PearlHacks (255 participants)',
+        //       tools: 'Python, Pandas, Matplotlib, Scipy',
+        //       link: 'https://devpost.com/software/search-trends-and-cryptocurrencies',
+        //       github: 'https://gist.github.com/chiuannica/b40328c39bd816d9e3dd5886925eccfd'
+        //     },
+        //     {
+        //       id: 1,
+        //       name: 'Comparing Cryptocurrencies: Dogecoin vs. Ethereum',
+        //       description: 'An analysis of Dogecoin and Ether to evaluate if it is a wise investment or has reliable growth<br> Best Financial Hack at FemmeHacks (210 participants)',
+        //       tools: 'Python, Pandas, Matplotlib, Keras',
+        //       link: 'https://devpost.com/software/ethereuming',
+        //       github: 'https://gist.github.com/chiuannica/df4c95917450d64517750f4e5dd93b1b'
+        //     }
+        //   ]
+        // },
         web: {
           id: 1,
           name: 'Web Development',
@@ -73,7 +73,7 @@ export default {
               name: 'ACM-W Website',
               description: 'A website for Temple\'s chapter of the Association of Computing Machinery',
               tools: 'Vue, JavaScript, HTML/CSS',
-              link: 'https://tuacmw.com',
+              link: 'https://tuacmw.onrender.com',
               github: 'https://github.com/chiuannica/acmw-vue'
             },
             {

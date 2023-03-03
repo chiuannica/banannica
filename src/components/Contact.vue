@@ -30,9 +30,9 @@ export default {
 
 <style>
 #contact {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 #contact > h2 {
   text-align: center;

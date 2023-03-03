@@ -36,7 +36,7 @@ export default {
   width: 100%;
 }
 body {
-  line-height: 1.1;
+  line-height: 1.2;
   font-size: 62.5%;
   margin: 0;
 }
@@ -65,7 +65,10 @@ h6 {
   color: #354051;
   margin: 0;
 }
-p  { font-size: 1.4rem; } /* =14px */
+p, li {
+  font-size: 1.4rem; /* =14px */
+  line-height: 1.2;
+}
 a {
   font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #354051;
