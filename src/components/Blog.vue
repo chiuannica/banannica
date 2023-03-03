@@ -438,8 +438,9 @@ export default {
       }
     },
     showBlog (blog) {
+      var save = blog.showBlog
       this.closeAllBlogs()
-      blog.showBlog = !blog.showBlog
+      blog.showBlog = !save
     }
   }
 }
