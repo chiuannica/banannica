@@ -1,6 +1,5 @@
 <template>
   <div id="blog">
-    <h2>{{ title }} <i :class="navIcon"></i></h2>
     <p class="nav-text">{{ navText }}</p>
     <!-- PAGINATION -->
     <nav>
@@ -116,9 +115,6 @@ h5 {
   display: block;
   max-width: 70em;
   margin: 0 auto;
-}
-#blog > h2 {
-  text-align: center;
 }
 #blog-nav {
   display: grid;

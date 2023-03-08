@@ -104,13 +104,13 @@ export default {
   margin: 2.5%;
   margin-top: 0;
 }
+#projects > h2 {
+  margin-left: 15%;
+}
 .project-nav-categories {
   display: grid;
   grid-template-columns: 1fr 6fr;
   grid-gap: 2%;
-}
-#projects > h2, .project-category {
-  text-align: center;
 }
 .project {
   background: hsl(216, 21%, 13%);
@@ -163,6 +163,8 @@ export default {
   width: 100%;
   padding: 0.5vh;
   padding-top: 2vh;
+  cursor: pointer;
+  opacity: 40%;
 }
 .projects-grid{
   display: grid;

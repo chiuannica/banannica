@@ -1,7 +1,7 @@
 <template>
   <div id="about">
-    <h2>{{ title }} <i :class="aboutIcon"></i></h2>
     <div class="content">
+      <h2>{{ title }}</h2>
       <p v-html="info"></p>
       <p><em v-html="pronouns"></em></p>
       <div class="text">
@@ -47,14 +47,11 @@ li {
   line-height: 0.9;
 }
 .content {
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 5%;
   justify-content: center;
   align-content: center;
-}
-#about > h2 {
-  text-align: center;
 }
 .my-picture {
   margin-left: auto;
@@ -67,10 +64,6 @@ li {
   border: 0.5rem solid hsla(217, 34%, 52%, 0.9);
   border-radius: 50%;
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
-}
-.text {
-  /* width: 95%; */
-  max-width: 85vh;
 }
 .bio-link {
   padding-left: 1%;

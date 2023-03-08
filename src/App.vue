@@ -45,7 +45,6 @@ h1, h2, h3, h4, h5 {
 }
 h1 {
   font-size: 4.2rem;
-  text-align: center;
 }
 h2 {
   font-size: 3.4rem;

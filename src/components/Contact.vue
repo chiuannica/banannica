@@ -1,6 +1,5 @@
 <template>
   <div id="contact">
-    <h2>{{ title }} <i :class="icon"></i></h2>
     <div class="contact-links">
       <div :key=media.id v-for="media in medias" class="contact-link">
         <a :href="media.link">
@@ -30,11 +29,7 @@ export default {
 
 <style>
 #contact {
-  margin-left: 25%;
-  margin-right: 25%;
-}
-#contact > h2 {
-  text-align: center;
+  margin: 7.5% 25%;
 }
 .contact-links {
   display: block;

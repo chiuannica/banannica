@@ -1,10 +1,11 @@
 <template>
   <nav>
     <div :key=tab.id v-for="tab in tabs">
-      <router-link :onclick="tab.func" :to="tab.link" exact>{{ tab.title }}</router-link>
+      <router-link :onclick="tab.func" :to="tab.link" exact :active-class="'active-tab'">{{ tab.title }}</router-link>
     </div>
   </nav>
 </template>
+
 <script>
 export default {
   name: 'Header',
@@ -21,7 +22,6 @@ export default {
 </script>
 <style scoped>
 a {
-  text-align: center;
   text-decoration: none;
   position: relative;
 }
@@ -44,17 +44,25 @@ a.block{
   display: block;
   padding: 0.5em;
 }
-nav{
+nav {
   background: transparent;
   width: 100%;
   height: 10vh;
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 1.5em;
+}
+.active-tab {
+  font-weight: bold;
+  width: 100%;
+  border-bottom: rgba(235, 193, 197, 0.55) 1vh solid;
+}
+.active-tab:after {
+  width: 100%;
 }
 @media screen and (max-width: 600px) {
   a {
-    font-size: 2em;
     margin-bottom: 5%;
     float: none;
     display: block;
