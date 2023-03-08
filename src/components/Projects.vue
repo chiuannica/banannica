@@ -1,17 +1,35 @@
 <template>
   <div id="projects">
-    <h2 v-html=title> <i :class="projectsIcon"></i></h2>
-    <div>
-      <div :key=projectCategory.id v-for="projectCategory in projectCategories">
-        <h3 class="project-category" v-html=projectCategory.name></h3>
-        <div class="projects-grid" >
-          <div :key=project.id v-for="project in projectCategory.projects">
-            <div class="project" >
-              <h4 class="project-title" v-html=project.name></h4>
-              <p v-html=project.description></p>
-              <p><em v-html=project.tools></em></p>
-              <a :href="project.link">Website</a><br>
-              <a v-if="project.github" :href="project.github">GitHub</a>
+    <h2>{{ title }} <i :class="projectsIcon"></i></h2>
+    <!-- PROJECT NAVIGATION  -->
+    <div class="project-nav-categories">
+      <div class="project-nav">
+        <h3
+          v-for="(projectCategory, index) in projectCategories"
+          :key="index"
+          :class="{ 'project-nav-button-active': projectCategory.showCategory === true }"
+          class="project-nav-button"
+          @click="showCategory(index)"
+        >
+          {{ projectCategory.name }}
+        </h3>
+      </div>
+
+      <!-- PROJECT BOXES  -->
+      <div class="project-categories">
+        <div v-for="(projectCategory, index) in projectCategories" :key="index" v-show="projectCategory.showCategory">
+          <div class="projects-grid" >
+            <div :key=project.id v-for="project in projectCategory.projects">
+              <div class="project" >
+                <div>
+                  <h4 class="project-title" v-html=project.name></h4>
+                  <p v-html=project.description></p>
+                  <p><em v-html=project.tools></em></p>
+                  <a class="project-link" v-if="project.link" :href="project.link">Website</a><br>
+                  <a class="project-link" v-if="project.github" :href="project.github">GitHub</a>
+                </div>
+                <div v-if="project.img"><img class="project-img" :src="require(`@/assets/demos/${project.img}`)"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -23,36 +41,80 @@
 <script>
 export default {
   name: 'Projects',
+  methods: {
+    closeAll () {
+      for (let category of this.projectCategories) {
+        category.showCategory = false
+      }
+    },
+    showCategory (index) {
+      this.closeAll()
+      this.projectCategories[index].showCategory = true
+    }
+  },
   data () {
     return {
       title: 'Projects',
       projectsIcon: 'fa fa-file-code-o',
-      projectCategories: {
-        // dataScience: {
-        //   id: 0,
-        //   name: 'Data Science',
-        //   projects: [
-        //     {
-        //       id: 0,
-        //       name: 'Finding Doge: Cryptocurrency Value and Search Trends',
-        //       description: 'An investigation of the relationship between Google search trends and cryptocurrency values<br> Best Financial Hack at PearlHacks (255 participants)',
-        //       tools: 'Python, Pandas, Matplotlib, Scipy',
-        //       link: 'https://devpost.com/software/search-trends-and-cryptocurrencies',
-        //       github: 'https://gist.github.com/chiuannica/b40328c39bd816d9e3dd5886925eccfd'
-        //     },
-        //     {
-        //       id: 1,
-        //       name: 'Comparing Cryptocurrencies: Dogecoin vs. Ethereum',
-        //       description: 'An analysis of Dogecoin and Ether to evaluate if it is a wise investment or has reliable growth<br> Best Financial Hack at FemmeHacks (210 participants)',
-        //       tools: 'Python, Pandas, Matplotlib, Keras',
-        //       link: 'https://devpost.com/software/ethereuming',
-        //       github: 'https://gist.github.com/chiuannica/df4c95917450d64517750f4e5dd93b1b'
-        //     }
-        //   ]
-        // },
-        web: {
+      projectCategories: [
+        {
+          id: 2,
+          name: 'Android',
+          showCategory: false,
+          projects: [
+            {
+              id: 0,
+              name: 'To Do List',
+              description: 'A simple to do list with automatic saving, update, creation, and deletion abilities',
+              tools: 'Kotlin, Android Studio',
+              github: 'https://github.com/chiuannica/SimpleToDo',
+              img: 'todolist.gif'
+            },
+            {
+              id: 1,
+              name: 'Wishlist',
+              description: 'A wishlist with automatic saving, creation, deletion abilities',
+              tools: 'Kotlin, Android Studio',
+              github: 'https://github.com/chiuannica/Wishlist',
+              img: 'wishlist.gif'
+            },
+            {
+              id: 2,
+              name: 'Capybarable',
+              description: 'An application inspired by Wordle, with a Capybara twist. The user guesses a four-letter word in three guesses, with the app telling the user if the letters are in the word and if they are in the right location.',
+              tools: 'Kotlin, Android Studio',
+              github: 'https://github.com/chiuannica/Wordle',
+              img: 'wordle.gif'
+            }
+          ]
+        },
+        {
+          id: 0,
+          name: 'Data Science',
+          showCategory: false,
+          projects: [
+            {
+              id: 0,
+              name: 'Finding Doge: Cryptocurrency Value and Search Trends',
+              description: 'An investigation of the relationship between Google search trends and cryptocurrency values<br> Best Financial Hack at PearlHacks (255 participants). <br>Two years later, my predition was proved to be true.',
+              tools: 'Python, Pandas, Matplotlib, Scipy',
+              link: 'https://devpost.com/software/search-trends-and-cryptocurrencies',
+              github: 'https://gist.github.com/chiuannica/b40328c39bd816d9e3dd5886925eccfd'
+            },
+            {
+              id: 1,
+              name: 'Comparing Cryptocurrencies: Dogecoin vs. Ethereum',
+              description: 'An analysis of Dogecoin and Ether to evaluate if it is a wise investment or has reliable growth<br> Best Financial Hack at FemmeHacks (210 participants). <br>Two years later, my predition was proved to be true.',
+              tools: 'Python, Pandas, Matplotlib, Keras',
+              link: 'https://devpost.com/software/ethereuming',
+              github: 'https://gist.github.com/chiuannica/df4c95917450d64517750f4e5dd93b1b'
+            }
+          ]
+        },
+        {
           id: 1,
           name: 'Web Development',
+          showCategory: false,
           projects: [
             {
               id: 2,
@@ -86,7 +148,7 @@ export default {
             }
           ]
         }
-      }
+      ]
     }
   }
 }
@@ -94,9 +156,14 @@ export default {
 
 <style>
 #projects{
-  width: 80%;
-  margin: 10%;
+  width: 93%;
+  margin: 2.5%;
   margin-top: 0;
+}
+.project-nav-categories {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-gap: 3%;
 }
 #projects > h2, .project-category {
   text-align: center;
@@ -110,26 +177,38 @@ export default {
   transition: border-left 0.7s;
   margin: 0;
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+  line-height: 1.2;
+
+  display: grid;
+  grid-template-columns: 5fr 1fr;
 }
-.project > .project-title {
+.project-nav-button {
+  cursor: pointer;
+}
+.project-nav-button-active {
+  border-bottom: hsla(354, 51%, 88%, 0.8) solid 1vh;
+  font-weight: bold;
+}
+.project-title {
   margin: 0;
   font-size: 3em;
   font-display: bold;
   line-height: 1;
 }
-.project > p {
-  line-height: 1.2;
-}
-.project > a {
+.project-link {
   padding-left: 1%;
   border-left: hsla(217, 34%, 52%, 1) solid 0.5vh;
   color: hsla(217, 34%, 52%, 0.9);
   transition: border-left 0.7s;
   line-height: 2;
 }
-.project > a:hover {
+.project-link:hover {
   color: hsla(217, 34%, 52%, 0.9);
   border-left: hsla(217, 34%, 52%, 1) solid 1vh;
+}
+.project-img {
+  width: 15vh;
+  padding: 2vh;
 }
 .projects-grid{
   display: grid;
