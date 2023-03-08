@@ -5,8 +5,8 @@
     <!-- PAGINATION -->
     <nav>
       <ul class="pagination">
-        <li class="prev" :class="{ 'disabled': currentPage === 1 }" @click="previousPage()">
-          <a href="#">Prev</a>
+        <li class="prev" @click="previousPage()">
+          <a href="#">←</a>
         </li>
         <li v-for="page in pages"
             :key="page"
@@ -14,8 +14,8 @@
             :class="{ 'bold-page': page === currentPage }">
           <a href="#">{{ page }}</a>
         </li>
-        <li class="next" :class="{ 'disabled': currentPage === pages.length }" @click="nextPage()">
-          <a href="#">Next</a>
+        <li class="next" @click="nextPage()">
+          <a href="#">→</a>
         </li>
       </ul>
     </nav>
@@ -517,10 +517,10 @@ article {
 }
 .blog-close-btn {
   font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1rem;
+  font-size: 3rem;
   display: block;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   line-height: 3rem;
   color: hsla(354, 51%, 95%, 0.8);
   background: hsla(354, 51%, 38%, 0.8);
@@ -528,12 +528,11 @@ article {
   border-radius: 0.5vh;
   padding-left: auto;
   padding-right: auto;
-  transition: all 0.7s;
   cursor: pointer;
+  transition: all 0.7s;
 }
 .blog-close-btn:hover{
-  border-bottom: hsla(354, 51%, 30%, 0.8) solid 1vh;
-  transition: all 0.7s;
+  background: hsla(354, 51%, 30%, 0.8);
 }
 iframe {
   border-left: hsla(354, 51%, 88%, 0.8) solid 1vh;
@@ -557,11 +556,11 @@ iframe {
   text-align: center;
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
 }
 .pagination li a:hover,
 .pagination li a.active {
   font-weight: bold;
-  cursor: pointer;
 }
 .bold-page > a {
   border-bottom: hsla(354, 51%, 88%, 0.8) solid 1vh;

@@ -4,7 +4,7 @@
     <!-- PROJECT NAVIGATION  -->
     <div class="project-nav-categories">
       <div class="project-nav">
-        <h3
+        <a
           v-for="(projectCategory, index) in projectCategories"
           :key="index"
           :class="{ 'project-nav-button-active': projectCategory.showCategory === true }"
@@ -12,7 +12,7 @@
           @click="showCategory(index)"
         >
           {{ projectCategory.name }}
-        </h3>
+      </a>
       </div>
 
       <!-- PROJECT BOXES  -->
@@ -60,7 +60,7 @@ export default {
         {
           id: 2,
           name: 'Android',
-          showCategory: false,
+          showCategory: true,
           projects: [
             {
               id: 0,
@@ -81,7 +81,7 @@ export default {
             {
               id: 2,
               name: 'Capybarable',
-              description: 'An application inspired by Wordle, with a Capybara twist. The user guesses a four-letter word in three guesses, with the app telling the user if the letters are in the word and if they are in the right location.',
+              description: 'An application inspired by Wordle, with a Capybara twist. <br>The user guesses a four-letter word in three guesses, with the app telling the user if the letters are in the word and if they are in the right location.',
               tools: 'Kotlin, Android Studio',
               github: 'https://github.com/chiuannica/Wordle',
               img: 'wordle.gif'
@@ -117,11 +117,25 @@ export default {
           showCategory: false,
           projects: [
             {
+              id: 1,
+              name: 'DogeBook',
+              description: 'This is a mock Facebook application. The application supports profile, timeline, friend recommendations, and friends!',
+              tools: 'ASP.NET, C#, Microsoft SQL Database, SQL HTML/CSS',
+              github: 'https://github.com/chiuannica/DogeBook'
+            },
+            {
               id: 2,
               name: 'DogeMail',
               description: 'This is a mock email application. This is a school project! Please don\'t enter any real information in this application.',
               tools: 'ASP.NET, C#, Microsoft SQL Database, SQL HTML/CSS',
               link: 'http://cis-iis2.temple.edu/Spring2021/CIS3342_tui30639/Project3/'
+            },
+            {
+              id: 2,
+              name: 'Doge\'s Pizza House',
+              description: 'This is a simple pizza ordering website.',
+              tools: 'ASP.NET, C#, Microsoft SQL Database, SQL HTML/CSS',
+              link: 'http://cis-iis2.temple.edu/Spring2021/CIS3342_tui30639/Project2/'
             },
             {
               id: 3,
@@ -156,7 +170,7 @@ export default {
 
 <style>
 #projects{
-  width: 93%;
+  width: 90%;
   margin: 2.5%;
   margin-top: 0;
 }
@@ -178,33 +192,42 @@ export default {
   margin: 0;
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
   line-height: 1.2;
-
   display: grid;
   grid-template-columns: 5fr 1fr;
 }
 .project-nav-button {
   cursor: pointer;
+  display: block;
+  margin: 1%;
+  padding: 2%;
+  padding-bottom: 1%;
+  font-size: 3.4em;
+  border-radius: 0.5vh;
+  border-bottom: hsla(354, 51%, 88%, 0) solid 1vh;
+  transition: 0.7s;
+}
+.project-nav-button:hover{
+  background: hsla(217, 34%, 80%, 0.5);
+  font-weight: bold;
 }
 .project-nav-button-active {
   border-bottom: hsla(354, 51%, 88%, 0.8) solid 1vh;
-  font-weight: bold;
 }
 .project-title {
   margin: 0;
-  font-size: 3em;
   font-display: bold;
   line-height: 1;
 }
 .project-link {
   padding-left: 1%;
-  border-left: hsla(217, 34%, 52%, 1) solid 0.5vh;
-  color: hsla(217, 34%, 52%, 0.9);
+  border-left: hsla(217, 34%, 80%, 1) solid 0.5vh;
+  color: hsla(217, 34%, 80%, 0.9);
   transition: border-left 0.7s;
   line-height: 2;
 }
 .project-link:hover {
-  color: hsla(217, 34%, 52%, 0.9);
-  border-left: hsla(217, 34%, 52%, 1) solid 1vh;
+  color: hsla(217, 34%, 80%, 1);
+  border-left: hsla(217, 34%, 80%, 1) solid 1vh;
 }
 .project-img {
   width: 15vh;
@@ -222,6 +245,12 @@ export default {
   }
   h4 {
     font-size: 1.2rem;
+  }
+  .project-nav-categories {
+    display: block;
+  }
+  .project-nav {
+    margin: 5%;
   }
   .projects-grid {
     display: block;

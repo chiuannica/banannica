@@ -38,7 +38,6 @@ export default {
 
 <style>
 li {
-  font-size: 2em;
   padding: 1%;
 }
 #about {
@@ -70,7 +69,8 @@ li {
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
 .text {
-  width: 100%;
+  /* width: 95%; */
+  max-width: 85vh;
 }
 .bio-link {
   padding-left: 1%;
@@ -91,6 +91,9 @@ li {
     display: block;
     width: 90%;
     margin: 5%;
+  }
+  .text {
+    width: 100%;
   }
   .my-picture {
     display: flex;
