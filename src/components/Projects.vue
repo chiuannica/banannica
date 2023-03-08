@@ -99,7 +99,7 @@ export default {
 </script>
 
 <style>
-#projects{
+#projects {
   width: 90%;
   margin: 2.5%;
   margin-top: 0;
@@ -175,13 +175,12 @@ export default {
   z-index: 10;
   left: 0;
   top: 0;
-  width: 60%;
-  height: 75%;
-  margin: 3% 25%;
+  width: 80%;
+  height: 100%;
+  margin: 0 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: hsla(214, 21%, 13%, 0.30);
   opacity: 0;
   transition: opacity 0.35s ease-in-out;
   cursor: pointer;
@@ -222,9 +221,9 @@ export default {
 }
 .modal-img {
   width: 100%;
-  max-width: 35rem;
-  max-height: 30rem;
-  border-radius: 1rem;
+  max-width: 45rem;
+  max-height: 45rem;
+  border-radius: 0.5rem;
 }
 @media screen and (max-width: 1100px) {
   #projects {
