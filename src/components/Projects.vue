@@ -12,9 +12,8 @@
           @click="showCategory(index)"
         >
           {{ projectCategory.name }}
-      </a>
+        </a>
       </div>
-
       <!-- PROJECT BOXES  -->
       <div class="project-categories">
         <div v-for="(projectCategory, index) in projectCategories" :key="index" v-show="projectCategory.showCategory">
@@ -28,10 +27,37 @@
                   <a class="project-link" v-if="project.link" :href="project.link">Website</a><br>
                   <a class="project-link" v-if="project.github" :href="project.github">GitHub</a>
                 </div>
-                <div v-if="project.img"><img class="project-img" :src="require(`@/assets/demos/${project.img}`)"></div>
+                <div v-if="project.img">
+                  <img
+                    class="project-img"
+                    :src="require(`@/assets/demos/${project.img}`)"
+                    @click="showModal(project)"
+                  >
+                  </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <!--IMAGE PREVIEW MODAL-->
+    <div
+      class="modal"
+      v-if="showImageModal"
+      @click="closeModal()"
+      :class="{ 'modal-show': showImageModal === true }"
+    >
+      <div class="modal-content">
+        <img
+          class="modal-img"
+          :src="require(`@/assets/demos/${modalProject.img}`)"
+        >
+        <div class="modal-close-wrapper">
+          <button
+            class="modal-close-button"
+          >
+            <i class="fa fa-times"></i>
+          </button>
         </div>
       </div>
     </div>
@@ -50,12 +76,21 @@ export default {
     showCategory (index) {
       this.closeAll()
       this.projectCategories[index].showCategory = true
+    },
+    showModal (project) {
+      this.modalProject = project
+      this.showImageModal = !this.showImageModal
+    },
+    closeModal () {
+      this.showImageModal = !this.showImageModal
     }
   },
   data () {
     return {
       title: 'Projects',
       projectsIcon: 'fa fa-file-code-o',
+      showImageModal: false,
+      modalProject: null,
       projectCategories: [
         {
           id: 2,
@@ -128,14 +163,16 @@ export default {
               name: 'DogeMail',
               description: 'This is a mock email application. This is a school project! Please don\'t enter any real information in this application.',
               tools: 'ASP.NET, C#, Microsoft SQL Database, SQL HTML/CSS',
-              link: 'http://cis-iis2.temple.edu/Spring2021/CIS3342_tui30639/Project3/'
+              link: 'http://cis-iis2.temple.edu/Spring2021/CIS3342_tui30639/Project3/',
+              img: 'dogemail.gif'
             },
             {
               id: 2,
               name: 'Doge\'s Pizza House',
               description: 'This is a simple pizza ordering website.',
               tools: 'ASP.NET, C#, Microsoft SQL Database, SQL HTML/CSS',
-              link: 'http://cis-iis2.temple.edu/Spring2021/CIS3342_tui30639/Project2/'
+              link: 'http://cis-iis2.temple.edu/Spring2021/CIS3342_tui30639/Project2/',
+              img: 'dogepizza.gif'
             },
             {
               id: 3,
@@ -177,7 +214,7 @@ export default {
 .project-nav-categories {
   display: grid;
   grid-template-columns: 1fr 6fr;
-  grid-gap: 3%;
+  grid-gap: 2%;
 }
 #projects > h2, .project-category {
   text-align: center;
@@ -187,13 +224,13 @@ export default {
   border-radius: 0.5vh;
   color: hsla(354, 51%, 88%, 0.8);
   box-sizing: border-box;
-  padding: 2em;
+  padding: 1.5em;
   transition: border-left 0.7s;
   margin: 0;
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
   line-height: 1.2;
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 .project-nav-button {
   cursor: pointer;
@@ -230,21 +267,78 @@ export default {
   border-left: hsla(217, 34%, 80%, 1) solid 1vh;
 }
 .project-img {
-  width: 15vh;
-  padding: 2vh;
+  width: 100%;
+  padding: 0.5vh;
+  padding-top: 2vh;
 }
 .projects-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3%;
+  grid-gap: 1.5%;
 }
-@media screen and (max-width: 768px) {
+/* Modal styles */
+.modal {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 75%;
+  margin: 3% 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsla(214, 21%, 13%, 0.30);
+  opacity: 0;
+  transition: opacity 0.35s ease-in-out;
+  cursor: pointer;
+}
+.modal-show {
+  opacity: 1;
+  transition: opacity 0.35s ease-in-out;
+}
+.modal-close-button {
+  z-index: 1;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 3rem;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  line-height: 3rem;
+  color: hsla(354, 51%, 95%, 0.8);
+  background: hsla(354, 51%, 38%, 0.8);
+  border: 0;
+  border-radius: 0.5vh;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+.modal-close-button:hover,
+.modal-close-button:focus {
+  text-decoration: none;
+  cursor: pointer;
+  background: hsla(354, 51%, 30%, 0.8);
+}
+.modal-close-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.modal-img {
+  width: 100%;
+  max-width: 35rem;
+  max-height: 30rem;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 1100px) {
   #projects {
     width: 100%;
-    margin: 0;
-  }
-  h4 {
-    font-size: 1.2rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .project-nav-categories {
     display: block;

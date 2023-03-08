@@ -30,7 +30,6 @@ export default {
 
 <style>
 #contact {
-  width: 50%;
   margin-left: 25%;
   margin-right: 25%;
 }
@@ -39,9 +38,12 @@ export default {
 }
 .contact-links {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact-link {
   padding: 2em;
+  max-width: 50vh;
 }
 .contact-link > a > .fa {
   font-size: 4em;
