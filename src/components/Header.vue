@@ -46,12 +46,13 @@ a.block{
 }
 nav {
   background: transparent;
-  width: 85%;
   height: 10vh;
   display: inline-flex;
   justify-content:space-between;
   align-items: center;
-  margin: 0 10%;
+  margin-left: 15%;
+  margin-right: 5%;
+  width: 75%;
 }
 .active-tab {
   font-weight: bold;

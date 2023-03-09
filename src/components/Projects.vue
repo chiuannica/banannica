@@ -187,10 +187,8 @@ export default {
   font-weight: bold;
   cursor: pointer;
   font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 3rem;
   display: block;
-  width: 4rem;
-  height: 4rem;
+  width: 20%;
   text-align: center;
   line-height: 3rem;
   color: hsla(354, 51%, 95%, 0.8);
@@ -199,6 +197,7 @@ export default {
   border-radius: 0.5vh;
   cursor: pointer;
   transition: all 0.7s;
+  text-align: center;
 }
 .modal-close-button:hover,
 .modal-close-button:focus {
