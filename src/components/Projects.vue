@@ -155,7 +155,6 @@ export default {
   padding: 0.5vh;
   padding-top: 2vh;
   cursor: pointer;
-  opacity: 80%;
 }
 .projects-grid{
   display: grid;
