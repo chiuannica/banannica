@@ -19,7 +19,14 @@ export default {
 
 <style>
 #home {
-  margin: 0;
-  width: 100%;
+  margin-left: 10%;
+  margin-right: 5%;
+  width: 85%;
+}
+@media screen and (max-width: 600px) {
+  #home {
+    margin: 2.5%;
+    width: 95%;
+  }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="projects">
-    <h2>{{ title }} <i :class="projectsIcon"></i></h2>
+    <h2>{{ title }}</h2>
     <!-- PROJECT NAVIGATION  -->
     <div class="project-nav-categories">
       <div class="project-nav">
@@ -99,14 +99,6 @@ export default {
 </script>
 
 <style>
-#projects {
-  width: 90%;
-  margin: 2.5%;
-  margin-top: 0;
-}
-#projects > h2 {
-  margin-left: 15%;
-}
 .project-nav-categories {
   display: grid;
   grid-template-columns: 1fr 6fr;
@@ -131,7 +123,6 @@ export default {
   margin: 1%;
   padding: 2%;
   padding-bottom: 1%;
-  font-size: 3.4em;
   border-radius: 0.5vh;
   border-bottom: hsla(354, 51%, 88%, 0) solid 1vh;
   transition: 0.7s;
@@ -229,17 +220,11 @@ export default {
   border-radius: 0.5rem;
 }
 @media screen and (max-width: 1100px) {
-  #projects {
-    width: 100%;
-    max-width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .project-nav-categories {
     display: block;
   }
   .project-nav {
-    margin: 5%;
+    margin: 0 2%;
   }
   .projects-grid {
     display: block;
@@ -251,9 +236,6 @@ export default {
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 5%;
-  }
-  .project > .project-title{
-    font-size: 1.4rem;
   }
 }
 </style>

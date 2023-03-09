@@ -135,6 +135,7 @@ h5 {
   color: hsl(216, 21%, 13%);
   text-decoration: none;
   transition: 0.7s;
+  font-size: 1.2em;
 }
 .date {
   text-align: right;
@@ -175,11 +176,9 @@ article {
 }
 .blog-close-btn {
   font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 3rem;
   display: block;
-  width: 4rem;
-  height: 4rem;
-  line-height: 3rem;
+  width: 15%;
+  height: 12%;
   color: hsla(354, 51%, 95%, 0.8);
   background: hsla(354, 51%, 38%, 0.8);
   border: 0;
@@ -205,7 +204,7 @@ iframe {
   justify-content: center;
   list-style: none;
   padding: 0;
-  font-size: 0.4em;
+  margin: 2%;
 }
 .pagination li {
   margin: 0 2%;
@@ -236,9 +235,5 @@ iframe {
     display: block;
     width: 90%;
   }
-  .blog-title {
-    font-size: 1rem;
-  }
-
 }
 </style>

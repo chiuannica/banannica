@@ -1,16 +1,16 @@
 <template>
   <div id="about">
+    <h2>{{ title }}</h2>
     <div class="content">
-      <h2>{{ title }}</h2>
-      <p v-html="info"></p>
-      <p><em v-html="pronouns"></em></p>
       <div class="text">
-        <ul>
-          <li v-for="text in texts" :key="text.id" v-html="text.p"></li>
-        </ul>
-        <!--
-        <router-link class="bio-link" to=/Bio exact>Extended Biography</router-link>
-        -->
+        <p v-html="info"></p>
+        <p><em v-html="pronouns"></em></p>
+          <ul>
+            <li v-for="text in texts" :key="text.id" v-html="text.p"></li>
+          </ul>
+          <!--
+          <router-link class="bio-link" to=/Bio exact>Extended Biography</router-link>
+          -->
       </div>
     </div>
   </div>
@@ -37,19 +37,7 @@ export default {
 </script>
 
 <style>
-li {
-  padding: 1%;
-}
 #about {
-  width: 100%;
-  margin: 0;
-  overflow: hidden;
-  line-height: 0.9;
-}
-.content {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 5%;
   justify-content: center;
   align-content: center;
 }
@@ -76,18 +64,7 @@ li {
   color: hsla(217, 34%, 52%, 0.9);
   border-left: hsla(217, 34%, 52%, 1) solid 1vh;
 }
-@media screen and (max-width: 768px) {
-  h6 {
-    font-size: 1.4rem;
-  }
-  .content {
-    display: block;
-    width: 90%;
-    margin: 5%;
-  }
-  .text {
-    width: 100%;
-  }
+@media screen and (max-width: 768px) {\
   .my-picture {
     display: flex;
     margin-left: 20%;

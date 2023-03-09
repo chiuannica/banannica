@@ -46,12 +46,12 @@ a.block{
 }
 nav {
   background: transparent;
-  width: 100%;
+  width: 85%;
   height: 10vh;
   display: inline-flex;
-  justify-content: space-around;
+  justify-content:space-between;
   align-items: center;
-  font-size: 1.5em;
+  margin: 0 10%;
 }
 .active-tab {
   font-weight: bold;
@@ -63,18 +63,15 @@ nav {
 }
 @media screen and (max-width: 600px) {
   a {
-    margin-bottom: 5%;
-    float: none;
-    display: block;
-    text-align: right;
+    font-size: 2.5em;
   }
-  #header{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  #header {
+    margin: 2.5%;
+    width: 95%;
   }
 }
 @media screen and (min-width: 1000px) {
-  a{
+  a {
     font-size: 3em;
   }
 }

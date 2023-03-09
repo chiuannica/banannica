@@ -42,13 +42,14 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: hsl(216, 21%, 13%);
+  line-height: 0.8;
+  padding: 0;
 }
 h1 {
   font-size: 4.2rem;
 }
 h2 {
   font-size: 3.4rem;
-  font-style: none;
 }
 h3 {
   font-size: 3.0rem;
@@ -65,7 +66,12 @@ h6 {
 }
 p, li {
   font-size: 2.1rem;
+  margin: 3% 0;
   line-height: 1.1;
+}
+ul {
+  margin: 0;
+  padding: 2%;
 }
 a {
   font-size: 2.1rem;
@@ -76,8 +82,23 @@ a {
   transition: color 0.7s;
 }
 @media screen and (max-width: 768px) {
-  p, li {
-    font-size: 2.0rem;
+  h1 {
+  font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.0rem;
+  }
+  h4, h5 {
+    font-size: 1.6rem;
+  }
+  h6 {
+    font-size: 1.6rem;
+  }
+  p, li, a {
+    font-size: 1.8em;
   }
 }
 </style>
