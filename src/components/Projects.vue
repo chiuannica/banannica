@@ -65,7 +65,7 @@
 </template>
 
 <script>
-import { projectCategories } from './projects.js'
+import { projectCategories } from './projectCategories.js'
 export default {
   name: 'Projects',
   methods: {
@@ -164,7 +164,7 @@ export default {
   padding: 0.5vh;
   padding-top: 2vh;
   cursor: pointer;
-  opacity: 40%;
+  opacity: 80%;
 }
 .projects-grid{
   display: grid;
@@ -200,6 +200,7 @@ export default {
   display: block;
   width: 4rem;
   height: 4rem;
+  text-align: center;
   line-height: 3rem;
   color: hsla(354, 51%, 95%, 0.8);
   background: hsla(354, 51%, 38%, 0.8);

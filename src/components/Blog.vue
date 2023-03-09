@@ -188,6 +188,7 @@ article {
   padding-right: auto;
   cursor: pointer;
   transition: all 0.7s;
+  text-align: center;
 }
 .blog-close-btn:hover{
   background: hsla(354, 51%, 30%, 0.8);
