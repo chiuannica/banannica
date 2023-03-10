@@ -31,7 +31,7 @@
         <div class="blog-body">
           <img class="blog-img" :src="blog.img">
           <div :key="paragraph.id" v-for="paragraph in blog.paragraphs">
-            <p v-html="paragraph.text"></p>
+            <p class="blog-text" v-html="paragraph.text"></p>
           </div>
         </div>
 
@@ -166,6 +166,9 @@ article {
 .blog-img {
   max-width: 25em;
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+}
+.blog-text {
+  margin-bottom: 2em;
 }
 .blog-close-wrapper {
   width: 100%;
