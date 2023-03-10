@@ -127,7 +127,7 @@ h5 {
 .blog-nav-item {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  padding: 0% 1%;
+  padding: 2% 3%;
   margin-bottom: 1.5%;
   border: hsl(216, 21%, 13%) solid 0.2vh;
   border-left: hsl(216, 21%, 13%) solid 0.5vh;

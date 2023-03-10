@@ -46,27 +46,27 @@ h1, h2, h3, h4, h5 {
   padding: 0;
 }
 h1 {
-  font-size: 4.2rem;
+  font-size: 3.2rem;
 }
 h2 {
-  font-size: 3.4rem;
+  font-size: 3.0rem;
 }
 h3 {
-  font-size: 3.0rem;
+  font-size: 2.4rem;
   font-style: none;
 }
 h4, h5 {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   color: #ebc1c5cc;
 }
 h6 {
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   color: #354051;
   margin: 0;
 }
 p, li {
-  font-size: 2.1rem;
-  margin: 3% 0;
+  font-size: 1.8rem;
+  margin: 0.5% 0;
   line-height: 1.1;
 }
 ul {
