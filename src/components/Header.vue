@@ -50,9 +50,7 @@ nav {
   display: inline-flex;
   justify-content:space-between;
   align-items: center;
-  margin-left: 15%;
-  margin-right: 5%;
-  width: 75%;
+  width: 100%;
 }
 .active-tab {
   font-weight: bold;
@@ -65,10 +63,6 @@ nav {
 @media screen and (max-width: 600px) {
   a {
     font-size: 2.5em;
-  }
-  #header {
-    margin: 2.5%;
-    width: 95%;
   }
 }
 @media screen and (min-width: 1000px) {

@@ -18,15 +18,6 @@ export default {
 </script>
 
 <style>
-#home {
-  margin-left: 15%;
-  margin-right: 5%;
-  width: 75%;
-}
 @media screen and (max-width: 600px) {
-  #home {
-    margin: 2.5%;
-    width: 95%;
-  }
 }
 </style>

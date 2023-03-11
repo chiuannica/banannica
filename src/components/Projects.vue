@@ -221,19 +221,13 @@ export default {
   .project-nav-categories {
     display: block;
   }
-  .project-nav {
-    margin: 0 2%;
-  }
   .projects-grid {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   .project {
-    padding: 3%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
   }
 }
 </style>

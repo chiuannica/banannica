@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <Scrollbar></Scrollbar>
-    <Header></Header>
-    <router-view></router-view>
+    <div id="body">
+      <Header></Header>
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -27,13 +29,14 @@ export default {
   font-family: 'Catamaran';
   src: url('assets/Catamaran-Regular.ttf');
 }
-#app {
+#body {
   font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   -webkit-font-smoothin: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0;
   color: hsl(216, 21%, 13%);
-  width: 100%;
+  margin-left: 15%;
+  margin-right: 5%;
+  width: 75%;
 }
 body {
   font-size: 62.5%;
@@ -82,11 +85,17 @@ a {
   transition: color 0.7s;
 }
 @media screen and (max-width: 768px) {
+  #body {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+  }
   h1 {
   font-size: 2.6rem;
   }
   h2 {
-    font-size: 1.6rem;
+    font-size: 2.0rem;
+    margin-left: 2%;
   }
   h3 {
     font-size: 1.0rem;
@@ -98,7 +107,7 @@ a {
     font-size: 1.6rem;
   }
   p, li, a {
-    font-size: 1.8em;
+    font-size: 2.0em;
   }
 }
 </style>
