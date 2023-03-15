@@ -82,6 +82,13 @@ export const projectCategories = [
         img: 'dogepizza.gif'
       },
       {
+        id: 14,
+        name: 'Svelte Pokemon Shopping Cart Tutorial',
+        description: 'This is a tutorial on how to create a Svelte Shopping Cart for my frontend class.',
+        tools: 'HTML/CSS, Svelte, JavaScript',
+        link: 'https://cis-iis2.temple.edu/Fall2020/CIS3344_tui30639/tutorial_page/index.html'
+      },
+      {
         id: 3,
         name: 'Video Game Store',
         description: 'A website that allows you to search video games in a video game store.',
