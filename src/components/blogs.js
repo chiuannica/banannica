@@ -15,6 +15,28 @@ export const blogs = [
   },
   */
   {
+    id: 18,
+    title: 'Falling in Love with Hong Kong',
+    date: '3/15/2023',
+    author: 'Annica',
+    paragraphs: [
+      { id: 0, text: 'I studied abroad in Hong Kong for my last semester of school. When I came home, it all felt like a dream. A wonderful, breathtaking dream. ' },
+      { id: 1, text: 'I wrote this around February 2022, a month into my stay.' },
+      { id: 2, text: '<em>I am studying abroad at Hong Kong Baptist University currently. I love it here. Truly. Oh my, to think that I was going to skip studying abroad. Everyone should have an experience like this.' },
+      { id: 4, text: 'I wrote this after I left in May 2022.' },
+      { id: 5, text: '<em>Dear Hong Kong,' },
+      { id: 6, text: '<em>I love you dearly. Our first meeting wasn’t the best. I spent 4 days in Penny’s Bay and 17 weeks in Dorsett Mongkok, and I spent a lot of money on the quarantine. Not the best experience, but I was determined to get to know you once I got out.' },
+      { id: 7, text: '<em>I discovered your beautiful landscape, side-by-side ruins, and wonders, endless delicious food, and met some lovely students.' },
+      { id: 8, text: '<em>For weeks, I lamented over how much money I spent on the quarantine, thinking that maybe it would have been better if I had gone to South Korea. At the same time, I tried to befriend local students, only to fail and realize my identity as a Chinese American more than ever. I gave up.' },
+      { id: 9, text: '<em>Things fell into place on their own. I made amazing friends. All are unique, from different places, and amazing in their own ways. I’ll cherish them and my time in Hong Kong for the rest of my life.' },
+      { id: 10, text: '<em>I overcame my fear of singing in public. This represents my lifelong fear of being judged, doing poorly at something, and what people think of me. I learned to do things for the fun of it. I spent more drunken nights here in the last month than in 21 years. I danced until the sun came out, I karaoke’d at Tsim Sha Tsui in front of a small crowd and got shut down by the police, jumped from 20 meters into a pool of water at Sai Kung, and climbed a mountain in a dress. So many wonderful things happened in Hong Kong.' },
+      { id: 11, text: 'I wrote this after I learned a bit of German and started a German class in September 2022, inspired by the wonderful German friends I met. Of course, I used a grammar checker and Google Translate. This is about how I learned a lot in Hong Kong and my next adventure to Germany.' },
+      { id: 12, text: '<em>Hallo Hong Kong, freut mich, wir haben uns kennengelernt. Ich habe viele Freunde in Hong Kong getroffen. Ich habe viele Dinge gelernt in Hong Kong, über die Kultur, die Leute, aber die wichtigsten Dinge sind meine Freunde! Einige Dinge, ich wünschte, sie wären anders, aber, naja, kein Problem haben wir jetzt, oder!? Nach Hong Kong, nach meine Heimatstadt gekommen. Ich habe meine Heimat lieben gelernt. Fast ich habe eine neue Reise nach Deutschland! Ich erwarte die Reise auch schwer, aber hoffentlich ganz gut oder besser aus! Also, kann man glauben, Leute haben andere Sprachen gelernt mit keinem Google Translate? Außerdem, kann man glauben, bin ich die schlechteste Studentin von meinem Deutschkurs? Gott sei Dank für Google Translate.' },
+      { id: 13, text: '' }
+    ],
+    showBlog: false
+  },
+  {
     id: 17,
     title: 'The Guilt of Success',
     date: '2/27/2023',
