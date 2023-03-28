@@ -5,14 +5,6 @@ export const projectCategories = [
     showCategory: true,
     projects: [
       {
-        id: 0,
-        name: 'To Do List',
-        description: 'A simple to do list with automatic saving, update, creation, and deletion abilities',
-        tools: 'Kotlin, Android Studio',
-        github: 'https://github.com/chiuannica/SimpleToDo',
-        img: 'todolist.gif'
-      },
-      {
         id: 1,
         name: 'Wishlist',
         description: 'A wishlist with automatic saving, creation, deletion abilities',
@@ -23,10 +15,26 @@ export const projectCategories = [
       {
         id: 2,
         name: 'Capybarable',
-        description: 'An application inspired by Wordle, with a Capybara twist. <br>The user guesses a four-letter word in three guesses, with the app telling the user if the letters are in the word and if they are in the right location.',
+        description: 'An application inspired by Wordle, with a Capybara twist.',
         tools: 'Kotlin, Android Studio',
         github: 'https://github.com/chiuannica/Wordle',
         img: 'wordle.gif'
+      },
+      {
+        id: 3,
+        name: 'The New York Times Bestseller List',
+        description: 'An application that calls the NYT API and shows a list of NYT Bestsellers.',
+        tools: 'Kotlin, Android Studio, NYT API',
+        github: 'https://github.com/chiuannica/and102-lab3-starter',
+        img: 'nyt.gif'
+      },
+      {
+        id: 0,
+        name: 'To Do List',
+        description: 'A simple to do list with automatic saving, update, creation, and deletion abilities',
+        tools: 'Kotlin, Android Studio',
+        github: 'https://github.com/chiuannica/SimpleToDo',
+        img: 'todolist.gif'
       }
     ]
   },
