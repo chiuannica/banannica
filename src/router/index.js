@@ -50,7 +50,7 @@ export default new Router({
       name: 'Resume',
       component: Contact,
       beforeEnter (to, from, next) {
-        window.location.href = 'https://drive.google.com/file/d/15w605bjlbpFN_kNhElEoeqV8Furvhu5K/view'
+        window.location.href = 'https://drive.google.com/file/d/12iKyHOO0ZaOl3qkPKmsd2BB5RihYMTxd/view?usp=sharing'
       }
     }
   ]
