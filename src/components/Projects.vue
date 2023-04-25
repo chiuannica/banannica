@@ -137,14 +137,16 @@ export default {
 .project-title {
   margin: 0;
   font-display: bold;
-  line-height: 1;
+  padding-bottom: 0.5em;
 }
 .project-link {
   padding-left: 1%;
   border-left: hsla(217, 34%, 80%, 1) solid 0.5vh;
   color: hsla(217, 34%, 80%, 0.9);
   transition: border-left 0.7s;
-  line-height: 2;
+  padding-left: 0.3em;
+  margin-top: 0.5em;
+
 }
 .project-link:hover {
   color: hsla(217, 34%, 80%, 1);

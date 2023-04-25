@@ -56,7 +56,7 @@ body {
   margin: 0;
 }
 h1, h2, h3, h4, h5 {
-  font-family: 'DMSans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Anon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: hsl(216, 21%, 13%);
   line-height: 0.8;
   padding: 0;
@@ -83,7 +83,7 @@ h6 {
 p, li {
   font-size: 1.8rem;
   margin: 0.5% 0;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 ul {
   margin: 0;
@@ -103,6 +103,11 @@ a {
     margin-right: 2%;
     width: 96%;
   }
+
+  h1, h2, h3, h4, h5 {
+    line-height: 1;
+    padding: 2%
+  }
   h1 {
   font-size: 2.6rem;
   }
@@ -120,7 +125,7 @@ a {
     font-size: 1.6rem;
   }
   p, li, a {
-    font-size: 2.0em;
+    font-size: 2.5em;
   }
 }
 </style>

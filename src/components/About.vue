@@ -24,10 +24,11 @@ export default {
       info: 'pronounced ANNE-EH-KAH',
       pronouns: 'she/her',
       texts: [
-        { p: 'I am a graduate of Temple University. I studied Information Technology.' },
-        { p: 'I have experience in Android, Full-Stack Development, and Data Science. ' },
-        { p: 'I used to be a baking teaching assistant for grades K through 8.' },
-        { p: 'I love learning languages! I speak the following languages in descending order of proficiency: English, Spanish, Cantonese, German, Mandarin, and Korean.' }
+        { p: 'I am studied Information Technology at Temple University' },
+        { p: 'I have experience in Android & Full-stack Development ' },
+        { p: 'I was in education for 6 years as a tutor, teaching assistant, and instructor' },
+        { p: 'I am a ployglot in training! I am studying Spanish, Cantonese, German, Mandarin, and Korean' },
+        { p: 'I love Kpop ' }
       ]
     }
   }

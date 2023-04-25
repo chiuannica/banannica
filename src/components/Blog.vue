@@ -113,20 +113,19 @@ h5 {
 }
 #blog {
   display: block;
-  max-width: 70em;
+  max-width: 76em;
   margin: 0 auto;
 }
 #blog-nav {
   display: grid;
   grid-template-rows: auto;
-  margin: 0% 3%;
 }
 .nav-text {
   text-align: center;
 }
 .blog-nav-item {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 2fr;
   padding: 2% 3%;
   margin-bottom: 1.5%;
   border: hsl(216, 21%, 13%) solid 0.2vh;
@@ -168,7 +167,7 @@ article {
   box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
 }
 .blog-text {
-  margin-bottom: 2em;
+  margin-bottom: 1.3em;
 }
 .blog-text > a {
   font-size: 1em;
@@ -224,9 +223,9 @@ iframe {
 .pagination li a {
   display: block;
   text-align: center;
-  font-weight: bold;
   text-decoration: none;
   cursor: pointer;
+  font-size: 1.3em;
 }
 .pagination li a:hover,
 .pagination li a.active {
