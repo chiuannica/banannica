@@ -22,6 +22,11 @@ export const blogs = [
     author: 'Annica',
     paragraphs: [
       { id: 10, text: 'This blog is in Spanish! Spanish has been a hobby for a few years after taking it in high school. ' },
+      { id: 11, text: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7L092BX9Uld1KfZdJbzMcQ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' },
+
+      { id: 12, text: 'Recientemente re-descubrí esta canción que solía escuchar mucho en la secundaria. Y ahora, todavía me identifico con ella.' },
+      { id: 13, text: '<a href="https://lyricstranslate.com/en/21-21.html-20">La letra está disponible aquí.</a>' },
+      
       { id: 0, text: 'He estado desempleado por casi 3 meses, y ha sido un tiempo muy difícil. En el pasado, me identificaba como ingeniera y trabajadora, pero ahora estoy explorando quién soy más allá de mi carrera.' },
       { id: 1, text: 'Me resulta gracioso pensar en todo lo que he logrado en mis sueños hasta ahora. He tenido la oportunidad de trabajar en Nueva York y Silicon Valley, ¡soy una "ex ingeniera de Silicon Valley"! Además, tuve la suerte de visitar países como Alemania, Corea del Sur y Hong Kong, lugares que siempre había soñado con conocer desde hace años. Lo creas o no, durante el transcurso de un año, pude hacer realidad todos estos sueños.' },
       { id: 2, text: 'Y ahora, tengo un descanso forzado de unas meses.' },

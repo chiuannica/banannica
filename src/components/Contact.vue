@@ -41,7 +41,7 @@ export default {
   max-width: 50vh;
 }
 .contact-link > a > .fa {
-  font-size: 4em;
+  font-size: 3em;
 }
 .contact-link > a > p {
   margin: 2% 0;

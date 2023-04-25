@@ -62,7 +62,7 @@ nav {
 }
 @media screen and (max-width: 600px) {
   a {
-    font-size: 2.5em;
+    font-size: 2.8em;
   }
 }
 @media screen and (min-width: 1000px) {

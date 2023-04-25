@@ -135,7 +135,7 @@ h5 {
   color: hsl(216, 21%, 13%);
   text-decoration: none;
   transition: 0.7s;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .date {
   text-align: right;
@@ -169,6 +169,15 @@ article {
 }
 .blog-text {
   margin-bottom: 2em;
+}
+.blog-text > a {
+  font-size: 1em;
+  transition: 0.7s;
+}
+.blog-text > a:hover {
+  background: hsla(217, 34%, 80%, 0.5);
+  font-weight: bold;
+  transition: 0.7s;
 }
 .blog-close-wrapper {
   width: 100%;
