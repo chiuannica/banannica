@@ -14,6 +14,24 @@ export const blogs = [
     showBlog: false
   },
   */
+
+  {
+    id: 20,
+    title: 'El Lado Positivo del Desempleo',
+    date: '4/25/2023',
+    author: 'Annica',
+    paragraphs: [
+      { id: 10, text: 'This blog is in Spanish! Spanish has been a hobby for a few years after taking it in high school. ' },
+      { id: 0, text: 'He estado desempleado por casi 3 meses, y ha sido un tiempo muy difícil. En el pasado, me identificaba como ingeniera y trabajadora, pero ahora estoy explorando quién soy más allá de mi carrera.' },
+      { id: 1, text: 'Me resulta gracioso pensar en todo lo que he logrado en mis sueños hasta ahora. He tenido la oportunidad de trabajar en Nueva York y Silicon Valley, ¡soy una "ex ingeniera de Silicon Valley"! Además, tuve la suerte de visitar países como Alemania, Corea del Sur y Hong Kong, lugares que siempre había soñado con conocer desde hace años. Lo creas o no, durante el transcurso de un año, pude hacer realidad todos estos sueños.' },
+      { id: 2, text: 'Y ahora, tengo un descanso forzado de unas meses.' },
+      { id: 3, text: 'Estar desempleado no es fácil, pero necesitaba esta pausa para reflexionar sobre mí mismo. He encontrado algo positivo en esta situación. He llegado a darme cuenta de que no soy solo una trabajadora cuyo único propósito es producir para el capitalismo, sino que soy una persona con intereses, pasatiempos, y sueños. Me encanta hacer el arte, tocar música, aprender idiomas, y explorar países.' },
+      { id: 4, text: 'Cuando haya fallecido, sé que me recordarán por las cosas que realmente importan, no por mi trabajo. Durante este tiempo libre, he retomado mis intereses pasados. He vuelto a aprender a tocar la viola, el erhu y el violín. Ahora entiendo que mis pasatiempos no tienen que ser actividades que me generen dinero.' },
+      { id: 5, text: '¿Y ahora qué haré? Bueno, este tiempo de reflexión es justo lo que necesitaba. Después de descubrir quién soy y estar listo para algo, aún no estoy seguro de qué camino seguir. El mercado laboral es realmente difícil en estos momentos, así que tal vez considere ir a la escuela o buscar oportunidades en otro país.' },
+      { id: 6, text: 'Recientemente, escuché un mensaje que dice que si algo no funciona después de muchos intentos, es una señal de que no es parte de mi camino y debo intentar algo nuevo. Estoy reflexionando sobre esta idea y pensando en cómo puedo aplicarla a mi vida.' }
+    ],
+    showBlog: false
+  },
   {
     id: 18,
     title: 'Falling in Love with Hong Kong',

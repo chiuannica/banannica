@@ -29,8 +29,21 @@ export default {
   font-family: 'Catamaran';
   src: url('assets/Catamaran-Regular.ttf');
 }
+@font-face {
+  font-family: 'DMSans';
+  src: url('assets/DMSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'Varela';
+  src: url('assets/VarelaRound-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Anon';
+  src: url('assets/AnonymousPro-Regular.ttf');
+}
 #body {
-  font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'DMSans', 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   -webkit-font-smoothin: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsl(216, 21%, 13%);
@@ -43,7 +56,7 @@ body {
   margin: 0;
 }
 h1, h2, h3, h4, h5 {
-  font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'DMSans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: hsl(216, 21%, 13%);
   line-height: 0.8;
   padding: 0;
@@ -78,8 +91,8 @@ ul {
 }
 a {
   font-size: 2.1rem;
-  line-height: 1.1;
-  font-family: 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 0.9;
+  font-family: 'Anon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #354051;
   text-decoration: none;
   transition: color 0.7s;
