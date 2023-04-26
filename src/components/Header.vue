@@ -45,7 +45,6 @@ a.block{
   padding: 0.5em;
 }
 nav {
-  background: transparent;
   height: 10vh;
   display: inline-flex;
   justify-content:space-between;

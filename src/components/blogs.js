@@ -22,7 +22,7 @@ export const blogs = [
     author: 'Annica',
     paragraphs: [
       { id: 10, text: 'This blog is in Spanish! Spanish has been a hobby for a few years after taking it in high school. ' },
-      { id: 11, text: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7L092BX9Uld1KfZdJbzMcQ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' },
+      { id: 11, text: '<iframe src="https://open.spotify.com/embed/track/7L092BX9Uld1KfZdJbzMcQ?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' },
       { id: 12, text: 'Recientemente re-descubrí esta canción que solía escuchar mucho en la secundaria. Y ahora, todavía me identifico con ella.' },
       { id: 13, text: '<a href="https://lyricstranslate.com/en/21-21.html-20">La letra está disponible aquí.</a>' },
       { id: 0, text: 'He estado desempleado por casi 3 meses, y ha sido un tiempo muy difícil. En el pasado, me identificaba como ingeniera y trabajadora, pero ahora estoy explorando quién soy más allá de mi carrera.' },
@@ -42,6 +42,8 @@ export const blogs = [
     author: 'Annica',
     paragraphs: [
       { id: 0, text: 'I studied abroad in Hong Kong for my last semester of school. When I came home, it all felt like a dream. A wonderful, breathtaking dream. ' },
+      { id: 11, text: 'This is a song with a message that resonated throughout my time in and after Hong Kong. It is also a song that all Hong Kongers know.' },
+      { id: 12, text: '<iframe src="https://open.spotify.com/embed/track/5M8FXrTngqo69sLY55pffy?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' },
       { id: 1, text: 'I wrote this around February 2022, a month into my stay.' },
       { id: 2, text: '<em>I am studying abroad at Hong Kong Baptist University currently. I love it here. Truly. Oh my, to think that I was going to skip studying abroad. Everyone should have an experience like this.' },
       { id: 4, text: 'I wrote this after I left in May 2022.' },

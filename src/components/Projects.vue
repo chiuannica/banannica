@@ -117,6 +117,7 @@ export default {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
+
 .project-nav-button {
   cursor: pointer;
   display: block;

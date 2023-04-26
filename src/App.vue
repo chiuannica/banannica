@@ -42,18 +42,21 @@ export default {
   font-family: 'Anon';
   src: url('assets/AnonymousPro-Regular.ttf');
 }
+
 #body {
   font-family: 'DMSans', 'Catamaran', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   -webkit-font-smoothin: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsl(216, 21%, 13%);
-  margin-left: 15%;
-  margin-right: 5%;
-  width: 75%;
+  margin-left: 10%;
+  margin-right: 10%;
+  opacity: 1;
+  width: 80%;
 }
 body {
   font-size: 62.5%;
   margin: 0;
+  text-shadow: 0.01em 0.01em 0.01em hsl(216, 21%, 13%);
 }
 h1, h2, h3, h4, h5 {
   font-family: 'Anon', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -116,7 +119,7 @@ a {
     margin-left: 2%;
   }
   h3 {
-    font-size: 1.0rem;
+    font-size: 1.8rem;
   }
   h4, h5 {
     font-size: 1.6rem;

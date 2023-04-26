@@ -7,9 +7,7 @@
       <ul>
         <li v-for="text in texts" :key="text.id" v-html="text.p"></li>
       </ul>
-        <!--
-        <router-link class="bio-link" to=/Bio exact>Extended Biography</router-link>
-        -->
+        <router-link class="bio-link" to=/Bio exact>More About Me</router-link>
     </div>
   </div>
 </template>
@@ -25,10 +23,7 @@ export default {
       pronouns: 'she/her',
       texts: [
         { p: 'I am studied Information Technology at Temple University' },
-        { p: 'I have experience in Android & Full-stack Development ' },
-        { p: 'I was in education for 6 years as a tutor, teaching assistant, and instructor' },
-        { p: 'I am a ployglot in training! I am studying Spanish, Cantonese, German, Mandarin, and Korean' },
-        { p: 'I love Kpop ' }
+        { p: 'I have experience in Android, Full-stack Development, and Data Science!' }
       ]
     }
   }
@@ -36,6 +31,9 @@ export default {
 </script>
 
 <style>
+#about {
+  margin-bottom: 7%;
+}
 .bio-link {
   padding-left: 1%;
   border-left: hsla(217, 34%, 52%, 1) solid 0.5vh;
@@ -47,6 +45,7 @@ export default {
   color: hsla(217, 34%, 52%, 0.9);
   border-left: hsla(217, 34%, 52%, 1) solid 1vh;
 }
+
 @media screen and (max-width: 768px) {
   .content {
     margin-left: 2%;
