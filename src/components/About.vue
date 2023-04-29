@@ -4,10 +4,10 @@
     <div class="content">
       <p v-html="info"></p>
       <p><em v-html="pronouns"></em></p>
-      <ul>
+      <ul class="bio-list">
         <li v-for="text in texts" :key="text.id" v-html="text.p"></li>
       </ul>
-        <router-link class="bio-link" to=/Bio exact>More About Me</router-link>
+      <router-link class="bio-link" to=/Bio exact>More About Me</router-link>
     </div>
   </div>
 </template>
@@ -34,8 +34,12 @@ export default {
 #about {
   margin-bottom: 7%;
 }
+.bio-list {
+  margin: 0;
+}
 .bio-link {
   padding-left: 1%;
+  margin-left: 1%;
   border-left: hsla(217, 34%, 52%, 1) solid 0.5vh;
   color: hsla(217, 34%, 52%, 0.9);
   transition: border-left 0.7s;
@@ -50,9 +54,12 @@ export default {
   .content {
     margin-left: 2%;
   }
-  .content > ul{
+  .content > ul {
     padding: 0;
     margin-left: 3%;
+  }
+  .bio-list {
+    margin: 5% 2%;
   }
 }
 </style>

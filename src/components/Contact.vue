@@ -37,15 +37,20 @@ export default {
   margin-right: auto;
 }
 .contact-link {
-  font-size: 0.8em;
+  font-size: 0.5em;
   padding: 2em;
   max-width: 80vh;
 }
 .contact-link > a > .fa {
-  font-size: 3em;
+  font-size: 5em;
 }
 .contact-link > a > p {
   margin: 2% 0;
   margin-bottom: 5vh;
+}
+@media screen and (max-width: 600px) {
+  .contact-link {
+    font-size: 0.5em;
+  }
 }
 </style>

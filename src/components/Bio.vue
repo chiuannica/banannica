@@ -50,7 +50,7 @@ export default {
           id: 1,
           title: 'Failures that keep me up at night',
           ps: [
-            {id: 5, text: 'I got waitlisted to a summer program at Curtis Institute of Music'},
+            {id: 5, text: 'I got waitlisted to a summer program at Curtis Institute of Music and wonder if I would have pursued music if I was accepted'},
             {id: 5, text: 'I got rejected by a program to go to Guatemala in high school'}
           ]
         },
@@ -105,7 +105,6 @@ export default {
   padding: 5%;
   text-shadow: 0 0 0.2em black;
   color: white;
-
 }
 .bio-body {
   padding: 0;
@@ -126,6 +125,10 @@ export default {
 @media screen and (max-width: 768px) {
   .bio-body {
     display: block;
+  }
+  .bio-body > div {
+    margin: 0;
+    margin-bottom: 5%;
   }
 
 }
