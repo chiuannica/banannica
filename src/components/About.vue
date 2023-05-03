@@ -22,7 +22,7 @@ export default {
       info: 'pronounced ANNE-EH-KAH',
       pronouns: 'she/her',
       texts: [
-        { p: 'I am studied Information Technology at Temple University' },
+        { p: 'I studied Information Technology at Temple University' },
         { p: 'I have experience in Android, Full-stack Development, and Data Science!' }
       ]
     }
