@@ -95,7 +95,6 @@ export default {
   background-size: cover;
   opacity: 0.4;
   z-index: -1;
-  border-radius: 0.5em;
 }
 .tokyo {
   background-image: url('../assets/bgs/tokyo.gif');

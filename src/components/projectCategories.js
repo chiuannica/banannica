@@ -5,6 +5,22 @@ export const projectCategories = [
     showCategory: true,
     projects: [
       {
+        id: 4,
+        name: 'Photocards and Yutaro',
+        description: 'An application that shows photocards, allows winning new photocards, editing messages, and choosing random motivating messages..',
+        tools: 'Kotlin, Android Studio',
+        github: 'https://github.com/chiuannica/PhotocardApp',
+        img: 'photocards.gif'
+      },
+      {
+        id: 3,
+        name: 'The New York Times Bestseller List',
+        description: 'An application that calls the NYT API and shows a list of bestselling books and most recent articles. It allows buying the books and reading the articles.',
+        tools: 'Kotlin, Android Studio, NYT API',
+        github: 'https://github.com/chiuannica/and102-lab3-starter',
+        img: 'nyt.gif'
+      },
+      {
         id: 1,
         name: 'Wishlist',
         description: 'A wishlist with automatic saving, creation, deletion abilities',
@@ -21,14 +37,6 @@ export const projectCategories = [
         img: 'wordle.gif'
       },
       {
-        id: 3,
-        name: 'The New York Times Bestseller List',
-        description: 'An application that calls the NYT API and shows a list of NYT Bestsellers.',
-        tools: 'Kotlin, Android Studio, NYT API',
-        github: 'https://github.com/chiuannica/and102-lab3-starter',
-        img: 'nyt.gif'
-      },
-      {
         id: 0,
         name: 'To Do List',
         description: 'A simple to do list with automatic saving, update, creation, and deletion abilities',
@@ -40,24 +48,16 @@ export const projectCategories = [
   },
   {
     id: 0,
-    name: 'Data Science',
+    name: 'iOS',
     showCategory: false,
     projects: [
       {
         id: 0,
-        name: 'Finding Doge: Cryptocurrency Value and Search Trends',
-        description: 'An investigation of the relationship between Google search trends and cryptocurrency values<br> Best Financial Hack at PearlHacks (255 participants). <br>Two years later, my predition was proved to be true.',
-        tools: 'Python, Pandas, Matplotlib, Scipy',
-        link: 'https://devpost.com/software/search-trends-and-cryptocurrencies',
-        github: 'https://gist.github.com/chiuannica/b40328c39bd816d9e3dd5886925eccfd'
-      },
-      {
-        id: 1,
-        name: 'Comparing Cryptocurrencies: Dogecoin vs. Ethereum',
-        description: 'An analysis of Dogecoin and Ether to evaluate if it is a wise investment or has reliable growth<br> Best Financial Hack at FemmeHacks (210 participants). <br>Two years later, my predition was proved to be true.',
-        tools: 'Python, Pandas, Matplotlib, Keras',
-        link: 'https://devpost.com/software/ethereuming',
-        github: 'https://gist.github.com/chiuannica/df4c95917450d64517750f4e5dd93b1b'
+        name: 'Tippy',
+        description: 'Helps you split the bill',
+        tools: 'Swift, xcode',
+        github: 'https://github.com/chiuannica/CalculatorApp',
+        img: 'tippy.gif'
       }
     ]
   },
@@ -118,6 +118,29 @@ export const projectCategories = [
         tools: 'JavaScript, Meme API, HTML/CSS',
         link: 'https://chiuannica.github.io/valentinesdaycard/meme.html',
         github: 'https://github.com/chiuannica/valentinesdaycard'
+      }
+    ]
+  },
+  {
+    id: 3,
+    name: 'Data Science',
+    showCategory: false,
+    projects: [
+      {
+        id: 0,
+        name: 'Finding Doge: Cryptocurrency Value and Search Trends',
+        description: 'An investigation of the relationship between Google search trends and cryptocurrency values<br> Best Financial Hack at PearlHacks (255 participants). <br>Two years later, my predition was proved to be true.',
+        tools: 'Python, Pandas, Matplotlib, Scipy',
+        link: 'https://devpost.com/software/search-trends-and-cryptocurrencies',
+        github: 'https://gist.github.com/chiuannica/b40328c39bd816d9e3dd5886925eccfd'
+      },
+      {
+        id: 1,
+        name: 'Comparing Cryptocurrencies: Dogecoin vs. Ethereum',
+        description: 'An analysis of Dogecoin and Ether to evaluate if it is a wise investment or has reliable growth<br> Best Financial Hack at FemmeHacks (210 participants). <br>Two years later, my predition was proved to be true.',
+        tools: 'Python, Pandas, Matplotlib, Keras',
+        link: 'https://devpost.com/software/ethereuming',
+        github: 'https://gist.github.com/chiuannica/df4c95917450d64517750f4e5dd93b1b'
       }
     ]
   }

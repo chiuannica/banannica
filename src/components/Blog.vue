@@ -130,7 +130,6 @@ h5 {
   margin-bottom: 1.5%;
   border: hsl(216, 21%, 13%) solid 0.2vh;
   border-left: hsl(216, 21%, 13%) solid 0.5vh;
-  border-radius: 0.5vh;
   color: hsl(216, 21%, 13%);
   text-decoration: none;
   transition: 0.7s;
@@ -193,7 +192,6 @@ article {
   color: hsla(354, 51%, 95%, 0.8);
   background: hsla(354, 51%, 38%, 0.8);
   border: 0;
-  border-radius: 0.5vh;
   padding-left: auto;
   padding-right: auto;
   cursor: pointer;

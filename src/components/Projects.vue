@@ -106,7 +106,6 @@ export default {
 }
 .project {
   background: hsl(216, 21%, 13%);
-  border-radius: 0.5vh;
   color: hsla(354, 51%, 88%, 0.8);
   box-sizing: border-box;
   padding: 1.5em;
@@ -121,19 +120,19 @@ export default {
 .project-nav-button {
   cursor: pointer;
   display: block;
-  margin: 1%;
-  padding: 2%;
+  margin: 1% 0;
+  padding: 2% 0;
   padding-bottom: 1%;
-  border-radius: 0.5vh;
   border-bottom: hsla(354, 51%, 88%, 0) solid 1vh;
   transition: 0.7s;
 }
 .project-nav-button:hover{
   background: hsla(217, 34%, 80%, 0.5);
+  padding-left: 1%;
   font-weight: bold;
 }
 .project-nav-button-active {
-  border-bottom: hsla(354, 51%, 88%, 0.8) solid 1vh;
+  border-bottom: hsla(354, 51%, 88%,0.8) solid 1vh;
 }
 .project-title {
   margin: 0;
@@ -161,7 +160,7 @@ export default {
 }
 .projects-grid{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 1.5%;
 }
 /* Modal styles */
@@ -196,7 +195,6 @@ export default {
   color: hsla(354, 51%, 95%, 0.8);
   background: hsla(354, 51%, 38%, 0.8);
   border: 0;
-  border-radius: 0.5vh;
   cursor: pointer;
   transition: all 0.7s;
   text-align: center;
@@ -218,7 +216,6 @@ export default {
   width: 100%;
   max-width: 45rem;
   max-height: 45rem;
-  border-radius: 0.5rem;
 }
 @media screen and (max-width: 1100px) {
   .project-nav-categories {
