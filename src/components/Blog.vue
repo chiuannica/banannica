@@ -237,9 +237,6 @@ iframe {
   #blog {
     margin: 0;
   }
-  .content {
-    margin: 5vh;
-  }
   .blog-nav-row {
     display: block;
     width: 90%;
