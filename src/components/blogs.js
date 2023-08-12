@@ -20,7 +20,7 @@ export const blogs = [
     date: '8/11/2023',
     author: 'Annica',
     paragraphs: [
-      { id: 11, text: 'This blog post is in Spanish and German! I have learned Spanish much longer than German. I wrote the blog with my sparse abilities and chatgpt helped me a lot. Writing is helping me learn the languages a lot.' },
+      { id: 11, text: 'This blog post is in Spanish and German! I have learned Spanish much longer than German. I wrote the blog with my sparse abilities and chatgpt helped me a lot. Writing and chatgpt is helping me learn so much.' },
       { id: 12, text: 'Esta canción trata sobre la monotonía de una vida centrada en el trabajo.' },
       { id: 11, text: '<iframe src="https://open.spotify.com/embed/track/3ZCjmlAZfEUbDNKkoJpMjm?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' },
       { id: 13, text: '<a href="https://genius.com/Genius-english-translations-lexie-liu-ganma-english-translation-lyrics">La letra está disponible aquí.</a>' },
