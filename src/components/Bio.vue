@@ -39,7 +39,7 @@ export default {
           id: 0,
           title: 'Bragging Rights',
           ps: [
-            {id: 0, text: '100+ day streak on Duolingo'},
+            {id: 0, text: '200+ day streak on Duolingo (I\'m learning Korean!)'},
             {id: 1, text: 'I was a BTS fan in 2014'},
             {id: 2, text: 'I do not watch many shows or movies'},
             {id: 1, text: 'I probably know more about Kpop than anyone you know'},
