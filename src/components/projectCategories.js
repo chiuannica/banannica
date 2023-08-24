@@ -5,20 +5,20 @@ export const projectCategories = [
     showCategory: true,
     projects: [
       {
-        id: 4,
-        name: 'Photocards and Yutaro',
-        description: 'An application that shows photocards, allows winning new photocards, editing messages, and choosing random motivating messages..',
-        tools: 'Kotlin, Android Studio',
-        github: 'https://github.com/chiuannica/PhotocardApp',
-        img: 'photocards.gif'
-      },
-      {
         id: 3,
         name: 'The New York Times Bestseller List',
         description: 'An application that calls the NYT API and shows a list of bestselling books and most recent articles. It allows buying the books and reading the articles.',
         tools: 'Kotlin, Android Studio, NYT API',
         github: 'https://github.com/chiuannica/and102-lab3-starter',
         img: 'nyt.gif'
+      },
+      {
+        id: 4,
+        name: 'Photocards and Yutaro',
+        description: 'An application that shows photocards, allows winning new photocards, editing messages, and choosing random motivating messages..',
+        tools: 'Kotlin, Android Studio',
+        github: 'https://github.com/chiuannica/PhotocardApp',
+        img: 'photocards.gif'
       },
       {
         id: 1,
