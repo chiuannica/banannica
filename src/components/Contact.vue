@@ -1,12 +1,13 @@
 <template>
   <div id="contact">
     <div class="contact-links">
-      <div :key=media.id v-for="media in medias" class="contact-link">
-        <a :href="media.link">
-          <i :class="media.icon"></i>
-          <p>{{ media.handle }}</p>
-        </a>
-      </div>
+      <a :key=media.id v-for="media in medias" :href="media.link">
+        <h6><i :class="media.icon"></i> {{ media.text }}</h6>
+      </a>
+
+      <router-link :onclick="resume.func" :to="resume.link" exact>
+          <h6><i :class="resume.icon"></i> {{ resume.text }}</h6>
+      </router-link>
     </div>
   </div>
 </template>
@@ -18,9 +19,10 @@ export default {
     return {
       title: 'Contact',
       icon: 'fa fa-address-book',
+      resume: { id: 3, name: 'Resume', text: 'My Resume', link: '/resume', icon: 'fa fa-file-text-o' },
       medias: [
-        { id: 1, name: 'GitHub', handle: 'chiuannica', link: 'https://github.com/chiuannica', icon: 'fa fa-github' },
-        { id: 2, name: 'LinkedIn', handle: 'Connect with me on LinkedIn', link: 'https://www.linkedin.com/in/annicachiu/', icon: 'fa fa-linkedin' }
+        { id: 1, name: 'GitHub', text: 'My GitHub', link: 'https://github.com/chiuannica', icon: 'fa fa-github' },
+        { id: 2, name: 'LinkedIn', text: 'Connect with me on LinkedIn', link: 'https://www.linkedin.com/in/annicachiu/', icon: 'fa fa-linkedin' }
       ]
     }
   }
@@ -36,17 +38,8 @@ export default {
   margin-left: auto;
   margin-right: auto;
 }
-.contact-link {
-  font-size: 0.5em;
-  padding: 2em;
-  max-width: 80vh;
-}
-.contact-link > a > .fa {
-  font-size: 5em;
-}
-.contact-link > a > p {
-  margin: 2% 0;
-  margin-bottom: 5vh;
+.contact-links > a > h6 {
+  margin-top: 7.5%;
 }
 @media screen and (max-width: 600px) {
   .contact-link {
